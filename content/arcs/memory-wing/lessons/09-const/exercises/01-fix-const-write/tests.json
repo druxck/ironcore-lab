@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "42\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints 42 without writing through the const pointer"
+  }
+]

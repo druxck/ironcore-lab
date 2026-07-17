@@ -1,0 +1,14 @@
+{
+  "id": "assembly-basement-01-what-is-a-bit",
+  "arcId": "assembly-basement",
+  "order": 1,
+  "title": "What Is a Bit",
+  "objectives": [
+    "Explain what a bit and a byte are",
+    "Convert small binary numbers to decimal by hand",
+    "Explain why computers use binary instead of decimal"
+  ],
+  "prerequisites": [],
+  "narrativeContentPath": "arcs/assembly-basement/lessons/01-what-is-a-bit/content.md",
+  "estXp": 40
+}

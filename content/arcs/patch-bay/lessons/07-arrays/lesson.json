@@ -1,0 +1,14 @@
+{
+  "id": "patch-bay-07-arrays",
+  "arcId": "patch-bay",
+  "order": 7,
+  "title": "Arrays: A Row of Jacks",
+  "objectives": [
+    "Declare and index a fixed-size array",
+    "State the valid index range for an array of a given size",
+    "Explain why C performs no automatic bounds checking on array access"
+  ],
+  "prerequisites": ["patch-bay-06-scope-lifetime"],
+  "narrativeContentPath": "arcs/patch-bay/lessons/07-arrays/content.md",
+  "estXp": 55
+}

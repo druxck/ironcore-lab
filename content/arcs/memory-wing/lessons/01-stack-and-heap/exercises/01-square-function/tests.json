@@ -1,0 +1,18 @@
+[
+  {
+    "id": "main",
+    "stdin": "4",
+    "expectedStdout": "Square of 4 is 16\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Input 4 prints \"Square of 4 is 16\""
+  },
+  {
+    "id": "seven",
+    "stdin": "7",
+    "expectedStdout": "Square of 7 is 49\n",
+    "matchMode": "exact",
+    "hidden": true,
+    "description": "A different input, to make sure square() is really being called"
+  }
+]

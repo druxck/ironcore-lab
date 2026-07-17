@@ -1,0 +1,15 @@
+{
+  "id": "assembly-basement-04-hello-lab",
+  "arcId": "assembly-basement",
+  "order": 4,
+  "title": "Hello, Lab",
+  "objectives": [
+    "Write a minimal, complete C program",
+    "Explain the role of #include, main, and return",
+    "Compile and run a real C program end to end"
+  ],
+  "prerequisites": ["assembly-basement-03-toolchain-awakens"],
+  "narrativeContentPath": "arcs/assembly-basement/lessons/04-hello-lab/content.md",
+  "estXp": 50,
+  "historyCardIds": ["hc-hello-world-origin", "hc-knr-book"]
+}

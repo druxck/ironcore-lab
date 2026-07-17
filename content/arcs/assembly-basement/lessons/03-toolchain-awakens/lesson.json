@@ -1,0 +1,15 @@
+{
+  "id": "assembly-basement-03-toolchain-awakens",
+  "arcId": "assembly-basement",
+  "order": 3,
+  "title": "The Toolchain Awakens",
+  "objectives": [
+    "Name the four stages that turn a .c file into a running program",
+    "Explain what the preprocessor, compiler, assembler, and linker each do",
+    "Explain why C needed a compiler instead of being interpreted"
+  ],
+  "prerequisites": ["assembly-basement-02-counting-like-a-machine"],
+  "narrativeContentPath": "arcs/assembly-basement/lessons/03-toolchain-awakens/content.md",
+  "estXp": 40,
+  "historyCardIds": ["hc-dennis-ritchie", "hc-b-language", "hc-unix-rewrite"]
+}

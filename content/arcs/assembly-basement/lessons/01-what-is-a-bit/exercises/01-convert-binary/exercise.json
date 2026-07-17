@@ -1,0 +1,13 @@
+{
+  "id": "assembly-basement-01-ex01-convert-binary",
+  "order": 1,
+  "title": "Convert Binary to Decimal",
+  "type": "fill-in-blank",
+  "prompt": "Convert the binary number 1101 to decimal. Type just the number.",
+  "starterCode": "",
+  "expectedAnswer": "13",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

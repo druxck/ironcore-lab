@@ -1,0 +1,92 @@
+[
+  {
+    "match": "expected ';' before",
+    "explanation": "The compiler hit something it didn't expect and its best guess is that a semicolon is missing on the line above. Check the end of the previous statement.",
+    "relatedLessonId": "assembly-basement-05-reading-complaints"
+  },
+  {
+    "match": "expected declaration or statement at end of input",
+    "explanation": "The compiler ran out of file before it found a closing '}'. Count your braces — one of them is missing.",
+    "relatedLessonId": "assembly-basement-05-reading-complaints"
+  },
+  {
+    "match": "expected '}'",
+    "explanation": "Your braces don't balance. Somewhere a '{' was opened that never got a matching '}', or vice versa.",
+    "relatedLessonId": "assembly-basement-05-reading-complaints"
+  },
+  {
+    "match": "implicit declaration of function",
+    "explanation": "You called a function the compiler hasn't seen declared yet — usually a missing #include, or the function is defined further down the file than where you called it.",
+    "relatedLessonId": "assembly-basement-06-make-it-so"
+  },
+  {
+    "match": "unused variable",
+    "explanation": "You declared this variable but never read its value. Not an error, but usually a sign of a bug — either you meant to use it, or you can delete it.",
+    "relatedLessonId": "assembly-basement-05-reading-complaints"
+  },
+  {
+    "match": "control reaches end of non-void function",
+    "explanation": "This function promises to return a value but there's a path through it that doesn't hit a return statement.",
+    "relatedLessonId": "patch-bay-05-functions"
+  },
+  {
+    "match": "assignment makes pointer from integer without a cast",
+    "explanation": "You're assigning a plain number to a pointer variable. This is almost always a bug — did you mean to use & to take an address, or forget a dereference *?",
+    "relatedLessonId": "memory-wing-02-what-is-a-pointer"
+  },
+  {
+    "match": "comparison between pointer and integer",
+    "explanation": "You're comparing a pointer to a plain number. If you meant to check for a null pointer, compare against NULL (or 0) explicitly and make sure both sides are actually pointers.",
+    "relatedLessonId": "memory-wing-02-what-is-a-pointer"
+  },
+  {
+    "match": "undeclared",
+    "explanation": "The compiler has never seen this name before at this point in the file. Common causes: a typo, using a variable outside the { } block it was declared in, or using it before its declaration.",
+    "relatedLessonId": "patch-bay-06-scope-lifetime"
+  },
+  {
+    "match": "conflicting types for",
+    "explanation": "You've declared or defined this function/variable twice with two different types. Check every declaration matches exactly.",
+    "relatedLessonId": "patch-bay-05-functions"
+  },
+  {
+    "match": "expected expression",
+    "explanation": "The compiler expected a value or expression here and found something else instead — often a stray operator, an extra comma, or a misplaced symbol.",
+    "relatedLessonId": "patch-bay-02-operators-expressions"
+  },
+  {
+    "match": "redefinition of",
+    "explanation": "This name has already been defined earlier in the file (or in an included header). Two functions or variables can't share the same name in the same scope.",
+    "relatedLessonId": "patch-bay-06-scope-lifetime"
+  },
+  {
+    "match": "incompatible pointer types",
+    "explanation": "You're assigning or passing a pointer of one type where a pointer of a different type is expected. Check the types on both sides carefully.",
+    "relatedLessonId": "memory-wing-03-pointers-and-arrays"
+  },
+  {
+    "match": "too few arguments to function",
+    "explanation": "You called this function with fewer arguments than it's declared to take. Check the function's signature.",
+    "relatedLessonId": "patch-bay-05-functions"
+  },
+  {
+    "match": "too many arguments to function",
+    "explanation": "You called this function with more arguments than it's declared to take. Check the function's signature.",
+    "relatedLessonId": "patch-bay-05-functions"
+  },
+  {
+    "match": "return type defaults to",
+    "explanation": "You defined a function without giving it a return type. Modern C requires every function to declare one explicitly (even 'void' if it returns nothing).",
+    "relatedLessonId": "patch-bay-05-functions"
+  },
+  {
+    "match": "format ",
+    "explanation": "A printf/scanf-family format specifier (like %d or %s) doesn't match the type of the argument you passed. Double-check every %X against the variable next to it, in order.",
+    "relatedLessonId": "assembly-basement-04-hello-lab"
+  },
+  {
+    "match": "expected identifier or",
+    "explanation": "The compiler expected a name (a variable, function, or type) here and found a symbol instead — often a missing type keyword or a typo.",
+    "relatedLessonId": "assembly-basement-05-reading-complaints"
+  }
+]

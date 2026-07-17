@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "count=3 ratio=0.50 grade=A\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints count, ratio (2 decimal places), and grade on one line"
+  }
+]

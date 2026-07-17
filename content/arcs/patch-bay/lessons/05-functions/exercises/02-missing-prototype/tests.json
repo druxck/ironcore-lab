@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "12\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints 12 (4 tripled), compiling with no warnings"
+  }
+]

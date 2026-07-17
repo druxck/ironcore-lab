@@ -1,0 +1,13 @@
+{
+  "id": "patch-bay-02-ex02-modulo",
+  "order": 2,
+  "title": "Remainder",
+  "type": "predict-output",
+  "prompt": "What does the expression 10 % 3 evaluate to?",
+  "starterCode": "",
+  "expectedAnswer": "1",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

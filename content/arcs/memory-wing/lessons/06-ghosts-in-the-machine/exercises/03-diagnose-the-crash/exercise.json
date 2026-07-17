@@ -1,0 +1,14 @@
+{
+  "id": "memory-wing-06-ex03-diagnose-the-crash",
+  "order": 3,
+  "title": "Diagnose the Crash",
+  "type": "debug-with-gdb",
+  "prompt": "This fixed diagnostic probe crashes every time it runs. Run the debugger session below, read the backtrace it produces, and type the name of the function where the crash happened (the top frame, #0).",
+  "starterCode": "#include <stdio.h>\n\nvoid diagnose(int *reading) {\n    printf(\"Reading: %d\\n\", *reading);\n}\n\nint main(void) {\n    int *sensor = NULL;\n    diagnose(sensor);\n    return 0;\n}\n",
+  "gdbCommands": "run\nbt\n",
+  "expectedAnswer": "diagnose",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 45,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

@@ -1,0 +1,5 @@
+[
+  { "id": "five", "stdin": "5", "expectedStdout": "25\n", "matchMode": "exact", "hidden": false, "description": "5 squared is 25" },
+  { "id": "zero", "stdin": "0", "expectedStdout": "0\n", "matchMode": "exact", "hidden": false, "description": "0 squared is 0" },
+  { "id": "negative", "stdin": "-3", "expectedStdout": "9\n", "matchMode": "exact", "hidden": true, "description": "-3 squared is 9" }
+]

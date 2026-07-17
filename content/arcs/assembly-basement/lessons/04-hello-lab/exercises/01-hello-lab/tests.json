@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Hello, lab.\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints \"Hello, lab.\" followed by a newline, and nothing else"
+  }
+]

@@ -1,0 +1,4 @@
+[
+  { "id": "positives", "stdin": "3 7 2 9", "expectedStdout": "9\n", "matchMode": "exact", "hidden": false, "description": "Largest of 3 7 2 9 is 9" },
+  { "id": "negatives", "stdin": "-1 -5 -2 -8", "expectedStdout": "-1\n", "matchMode": "exact", "hidden": true, "description": "Largest of all-negative values is the one closest to zero" }
+]

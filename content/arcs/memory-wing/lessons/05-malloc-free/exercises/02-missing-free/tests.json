@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Reading: 7\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints \"Reading: 7\" and Valgrind reports zero leaks"
+  }
+]

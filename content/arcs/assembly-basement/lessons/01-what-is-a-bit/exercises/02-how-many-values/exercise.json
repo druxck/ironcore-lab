@@ -1,0 +1,13 @@
+{
+  "id": "assembly-basement-01-ex02-how-many-values",
+  "order": 2,
+  "title": "How Many Values?",
+  "type": "fill-in-blank",
+  "prompt": "A byte is 8 bits. How many distinct values can a single byte represent?",
+  "starterCode": "",
+  "expectedAnswer": "256",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

@@ -1,0 +1,13 @@
+{
+  "id": "assembly-basement-06-ex01-recipe-indent",
+  "order": 1,
+  "title": "The Tab Trap",
+  "type": "fill-in-blank",
+  "prompt": "In a Makefile, a recipe line must be indented with which whitespace character: tab or spaces?",
+  "starterCode": "",
+  "expectedAnswer": "tab",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

@@ -1,0 +1,12 @@
+{
+  "id": "memory-wing-06-ex01-use-after-free",
+  "order": 1,
+  "title": "Fix It: Reading After Free",
+  "type": "fix-the-bug",
+  "prompt": "This program frees its reading before it prints it. Fix the ordering so it prints \"Reading: 42\" without touching the pointer after it's been freed.",
+  "starterCode": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(void) {\n    int *reading = malloc(sizeof(int));\n    if (reading == NULL) {\n        return 1;\n    }\n    *reading = 42;\n    free(reading);\n    printf(\"Reading: %d\\n\", *reading);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "sanitizer-clean"],
+  "baseXp": 40,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

@@ -1,0 +1,69 @@
+@import './theme-tokens.css';
+
+.crt-scanlines {
+  position: relative;
+}
+.crt-scanlines::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0px,
+    rgba(0, 0, 0, 0) 1px,
+    rgba(0, 0, 0, 0.12) 2px,
+    rgba(0, 0, 0, 0) 3px
+  );
+  mix-blend-mode: multiply;
+}
+
+@keyframes crt-flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+  93% {
+    opacity: 0.86;
+  }
+  94% {
+    opacity: 1;
+  }
+}
+.crt-flicker {
+  animation: crt-flicker 6s infinite;
+}
+
+.glow-text-phosphor {
+  text-shadow: var(--lab-glow-phosphor);
+}
+.glow-text-amber {
+  text-shadow: var(--lab-glow-amber);
+}
+.glow-text-alert {
+  text-shadow: var(--lab-glow-alert);
+}
+
+.blueprint-grid {
+  background-image: linear-gradient(rgba(57, 255, 136, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(57, 255, 136, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+@keyframes room-power-on {
+  0% {
+    filter: brightness(0.35) saturate(0.2);
+  }
+  60% {
+    filter: brightness(1.25) saturate(1.3);
+  }
+  100% {
+    filter: brightness(1) saturate(1);
+  }
+}
+.room-power-on {
+  animation: room-power-on 900ms ease-out;
+}

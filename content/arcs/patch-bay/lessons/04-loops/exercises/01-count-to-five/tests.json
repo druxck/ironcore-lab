@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "1\n2\n3\n4\n5\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints 1 through 5, one per line"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "id": "assembly-basement-05-ex01-missing-semicolon",
+  "order": 1,
+  "title": "Fix It: Missing Semicolon",
+  "type": "fix-the-bug",
+  "prompt": "This program should print \"Systems nominal.\" but it won't compile. Read the compiler's error and fix it.",
+  "starterCode": "#include <stdio.h>\n\nint main(void) {\n    int status = 1\n    printf(\"Systems nominal.\\n\");\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

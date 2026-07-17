@@ -1,0 +1,12 @@
+{
+  "id": "memory-wing-04-ex01-fix-swap",
+  "order": 1,
+  "title": "Fix It: Swap That Doesn't Swap",
+  "type": "fix-the-bug",
+  "prompt": "swap() is supposed to exchange the values of a and b in main, but it's written with plain int parameters so it can't. Fix swap (and its call) to use pointers so it actually works. Expected output: Before: 3, 8 then After: 8, 3",
+  "starterCode": "#include <stdio.h>\n\nvoid swap(int a, int b) {\n    int temp = a;\n    a = b;\n    b = temp;\n}\n\nint main(void) {\n    int x = 3, y = 8;\n    printf(\"Before: %d, %d\\n\", x, y);\n    swap(x, y);\n    printf(\"After: %d, %d\\n\", x, y);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 35,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

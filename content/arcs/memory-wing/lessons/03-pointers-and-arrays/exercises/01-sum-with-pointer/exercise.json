@@ -1,0 +1,12 @@
+{
+  "id": "memory-wing-03-ex01-sum-with-pointer",
+  "order": 1,
+  "title": "Sum an Array Using a Pointer",
+  "type": "write-program",
+  "prompt": "Given int values[5] = {10, 20, 30, 40, 50};, compute the sum by walking the array with a pointer (use *p and p++, not values[i]). Print exactly: Sum: 150",
+  "starterCode": "#include <stdio.h>\n\nint main(void) {\n    int values[5] = {10, 20, 30, 40, 50};\n    int *p = values;\n    int sum = 0;\n    // walk the array with p, accumulate into sum\n    printf(\"Sum: %d\\n\", sum);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 35,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

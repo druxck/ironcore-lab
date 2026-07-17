@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Sum: 150\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints \"Sum: 150\""
+  }
+]

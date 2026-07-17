@@ -1,0 +1,13 @@
+{
+  "id": "patch-bay-04-ex03-do-while-count",
+  "order": 3,
+  "title": "At Least Once",
+  "type": "predict-output",
+  "prompt": "How many times does the body of this loop execute?\n\nint i = 5;\ndo {\n    printf(\"%d\\n\", i);\n    i++;\n} while (i < 5);",
+  "starterCode": "",
+  "expectedAnswer": "1",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 20,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

@@ -1,0 +1,10 @@
+[
+  { "workingTitle": "From Source to Silicon", "summary": "The four-stage pipeline — preprocess, compile, assemble, link — and what artifact each stage produces." },
+  { "workingTitle": "Reading Assembly Without Fear", "summary": "objdump -d and matching generated instructions back to the C lines that produced them." },
+  { "workingTitle": "The Stack Frame and the Calling Convention", "summary": "How arguments, return addresses, and saved registers actually move across a function call." },
+  { "workingTitle": "What -O2 Actually Does", "summary": "Optimization levels and the assumptions the compiler is legally allowed to make about your code." },
+  { "workingTitle": "The Memory Hierarchy", "summary": "Registers, cache lines, and why array-of-structs versus struct-of-arrays changes real performance." },
+  { "workingTitle": "Measuring Instead of Guessing", "summary": "perf and the common pitfalls of writing a fair benchmark." },
+  { "workingTitle": "Undefined Behavior Is a Compiler's Permission Slip", "summary": "Why UB isn't 'anything could happen' folklore — it's the optimizer being handed explicit legal license." },
+  { "workingTitle": "Capstone: Make It Fast", "summary": "Profiling and rewriting a slow-but-correct program, measuring every claimed improvement." }
+]

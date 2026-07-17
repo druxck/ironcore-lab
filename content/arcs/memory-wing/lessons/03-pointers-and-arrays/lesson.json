@@ -1,0 +1,14 @@
+{
+  "id": "memory-wing-03-pointers-and-arrays",
+  "arcId": "memory-wing",
+  "order": 3,
+  "title": "Pointers and Arrays: Secretly the Same",
+  "objectives": [
+    "Explain array-to-pointer decay",
+    "Explain why arr[i] and *(arr + i) mean exactly the same thing",
+    "Walk an array using a pointer instead of an index"
+  ],
+  "prerequisites": ["memory-wing-02-what-is-a-pointer"],
+  "narrativeContentPath": "arcs/memory-wing/lessons/03-pointers-and-arrays/content.md",
+  "estXp": 50
+}

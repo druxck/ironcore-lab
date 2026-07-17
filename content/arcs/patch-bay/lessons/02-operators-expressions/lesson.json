@@ -1,0 +1,14 @@
+{
+  "id": "patch-bay-02-operators-expressions",
+  "arcId": "patch-bay",
+  "order": 2,
+  "title": "Operators & Expressions",
+  "objectives": [
+    "Use arithmetic, comparison, and logical operators",
+    "Explain why integer division truncates instead of rounding",
+    "Apply operator precedence to predict an expression's value"
+  ],
+  "prerequisites": ["patch-bay-01-variables"],
+  "narrativeContentPath": "arcs/patch-bay/lessons/02-operators-expressions/content.md",
+  "estXp": 50
+}

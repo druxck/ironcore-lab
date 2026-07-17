@@ -1,0 +1,12 @@
+{
+  "id": "memory-wing-08-ex01-build-and-free",
+  "order": 1,
+  "title": "Build, Traverse, Free",
+  "type": "write-program",
+  "prompt": "Using the struct node below, build a 3-node list with values 10, 20, 30 in that order (head -> 10 -> 20 -> 30 -> NULL), traverse it printing each value on its own line, then free every node.",
+  "starterCode": "#include <stdio.h>\n#include <stdlib.h>\n\nstruct node {\n    int value;\n    struct node *next;\n};\n\nint main(void) {\n    // build the list, print it, then free every node\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "sanitizer-clean"],
+  "baseXp": 50,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "x is now 99\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints \"x is now 99\" after setting x through a pointer"
+  }
+]

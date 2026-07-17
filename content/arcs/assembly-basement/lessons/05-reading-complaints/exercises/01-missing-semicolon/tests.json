@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Systems nominal.\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints \"Systems nominal.\" once fixed"
+  }
+]

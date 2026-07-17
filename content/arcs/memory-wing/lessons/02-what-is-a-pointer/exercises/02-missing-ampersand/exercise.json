@@ -1,0 +1,12 @@
+{
+  "id": "memory-wing-02-ex02-missing-ampersand",
+  "order": 2,
+  "title": "Fix It: Missing &",
+  "type": "fix-the-bug",
+  "prompt": "This program should print \"Reading: 42\" but the compiler complains about the pointer assignment. Find the missing operator.",
+  "starterCode": "#include <stdio.h>\n\nint main(void) {\n    int reading = 42;\n    int *p = reading;\n    printf(\"Reading: %d\\n\", *p);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

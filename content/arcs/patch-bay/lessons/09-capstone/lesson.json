@@ -1,0 +1,14 @@
+{
+  "id": "patch-bay-09-capstone",
+  "arcId": "patch-bay",
+  "order": 9,
+  "title": "Capstone: A Word Counter",
+  "objectives": [
+    "Combine loops, branching, and arrays to process real text input",
+    "Read a full line of input with fgets instead of scanf",
+    "Finish restoring the Patch Bay"
+  ],
+  "prerequisites": ["patch-bay-08-strings"],
+  "narrativeContentPath": "arcs/patch-bay/lessons/09-capstone/content.md",
+  "estXp": 65
+}

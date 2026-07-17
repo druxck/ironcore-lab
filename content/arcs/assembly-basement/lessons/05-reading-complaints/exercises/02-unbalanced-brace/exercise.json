@@ -1,0 +1,12 @@
+{
+  "id": "assembly-basement-05-ex02-unbalanced-brace",
+  "order": 2,
+  "title": "Fix It: Unbalanced Brace",
+  "type": "fix-the-bug",
+  "prompt": "This program should print \"Diagnostics: green.\" but the compiler runs out of file before it's happy. Find the missing piece.",
+  "starterCode": "#include <stdio.h>\n\nint main(void) {\n    printf(\"Diagnostics: \");\n    printf(\"green.\\n\");\n    return 0;\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

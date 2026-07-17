@@ -1,0 +1,15 @@
+{
+  "id": "memory-wing-06-ghosts-in-the-machine",
+  "arcId": "memory-wing",
+  "order": 6,
+  "title": "Ghosts in the Machine",
+  "objectives": [
+    "Identify a leak, a dangling pointer, and a double-free by their symptoms",
+    "Use the app's Valgrind and sanitizer output to locate a real memory bug",
+    "Read a gdb backtrace to find where a crash actually happened"
+  ],
+  "prerequisites": ["memory-wing-05-malloc-free"],
+  "narrativeContentPath": "arcs/memory-wing/lessons/06-ghosts-in-the-machine/content.md",
+  "estXp": 70,
+  "historyCardIds": ["hc-valgrind-origin", "hc-segfault-name", "hc-gdb-origin"]
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "int: 3 float: 3.50\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints both the truncated integer result and the 2-decimal float result"
+  }
+]

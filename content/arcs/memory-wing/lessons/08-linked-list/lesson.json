@@ -1,0 +1,14 @@
+{
+  "id": "memory-wing-08-linked-list",
+  "arcId": "memory-wing",
+  "order": 8,
+  "title": "Building Real Structures",
+  "objectives": [
+    "Explain why a struct can contain a pointer to its own type but not a copy of itself",
+    "Build and traverse a singly linked list",
+    "Free every node in a list without leaking any of them"
+  ],
+  "prerequisites": ["memory-wing-07-structs"],
+  "narrativeContentPath": "arcs/memory-wing/lessons/08-linked-list/content.md",
+  "estXp": 65
+}

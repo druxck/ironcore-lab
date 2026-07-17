@@ -1,0 +1,11 @@
+{
+  "id": "assembly-basement",
+  "title": "Assembly Basement",
+  "roomName": "Assembly Basement",
+  "shortDescription": "Bits, bytes, and getting the machine to listen to you for the first time.",
+  "longDescription": "The lowest room in Meridian Computing Laboratory, where the old teletype terminals and the first compiler tapes are stored. Nothing here has run in years. Restoring it means learning what a computer actually is underneath — bits, bytes, and the toolchain that turns text you write into something the machine can execute — and getting your very first program to run.",
+  "order": 1,
+  "unlockRequires": [],
+  "theme": { "accentColor": "#39ff88", "motif": "vacuum-tube-racks" },
+  "status": "authored"
+}

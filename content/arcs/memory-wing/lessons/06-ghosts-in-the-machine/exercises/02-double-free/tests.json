@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Reading: 9\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints \"Reading: 9\" with no double free"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "id": "assembly-basement-07-archive-room",
+  "arcId": "assembly-basement",
+  "order": 7,
+  "title": "The Archive Room",
+  "objectives": [
+    "Combine printf format specifiers to produce exact output",
+    "Recap bits, hex, the toolchain, and reading compiler diagnostics",
+    "Finish restoring the Assembly Basement"
+  ],
+  "prerequisites": ["assembly-basement-06-make-it-so"],
+  "narrativeContentPath": "arcs/assembly-basement/lessons/07-archive-room/content.md",
+  "estXp": 60,
+  "historyCardIds": ["hc-ansi-c", "hc-embedded-today"]
+}

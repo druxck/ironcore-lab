@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Reading: 42\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints \"Reading: 42\" with no use-after-free"
+  }
+]

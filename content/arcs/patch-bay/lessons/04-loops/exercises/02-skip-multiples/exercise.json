@@ -1,0 +1,12 @@
+{
+  "id": "patch-bay-04-ex02-skip-multiples",
+  "order": 2,
+  "title": "Skip the Multiples of Three",
+  "type": "write-program",
+  "prompt": "Print the numbers 1 through 10, one per line, but skip any number that's a multiple of 3.",
+  "starterCode": "#include <stdio.h>\n\nint main(void) {\n    // your code here\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

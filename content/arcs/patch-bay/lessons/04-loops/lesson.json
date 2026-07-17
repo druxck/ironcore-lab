@@ -1,0 +1,14 @@
+{
+  "id": "patch-bay-04-loops",
+  "arcId": "patch-bay",
+  "order": 4,
+  "title": "Loops: Closing the Circuit",
+  "objectives": [
+    "Write while, for, and do-while loops",
+    "Use break and continue correctly",
+    "Explain why a do-while body always runs at least once"
+  ],
+  "prerequisites": ["patch-bay-03-branching"],
+  "narrativeContentPath": "arcs/patch-bay/lessons/04-loops/content.md",
+  "estXp": 55
+}

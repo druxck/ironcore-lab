@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "5\n4\n3\n2\n1\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Pops values back out in last-in-first-out order, cleanly"
+  }
+]

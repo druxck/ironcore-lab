@@ -1,0 +1,14 @@
+{
+  "id": "patch-bay-05-functions",
+  "arcId": "patch-bay",
+  "order": 5,
+  "title": "Functions: Patch Cables",
+  "objectives": [
+    "Write a function with parameters and a return value",
+    "Explain the difference between a function declaration (prototype) and its definition",
+    "Explain why calling a function before it's declared causes problems"
+  ],
+  "prerequisites": ["patch-bay-04-loops"],
+  "narrativeContentPath": "arcs/patch-bay/lessons/05-functions/content.md",
+  "estXp": 55
+}

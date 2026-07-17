@@ -1,0 +1,13 @@
+{
+  "id": "patch-bay-01-ex02-uninitialized",
+  "order": 2,
+  "title": "Undefined, Not Zero",
+  "type": "predict-output",
+  "prompt": "A local variable is declared with `int mystery;` and never assigned before being printed. Is its value guaranteed to be 0, or is it undefined? Answer with one word: zero or undefined.",
+  "starterCode": "",
+  "expectedAnswer": "undefined",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

@@ -1,0 +1,12 @@
+{
+  "id": "patch-bay-06-ex03-redefinition",
+  "order": 3,
+  "title": "Fix It: Redefinition",
+  "type": "fix-the-bug",
+  "prompt": "This should print 5, but the global variable total is accidentally declared twice with conflicting initializers. Fix it so exactly one declaration remains and the program prints 5.",
+  "starterCode": "#include <stdio.h>\n\nint total = 0;\nint total = 5;\n\nint main(void) {\n    printf(\"%d\\n\", total);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

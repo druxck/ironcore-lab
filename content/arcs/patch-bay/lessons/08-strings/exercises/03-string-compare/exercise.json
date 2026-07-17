@@ -1,0 +1,12 @@
+{
+  "id": "patch-bay-08-ex03-string-compare",
+  "order": 3,
+  "title": "Fix It: Comparing Strings with ==",
+  "type": "fix-the-bug",
+  "prompt": "This should print \"correct\" when the user types yes, and \"try again\" otherwise — but it always prints \"try again\" no matter what's typed. Fix the comparison.",
+  "starterCode": "#include <stdio.h>\n#include <string.h>\n\nint main(void) {\n    char answer[10];\n    scanf(\"%s\", answer);\n    if (answer == \"yes\") {\n        printf(\"correct\\n\");\n    } else {\n        printf(\"try again\\n\");\n    }\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 35,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

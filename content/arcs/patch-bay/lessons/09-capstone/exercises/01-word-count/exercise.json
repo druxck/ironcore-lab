@@ -1,0 +1,12 @@
+{
+  "id": "patch-bay-09-ex01-word-count",
+  "order": 1,
+  "title": "Word Counter",
+  "type": "write-program",
+  "prompt": "Read one line of text from stdin using fgets and print the number of words it contains (a word is any run of non-whitespace characters, separated by spaces/tabs).",
+  "starterCode": "#include <stdio.h>\n\nint main(void) {\n    char line[256];\n    if (fgets(line, sizeof(line), stdin) == NULL) {\n        printf(\"0\\n\");\n        return 0;\n    }\n\n    // your code here: count words in line[]\n\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 60,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

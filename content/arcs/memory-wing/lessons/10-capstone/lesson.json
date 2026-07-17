@@ -1,0 +1,14 @@
+{
+  "id": "memory-wing-10-capstone",
+  "arcId": "memory-wing",
+  "order": 10,
+  "title": "Capstone: A Stack That Doesn't Leak",
+  "objectives": [
+    "Combine structs, pointers, and malloc/free into a working data structure",
+    "Implement push and pop on a linked-list-backed stack",
+    "Pass a submission that is correct, sanitizer-clean, and valgrind-clean all at once"
+  ],
+  "prerequisites": ["memory-wing-09-const"],
+  "narrativeContentPath": "arcs/memory-wing/lessons/10-capstone/content.md",
+  "estXp": 90
+}

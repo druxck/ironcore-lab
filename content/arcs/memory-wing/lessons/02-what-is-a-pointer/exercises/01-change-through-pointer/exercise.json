@@ -1,0 +1,12 @@
+{
+  "id": "memory-wing-02-ex01-change-through-pointer",
+  "order": 1,
+  "title": "Change a Value Through Its Pointer",
+  "type": "write-program",
+  "prompt": "Declare int x = 10;, a pointer to x, and use the pointer (not the name x directly) to set x to 99. Then print exactly: x is now 99",
+  "starterCode": "#include <stdio.h>\n\nint main(void) {\n    int x = 10;\n    // declare a pointer to x, then use it to set x to 99\n    printf(\"x is now %d\\n\", x);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

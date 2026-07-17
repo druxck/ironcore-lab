@@ -1,0 +1,12 @@
+{
+  "id": "memory-wing-08-ex02-insert-head",
+  "order": 2,
+  "title": "Insert at the Head",
+  "type": "write-program",
+  "prompt": "Implement insert_head so it allocates a new node, points it at the current front of the list, and makes it the new front. It needs to modify the caller's head pointer itself, so it takes a pointer to the pointer: struct node **head. With the calls already in main (insert 30, then 20, then 10, each at the head), the final printed list should read 10, 20, 30.",
+  "starterCode": "#include <stdio.h>\n#include <stdlib.h>\n\nstruct node {\n    int value;\n    struct node *next;\n};\n\nvoid insert_head(struct node **head, int value) {\n    // your code here\n}\n\nvoid print_list(struct node *head) {\n    struct node *cur = head;\n    while (cur != NULL) {\n        printf(\"%d\\n\", cur->value);\n        cur = cur->next;\n    }\n}\n\nvoid free_list(struct node *head) {\n    struct node *cur = head;\n    while (cur != NULL) {\n        struct node *next = cur->next;\n        free(cur);\n        cur = next;\n    }\n}\n\nint main(void) {\n    struct node *head = NULL;\n    insert_head(&head, 30);\n    insert_head(&head, 20);\n    insert_head(&head, 10);\n    print_list(head);\n    free_list(head);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "sanitizer-clean"],
+  "baseXp": 55,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

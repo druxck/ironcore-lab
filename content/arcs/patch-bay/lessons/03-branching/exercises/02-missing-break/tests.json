@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "medium\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints only \"medium\" once every case has its own break"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Sensor 3: 101.5\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints \"Sensor 3: 101.5\" using pointer field access"
+  }
+]

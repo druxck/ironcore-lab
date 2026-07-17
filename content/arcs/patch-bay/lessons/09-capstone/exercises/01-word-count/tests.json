@@ -1,0 +1,6 @@
+[
+  { "id": "two-words", "stdin": "hello world\n", "expectedStdout": "2\n", "matchMode": "exact", "hidden": false, "description": "\"hello world\" has 2 words" },
+  { "id": "one-word", "stdin": "one\n", "expectedStdout": "1\n", "matchMode": "exact", "hidden": false, "description": "\"one\" has 1 word" },
+  { "id": "extra-spaces", "stdin": "   spaced   out   words   \n", "expectedStdout": "3\n", "matchMode": "exact", "hidden": true, "description": "Leading, trailing, and repeated spaces shouldn't create phantom words" },
+  { "id": "empty-line", "stdin": "\n", "expectedStdout": "0\n", "matchMode": "exact", "hidden": true, "description": "A blank line has 0 words" }
+]

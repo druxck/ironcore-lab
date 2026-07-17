@@ -1,0 +1,15 @@
+{
+  "id": "assembly-basement-06-make-it-so",
+  "arcId": "assembly-basement",
+  "order": 6,
+  "title": "Make It So",
+  "objectives": [
+    "Explain what a build tool like make automates",
+    "Read a simple Makefile: targets, prerequisites, recipes",
+    "Explain why Makefile recipe lines must start with a tab"
+  ],
+  "prerequisites": ["assembly-basement-05-reading-complaints"],
+  "narrativeContentPath": "arcs/assembly-basement/lessons/06-make-it-so/content.md",
+  "estXp": 40,
+  "historyCardIds": ["hc-portability-goal"]
+}

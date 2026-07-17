@@ -1,0 +1,12 @@
+{
+  "id": "patch-bay-03-ex01-sign-check",
+  "order": 1,
+  "title": "Positive, Negative, or Zero",
+  "type": "write-program",
+  "prompt": "Read one integer from stdin. Print \"negative\" if it's less than 0, \"zero\" if it's exactly 0, or \"positive\" otherwise.",
+  "starterCode": "#include <stdio.h>\n\nint main(void) {\n    int n;\n    scanf(\"%d\", &n);\n    // your code here\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

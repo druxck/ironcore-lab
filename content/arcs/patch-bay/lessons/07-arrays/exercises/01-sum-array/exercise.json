@@ -1,0 +1,12 @@
+{
+  "id": "patch-bay-07-ex01-sum-array",
+  "order": 1,
+  "title": "Sum an Array",
+  "type": "write-program",
+  "prompt": "Declare an array of 5 ints: {10, 20, 30, 40, 50}. Print the sum of all its elements on one line.",
+  "starterCode": "#include <stdio.h>\n\nint main(void) {\n    int arr[5] = {10, 20, 30, 40, 50};\n    // your code here\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

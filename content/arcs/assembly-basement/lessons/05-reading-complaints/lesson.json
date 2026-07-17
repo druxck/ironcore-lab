@@ -1,0 +1,14 @@
+{
+  "id": "assembly-basement-05-reading-complaints",
+  "arcId": "assembly-basement",
+  "order": 5,
+  "title": "Reading the Machine's Complaints",
+  "objectives": [
+    "Distinguish a compiler error from a warning",
+    "Read a file:line:col diagnostic and find the real problem",
+    "Fix the most common first-week compile errors"
+  ],
+  "prerequisites": ["assembly-basement-04-hello-lab"],
+  "narrativeContentPath": "arcs/assembly-basement/lessons/05-reading-complaints/content.md",
+  "estXp": 50
+}

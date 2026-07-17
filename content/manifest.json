@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "arcs": [
+    "assembly-basement",
+    "patch-bay",
+    "memory-wing",
+    "machine-room",
+    "concurrency-annex",
+    "architecture-vault"
+  ]
+}

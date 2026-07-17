@@ -1,0 +1,13 @@
+{
+  "id": "memory-wing-03-ex02-dereference-offset",
+  "order": 2,
+  "title": "Predict: Dereference at an Offset",
+  "type": "predict-output",
+  "prompt": "Given int arr[4] = {5, 15, 25, 35}; what does *(arr + 2) evaluate to?",
+  "starterCode": "",
+  "expectedAnswer": "25",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

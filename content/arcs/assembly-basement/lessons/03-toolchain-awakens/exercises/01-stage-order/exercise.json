@@ -1,0 +1,13 @@
+{
+  "id": "assembly-basement-03-ex01-stage-order",
+  "order": 1,
+  "title": "Which Stage Produces the Executable?",
+  "type": "predict-output",
+  "prompt": "Of the four toolchain stages (preprocessing, compiling, assembling, linking), which one produces the final runnable executable?",
+  "starterCode": "",
+  "expectedAnswer": "linking",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

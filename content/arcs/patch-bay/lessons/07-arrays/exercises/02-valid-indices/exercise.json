@@ -1,0 +1,13 @@
+{
+  "id": "patch-bay-07-ex02-valid-indices",
+  "order": 2,
+  "title": "Valid Indices",
+  "type": "fill-in-blank",
+  "prompt": "An array is declared `int arr[5];`. What are the valid indices, lowest to highest? Answer in the form: 0 to 4",
+  "starterCode": "",
+  "expectedAnswer": "0 to 4",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

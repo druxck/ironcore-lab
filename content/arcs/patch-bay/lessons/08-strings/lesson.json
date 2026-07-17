@@ -1,0 +1,14 @@
+{
+  "id": "patch-bay-08-strings",
+  "arcId": "patch-bay",
+  "order": 8,
+  "title": "Strings Are Just Arrays",
+  "objectives": [
+    "Explain how a C string is represented in memory, including the null terminator",
+    "Use strlen from <string.h>",
+    "Explain why comparing C strings with == is wrong and use strcmp instead"
+  ],
+  "prerequisites": ["patch-bay-07-arrays"],
+  "narrativeContentPath": "arcs/patch-bay/lessons/08-strings/content.md",
+  "estXp": 55
+}

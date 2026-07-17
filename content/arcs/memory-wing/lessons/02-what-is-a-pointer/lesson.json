@@ -1,0 +1,14 @@
+{
+  "id": "memory-wing-02-what-is-a-pointer",
+  "arcId": "memory-wing",
+  "order": 2,
+  "title": "What Is a Pointer",
+  "objectives": [
+    "Explain what a pointer variable actually stores",
+    "Use & to take an address and * to dereference a pointer",
+    "Explain what NULL means and why you must check for it before dereferencing"
+  ],
+  "prerequisites": ["memory-wing-01-stack-and-heap"],
+  "narrativeContentPath": "arcs/memory-wing/lessons/02-what-is-a-pointer/content.md",
+  "estXp": 50
+}

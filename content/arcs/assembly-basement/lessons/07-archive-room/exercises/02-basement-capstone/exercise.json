@@ -1,0 +1,12 @@
+{
+  "id": "assembly-basement-07-ex02-basement-capstone",
+  "order": 2,
+  "title": "Basement Capstone",
+  "type": "write-program",
+  "prompt": "Write a program that prints exactly these three lines, in order:\nBits per byte: 8\nValues per byte: 256\nMax byte in hex: 0xff",
+  "starterCode": "#include <stdio.h>\n\nint main(void) {\n    // your code here\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 50,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

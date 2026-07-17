@@ -1,0 +1,14 @@
+{
+  "id": "memory-wing-04-passing-by-reference",
+  "arcId": "memory-wing",
+  "order": 4,
+  "title": "Passing by Reference",
+  "objectives": [
+    "Explain why C always passes function arguments by value",
+    "Use a pointer parameter to let a function modify a caller's variable",
+    "Write a correct swap function"
+  ],
+  "prerequisites": ["memory-wing-03-pointers-and-arrays"],
+  "narrativeContentPath": "arcs/memory-wing/lessons/04-passing-by-reference/content.md",
+  "estXp": 50
+}

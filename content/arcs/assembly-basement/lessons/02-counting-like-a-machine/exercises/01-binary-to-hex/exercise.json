@@ -1,0 +1,13 @@
+{
+  "id": "assembly-basement-02-ex01-binary-to-hex",
+  "order": 1,
+  "title": "Binary to Hex",
+  "type": "fill-in-blank",
+  "prompt": "Convert the byte 1011 0110 to hexadecimal. Write it as two hex digits, no 0x prefix (e.g. 4F).",
+  "starterCode": "",
+  "expectedAnswer": "B6",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Diagnostics: green.\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints \"Diagnostics: green.\" once the brace is balanced"
+  }
+]

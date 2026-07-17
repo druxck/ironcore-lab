@@ -1,0 +1,9 @@
+[
+  { "workingTitle": "Threads: Running Two Places at Once", "summary": "pthread_create/pthread_join and what actually runs concurrently versus what only looks like it does." },
+  { "workingTitle": "Race Conditions, Made Visible", "summary": "A deliberately broken shared counter, and using ThreadSanitizer to prove the bug instead of guessing at it." },
+  { "workingTitle": "Mutexes: Taking Turns", "summary": "pthread_mutex_t and the discipline of only ever touching shared state while holding the right lock." },
+  { "workingTitle": "Condition Variables: Waiting for Something to Happen", "summary": "pthread_cond_t for threads that need to sleep until another thread says 'now'." },
+  { "workingTitle": "Atomics and the Cost of Ordering", "summary": "stdatomic.h, and why 'atomic' is about ordering guarantees, not just avoiding torn writes." },
+  { "workingTitle": "Deadlock: When Everyone's Waiting", "summary": "Lock ordering, the four conditions for deadlock, and how to design them away." },
+  { "workingTitle": "Capstone: A Thread-Safe Work Queue", "summary": "A bounded producer/consumer queue built correctly with mutexes and condition variables." }
+]

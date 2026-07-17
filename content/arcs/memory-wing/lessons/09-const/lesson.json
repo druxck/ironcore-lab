@@ -1,0 +1,14 @@
+{
+  "id": "memory-wing-09-const",
+  "arcId": "memory-wing",
+  "order": 9,
+  "title": "const and Respecting the Wiring",
+  "objectives": [
+    "Explain what const int *p protects versus what int * const p protects",
+    "Read a const-pointer declaration right to left",
+    "Explain why const parameters are a promise the compiler enforces"
+  ],
+  "prerequisites": ["memory-wing-08-linked-list"],
+  "narrativeContentPath": "arcs/memory-wing/lessons/09-const/content.md",
+  "estXp": 45
+}

@@ -1,0 +1,13 @@
+{
+  "id": "patch-bay-02-ex03-precedence",
+  "order": 3,
+  "title": "Precedence",
+  "type": "predict-output",
+  "prompt": "What is the value of the expression 2 + 3 * 4 in C?",
+  "starterCode": "",
+  "expectedAnswer": "14",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

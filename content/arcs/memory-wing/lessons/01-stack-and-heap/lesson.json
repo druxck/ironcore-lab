@@ -1,0 +1,14 @@
+{
+  "id": "memory-wing-01-stack-and-heap",
+  "arcId": "memory-wing",
+  "order": 1,
+  "title": "The Stack and the Heap",
+  "objectives": [
+    "Explain the difference between stack and heap memory",
+    "Explain why stack allocation is automatic and heap allocation is manual",
+    "Predict when a local variable's memory becomes invalid"
+  ],
+  "prerequisites": [],
+  "narrativeContentPath": "arcs/memory-wing/lessons/01-stack-and-heap/content.md",
+  "estXp": 40
+}

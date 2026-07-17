@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "150\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "10+20+30+40+50 = 150"
+  }
+]

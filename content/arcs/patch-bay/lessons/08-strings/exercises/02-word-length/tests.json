@@ -1,0 +1,4 @@
+[
+  { "id": "hello", "stdin": "hello", "expectedStdout": "5\n", "matchMode": "exact", "hidden": false, "description": "\"hello\" has 5 characters" },
+  { "id": "single", "stdin": "C", "expectedStdout": "1\n", "matchMode": "exact", "hidden": true, "description": "\"C\" has 1 character" }
+]

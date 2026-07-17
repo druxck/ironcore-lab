@@ -1,0 +1,65 @@
+{
+  "name": "ironcore-lab",
+  "version": "0.1.0",
+  "description": "Ironcore Lab — restore the Meridian Computing Laboratory while mastering C, from bits to bare metal.",
+  "main": "./out/main/index.js",
+  "author": "Austin",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/druxck/ironcore-lab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/druxck/ironcore-lab/issues"
+  },
+  "homepage": "https://github.com/druxck/ironcore-lab#readme",
+  "keywords": [
+    "c",
+    "learn-to-code",
+    "education",
+    "electron",
+    "wsl",
+    "gcc",
+    "gdb",
+    "valgrind"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.node.json",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "vitest run test/unit",
+    "test:wsl": "vitest run test/integration-wsl",
+    "start": "electron-vite preview"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
+    "framer-motion": "^11.11.17",
+    "monaco-editor": "^0.52.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.23.8",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "electron": "^33.2.0",
+    "electron-vite": "^2.3.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.5"
+  }
+}

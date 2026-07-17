@@ -1,0 +1,14 @@
+{
+  "id": "memory-wing-07-structs",
+  "arcId": "memory-wing",
+  "order": 7,
+  "title": "Structs: Custom Rooms",
+  "objectives": [
+    "Define a struct type bundling related fields",
+    "Access struct fields with . on a value and -> on a pointer",
+    "Explain why -> is shorthand for (*p).field"
+  ],
+  "prerequisites": ["memory-wing-06-ghosts-in-the-machine"],
+  "narrativeContentPath": "arcs/memory-wing/lessons/07-structs/content.md",
+  "estXp": 50
+}

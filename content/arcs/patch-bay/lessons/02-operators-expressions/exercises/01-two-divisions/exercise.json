@@ -1,0 +1,12 @@
+{
+  "id": "patch-bay-02-ex01-two-divisions",
+  "order": 1,
+  "title": "Two Kinds of Division",
+  "type": "write-program",
+  "prompt": "Print the result of integer division 7/2, then the result of float division 7.0/2 rounded to 2 decimal places. Print exactly: int: 3 float: 3.50",
+  "starterCode": "#include <stdio.h>\n\nint main(void) {\n    // your code here\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

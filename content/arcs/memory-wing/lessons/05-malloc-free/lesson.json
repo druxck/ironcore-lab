@@ -1,0 +1,15 @@
+{
+  "id": "memory-wing-05-malloc-free",
+  "arcId": "memory-wing",
+  "order": 5,
+  "title": "The Heap: Borrowing Memory",
+  "objectives": [
+    "Allocate heap memory with malloc and release it with free",
+    "Check malloc's return value before using it",
+    "Explain the rule: every successful malloc needs exactly one matching free"
+  ],
+  "prerequisites": ["memory-wing-04-passing-by-reference"],
+  "narrativeContentPath": "arcs/memory-wing/lessons/05-malloc-free/content.md",
+  "estXp": 55,
+  "historyCardIds": ["hc-malloc-name"]
+}

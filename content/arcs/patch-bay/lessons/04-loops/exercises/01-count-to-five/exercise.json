@@ -1,0 +1,12 @@
+{
+  "id": "patch-bay-04-ex01-count-to-five",
+  "order": 1,
+  "title": "Count to Five",
+  "type": "write-program",
+  "prompt": "Print the numbers 1 through 5, one per line, using a for loop.",
+  "starterCode": "#include <stdio.h>\n\nint main(void) {\n    // your code here\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 25,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

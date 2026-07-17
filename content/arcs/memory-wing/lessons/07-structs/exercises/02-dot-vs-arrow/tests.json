@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Sensor 5: 72.25\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints \"Sensor 5: 72.25\" once -> is used consistently"
+  }
+]

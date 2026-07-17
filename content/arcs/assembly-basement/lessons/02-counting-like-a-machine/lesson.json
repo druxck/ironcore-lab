@@ -1,0 +1,14 @@
+{
+  "id": "assembly-basement-02-counting-like-a-machine",
+  "arcId": "assembly-basement",
+  "order": 2,
+  "title": "Counting Like a Machine",
+  "objectives": [
+    "Convert between binary and hexadecimal",
+    "Explain why programmers use hex as shorthand for binary",
+    "Read a byte written as a hex pair"
+  ],
+  "prerequisites": ["assembly-basement-01-what-is-a-bit"],
+  "narrativeContentPath": "arcs/assembly-basement/lessons/02-counting-like-a-machine/content.md",
+  "estXp": 40
+}

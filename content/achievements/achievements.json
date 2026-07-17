@@ -1,0 +1,72 @@
+[
+  {
+    "id": "power-on",
+    "title": "Power On",
+    "description": "Got your first program through the compiler and running.",
+    "icon": "⚡",
+    "trigger": { "type": "first-compile" }
+  },
+  {
+    "id": "read-the-tea-leaves",
+    "title": "Read the Tea Leaves",
+    "description": "Fixed a compiler error on your own, no hints needed.",
+    "icon": "🔍",
+    "trigger": { "type": "first-fixed-error" }
+  },
+  {
+    "id": "ghostbuster",
+    "title": "Ghostbuster",
+    "description": "Chased down and fixed a memory leak Valgrind caught.",
+    "icon": "👻",
+    "trigger": { "type": "first-valgrind-clean-fix" }
+  },
+  {
+    "id": "no-ghosts-in-this-machine",
+    "title": "No Ghosts in This Machine",
+    "description": "Passed a lesson completely clean — no warnings, no sanitizer findings, no leaks.",
+    "icon": "🧼",
+    "trigger": { "type": "lesson-completed-clean" }
+  },
+  {
+    "id": "segfault-survivor",
+    "title": "Segfault Survivor",
+    "description": "Diagnosed your first segmentation fault and lived to tell about it.",
+    "icon": "💥",
+    "trigger": { "type": "first-crash-diagnosed" }
+  },
+  {
+    "id": "core-dump",
+    "title": "Core Dump",
+    "description": "Used the debugger to inspect a crash from the inside.",
+    "icon": "🪲",
+    "trigger": { "type": "first-gdb-session" }
+  },
+  {
+    "id": "assembly-basement-restored",
+    "title": "Lights On Downstairs",
+    "description": "Fully restored the Assembly Basement.",
+    "icon": "🔧",
+    "trigger": { "type": "arc-completed", "arcId": "assembly-basement" }
+  },
+  {
+    "id": "patch-bay-restored",
+    "title": "Signal Flowing",
+    "description": "Fully restored the Patch Bay.",
+    "icon": "📞",
+    "trigger": { "type": "arc-completed", "arcId": "patch-bay" }
+  },
+  {
+    "id": "memory-wing-restored",
+    "title": "Wing Fully Wired",
+    "description": "Fully restored the Memory Wing.",
+    "icon": "🧠",
+    "trigger": { "type": "arc-completed", "arcId": "memory-wing" }
+  },
+  {
+    "id": "full-power",
+    "title": "Full Power",
+    "description": "Restored every authored room in the lab.",
+    "icon": "💡",
+    "trigger": { "type": "all-arcs-completed" }
+  }
+]

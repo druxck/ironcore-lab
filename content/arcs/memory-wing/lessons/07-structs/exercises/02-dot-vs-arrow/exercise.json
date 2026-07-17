@@ -1,0 +1,12 @@
+{
+  "id": "memory-wing-07-ex02-dot-vs-arrow",
+  "order": 2,
+  "title": "Fix It: Dot on a Pointer",
+  "type": "fix-the-bug",
+  "prompt": "p is a pointer to a struct, but this code uses . instead of -> to reach its fields, and the compiler won't accept it. Fix the two field accesses so it prints \"Sensor 5: 72.25\".",
+  "starterCode": "#include <stdio.h>\n\nstruct sensor {\n    int id;\n    double reading;\n};\n\nint main(void) {\n    struct sensor s;\n    struct sensor *p = &s;\n    p.id = 5;\n    p.reading = 72.25;\n    printf(\"Sensor %d: %.2f\\n\", p->id, p->reading);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

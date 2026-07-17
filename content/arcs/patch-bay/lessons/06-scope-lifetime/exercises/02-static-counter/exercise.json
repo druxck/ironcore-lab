@@ -1,0 +1,12 @@
+{
+  "id": "patch-bay-06-ex02-static-counter",
+  "order": 2,
+  "title": "A Counter That Remembers",
+  "type": "write-program",
+  "prompt": "Write a function int next_id(void) that returns 1 the first time it's called, 2 the second time, and 3 the third time, using a static local variable. In main, call it three times and print each result on its own line.",
+  "starterCode": "#include <stdio.h>\n\n// define next_id here\n\nint main(void) {\n    // your code here\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 35,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

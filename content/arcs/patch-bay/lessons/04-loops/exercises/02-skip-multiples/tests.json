@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "1\n2\n4\n5\n7\n8\n10\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints 1-10 skipping 3, 6, and 9"
+  }
+]

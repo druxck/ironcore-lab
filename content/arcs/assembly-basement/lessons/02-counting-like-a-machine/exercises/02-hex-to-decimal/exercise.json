@@ -1,0 +1,13 @@
+{
+  "id": "assembly-basement-02-ex02-hex-to-decimal",
+  "order": 2,
+  "title": "Hex to Decimal",
+  "type": "fill-in-blank",
+  "prompt": "What is 0xFF in decimal?",
+  "starterCode": "",
+  "expectedAnswer": "255",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

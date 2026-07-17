@@ -1,0 +1,12 @@
+{
+  "id": "memory-wing-09-ex01-fix-const-write",
+  "order": 1,
+  "title": "Fix It: Writing Through const",
+  "type": "fix-the-bug",
+  "prompt": "print_doubled promises (via const int *value) not to modify what value points at, but it tries to anyway. Fix it to compute the doubled value in a local variable instead, without writing through value. Expected output: 42",
+  "starterCode": "#include <stdio.h>\n\nvoid print_doubled(const int *value) {\n    *value = *value * 2;\n    printf(\"%d\\n\", *value);\n}\n\nint main(void) {\n    int x = 21;\n    print_doubled(&x);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 35,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

@@ -1,0 +1,5 @@
+[
+  { "id": "positive", "stdin": "5", "expectedStdout": "positive\n", "matchMode": "exact", "hidden": false, "description": "5 is positive" },
+  { "id": "negative", "stdin": "-3", "expectedStdout": "negative\n", "matchMode": "exact", "hidden": false, "description": "-3 is negative" },
+  { "id": "zero", "stdin": "0", "expectedStdout": "zero\n", "matchMode": "exact", "hidden": true, "description": "0 is exactly zero" }
+]

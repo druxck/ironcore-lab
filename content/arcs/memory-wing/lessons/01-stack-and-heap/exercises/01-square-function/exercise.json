@@ -1,0 +1,12 @@
+{
+  "id": "memory-wing-01-ex01-square-function",
+  "order": 1,
+  "title": "A Function, Stack and All",
+  "type": "write-program",
+  "prompt": "Write a function `int square(int n)` that returns n * n. In main, read one integer from stdin with scanf, then print exactly: Square of <n> is <result>  (e.g. for input 4, print \"Square of 4 is 16\").",
+  "starterCode": "#include <stdio.h>\n\nint square(int n) {\n    // your code here\n}\n\nint main(void) {\n    int n;\n    scanf(\"%d\", &n);\n    // your code here\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

@@ -1,0 +1,12 @@
+{
+  "id": "memory-wing-05-ex01-allocate-and-sum",
+  "order": 1,
+  "title": "Allocate, Fill, Sum, Free",
+  "type": "write-program",
+  "prompt": "Use malloc to allocate room for 5 ints on the heap. Store 1, 2, 3, 4, 5 into it, print their sum as exactly: Sum: 15   then free the memory before returning.",
+  "starterCode": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(void) {\n    int *values = malloc(5 * sizeof(int));\n    if (values == NULL) {\n        return 1;\n    }\n    // fill values with 1..5, sum them, print, then free\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "sanitizer-clean"],
+  "baseXp": 40,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

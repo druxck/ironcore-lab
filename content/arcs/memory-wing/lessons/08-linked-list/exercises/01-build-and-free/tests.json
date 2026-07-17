@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "10\n20\n30\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints 10, 20, 30 on separate lines and leaks nothing"
+  }
+]

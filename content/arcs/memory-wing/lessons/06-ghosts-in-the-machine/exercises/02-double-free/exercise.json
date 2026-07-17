@@ -1,0 +1,12 @@
+{
+  "id": "memory-wing-06-ex02-double-free",
+  "order": 2,
+  "title": "Fix It: Freed Twice",
+  "type": "fix-the-bug",
+  "prompt": "This program frees the same pointer twice. Remove the extra free so it prints \"Reading: 9\" cleanly.",
+  "starterCode": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(void) {\n    int *reading = malloc(sizeof(int));\n    if (reading == NULL) {\n        return 1;\n    }\n    *reading = 9;\n    printf(\"Reading: %d\\n\", *reading);\n    free(reading);\n    free(reading);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "sanitizer-clean"],
+  "baseXp": 40,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

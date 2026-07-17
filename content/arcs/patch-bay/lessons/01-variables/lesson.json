@@ -1,0 +1,15 @@
+{
+  "id": "patch-bay-01-variables",
+  "arcId": "patch-bay",
+  "order": 1,
+  "title": "Variables and the Boxes They Live In",
+  "objectives": [
+    "Declare variables of type int, char, float, and double",
+    "Explain the difference between declaration and initialization",
+    "Explain why an uninitialized local variable's value is undefined, not zero"
+  ],
+  "prerequisites": ["assembly-basement-07-archive-room"],
+  "narrativeContentPath": "arcs/patch-bay/lessons/01-variables/content.md",
+  "estXp": 45,
+  "historyCardIds": ["hc-bell-labs"]
+}

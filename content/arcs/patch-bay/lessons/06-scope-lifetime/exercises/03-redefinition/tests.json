@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "5\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints 5 once only one definition of total remains"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "id": "patch-bay-06-scope-lifetime",
+  "arcId": "patch-bay",
+  "order": 6,
+  "title": "Scope and Lifetime",
+  "objectives": [
+    "Explain block scope and how a local variable can shadow a global one",
+    "Use a static local variable to persist a value across function calls",
+    "Explain why two global definitions with the same name conflict"
+  ],
+  "prerequisites": ["patch-bay-05-functions"],
+  "narrativeContentPath": "arcs/patch-bay/lessons/06-scope-lifetime/content.md",
+  "estXp": 55
+}

@@ -1,0 +1,12 @@
+{
+  "id": "assembly-basement-07-ex01-dual-base-print",
+  "order": 1,
+  "title": "Print It Two Ways",
+  "type": "write-program",
+  "prompt": "Write a program that prints exactly: 255 = 0xff  (decimal, an equals sign with spaces on both sides, then 0x followed by the lowercase hex form, then a newline).",
+  "starterCode": "#include <stdio.h>\n\nint main(void) {\n    // your code here\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 40,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

@@ -1,0 +1,13 @@
+{
+  "id": "patch-bay-06-ex01-shadowing",
+  "order": 1,
+  "title": "Which x Wins?",
+  "type": "predict-output",
+  "prompt": "What does this program print?\n\nint x = 10;\n\nint main(void) {\n    int x = 20;\n    printf(\"%d\\n\", x);\n    return 0;\n}",
+  "starterCode": "",
+  "expectedAnswer": "20",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 20,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

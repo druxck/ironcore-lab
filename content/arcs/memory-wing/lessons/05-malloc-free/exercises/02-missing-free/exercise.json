@@ -1,0 +1,12 @@
+{
+  "id": "memory-wing-05-ex02-missing-free",
+  "order": 2,
+  "title": "Fix It: The Leak",
+  "type": "fix-the-bug",
+  "prompt": "This program prints the right thing (\"Reading: 7\") but never gives its heap memory back. Add the missing call so nothing is leaked.",
+  "starterCode": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(void) {\n    int *reading = malloc(sizeof(int));\n    if (reading == NULL) {\n        return 1;\n    }\n    *reading = 7;\n    printf(\"Reading: %d\\n\", *reading);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "valgrind-clean"],
+  "baseXp": 35,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

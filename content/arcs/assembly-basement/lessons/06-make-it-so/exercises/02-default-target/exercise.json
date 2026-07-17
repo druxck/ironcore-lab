@@ -1,0 +1,13 @@
+{
+  "id": "assembly-basement-06-ex02-default-target",
+  "order": 2,
+  "title": "Which Target Runs?",
+  "type": "predict-output",
+  "prompt": "A Makefile lists the target 'program' first and 'clean' second. Running plain `make` with no arguments builds which target?",
+  "starterCode": "",
+  "expectedAnswer": "program",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

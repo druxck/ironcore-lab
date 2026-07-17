@@ -1,0 +1,12 @@
+{
+  "id": "patch-bay-05-ex01-square-function",
+  "order": 1,
+  "title": "Write a Square Function",
+  "type": "write-program",
+  "prompt": "Write a function `int square(int n)` that returns n*n. In main, read an integer from stdin and print its square.",
+  "starterCode": "#include <stdio.h>\n\n// declare/define square here\n\nint main(void) {\n    int x;\n    scanf(\"%d\", &x);\n    // your code here\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 35,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

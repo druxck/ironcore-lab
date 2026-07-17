@@ -1,0 +1,14 @@
+{
+  "id": "patch-bay-03-branching",
+  "arcId": "patch-bay",
+  "order": 3,
+  "title": "Branching the Signal",
+  "objectives": [
+    "Write if / else if / else chains",
+    "Write a switch statement and explain fallthrough",
+    "Explain why every case in a switch needs its own break"
+  ],
+  "prerequisites": ["patch-bay-02-operators-expressions"],
+  "narrativeContentPath": "arcs/patch-bay/lessons/03-branching/content.md",
+  "estXp": 50
+}

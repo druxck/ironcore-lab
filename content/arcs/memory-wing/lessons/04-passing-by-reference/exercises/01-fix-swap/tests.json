@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Before: 3, 8\nAfter: 8, 3\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "x and y are actually swapped"
+  }
+]

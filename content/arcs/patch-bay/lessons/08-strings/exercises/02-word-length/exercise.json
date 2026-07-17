@@ -1,0 +1,12 @@
+{
+  "id": "patch-bay-08-ex02-word-length",
+  "order": 2,
+  "title": "Measure a Word",
+  "type": "write-program",
+  "prompt": "Read a single word from stdin (no spaces) and print its length using strlen.",
+  "starterCode": "#include <stdio.h>\n#include <string.h>\n\nint main(void) {\n    char word[100];\n    scanf(\"%s\", word);\n    // your code here\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "255 = 0xff\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints \"255 = 0xff\""
+  }
+]

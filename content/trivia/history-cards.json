@@ -1,0 +1,88 @@
+[
+  {
+    "id": "hc-dennis-ritchie",
+    "title": "A language built to write an operating system",
+    "year": "1969–1973",
+    "body": "C was designed by Dennis Ritchie at Bell Labs, growing out of an earlier language called B. It wasn't built as an academic exercise — it was built because Ritchie and Ken Thompson needed a language good enough to write an operating system in.",
+    "tags": ["history", "origins"]
+  },
+  {
+    "id": "hc-b-language",
+    "title": "B, C's parent",
+    "year": "1969",
+    "body": "Before C there was B, written by Ken Thompson. B was itself derived from BCPL (Basic Combined Programming Language), created by Martin Richards. C added types (like char and int) that B never had.",
+    "tags": ["history", "origins"]
+  },
+  {
+    "id": "hc-unix-rewrite",
+    "title": "Unix rewrites itself",
+    "year": "1973",
+    "body": "The third edition of Unix was almost entirely rewritten in C, replacing assembly language. This was a radical bet at the time — operating systems were assumed to need hand-tuned assembly. It paid off: Unix could now be ported to new hardware by rewriting the compiler, not the OS.",
+    "tags": ["history", "unix"]
+  },
+  {
+    "id": "hc-hello-world-origin",
+    "title": "Where 'hello, world' really comes from",
+    "year": "1972",
+    "body": "The phrase predates the C language's famous textbook. Brian Kernighan used 'hello, world' in a 1972 internal Bell Labs tutorial for the B language. When he and Ritchie wrote the C book six years later, the example — and the tradition — came with it.",
+    "tags": ["history", "trivia"]
+  },
+  {
+    "id": "hc-knr-book",
+    "title": "The White Book",
+    "year": "1978",
+    "body": "\"The C Programming Language\" by Kernighan and Ritchie — universally called K&R — was, for decades, the closest thing C had to an official specification. Programmers still refer to pre-standard C style as \"K&R C.\"",
+    "tags": ["history", "reference"]
+  },
+  {
+    "id": "hc-ansi-c",
+    "title": "Taming the dialects",
+    "year": "1989",
+    "body": "By the mid-1980s, enough compiler vendors had added their own extensions that C code didn't reliably move between compilers. ANSI C89 (ratified internationally as ISO C90) locked down a single standard the whole industry could target.",
+    "tags": ["history", "standards"]
+  },
+  {
+    "id": "hc-bell-labs",
+    "title": "One lab, an absurd number of inventions",
+    "body": "Bell Labs, where C and Unix were born, also produced the transistor, the laser, information theory (Claude Shannon), and the CCD sensor behind digital cameras. For much of the 20th century it was arguably the most productive research organization on Earth.",
+    "tags": ["history", "bell-labs"]
+  },
+  {
+    "id": "hc-portability-goal",
+    "title": "Portability was the whole point",
+    "body": "C's design deliberately stays close to how real hardware works (pointers, manual memory, small runtime) while still being abstract enough to compile to wildly different machines. That balance is why, fifty years later, C is still the language new CPU architectures get a compiler for first.",
+    "tags": ["design", "portability"]
+  },
+  {
+    "id": "hc-embedded-today",
+    "title": "Still running everything",
+    "body": "Decades after its creation, C remains the dominant language for operating system kernels (Linux, most embedded RTOSes, large parts of Windows and macOS) and for microcontroller firmware — anywhere code needs to sit directly on top of the hardware.",
+    "tags": ["modern", "systems"]
+  },
+  {
+    "id": "hc-segfault-name",
+    "title": "Where 'segmentation fault' comes from",
+    "body": "The term comes from memory segmentation, a hardware feature that lets the operating system mark which memory regions a process is allowed to touch. When your program reaches outside its allowed segment, the CPU itself raises the fault — it's hardware catching the bug, not C.",
+    "tags": ["memory", "trivia"]
+  },
+  {
+    "id": "hc-malloc-name",
+    "title": "malloc: exactly what it says",
+    "body": "malloc is short for \"memory allocation.\" It and free() have been part of the C standard library since the language's earliest days — one of the first widely used APIs for manual, general-purpose heap management.",
+    "tags": ["memory", "trivia"]
+  },
+  {
+    "id": "hc-valgrind-origin",
+    "title": "Named after a gate to the underworld",
+    "year": "2002",
+    "body": "Valgrind was created by Julian Seward. Its name comes from Norse mythology — the entrance to Valhalla — chosen, fittingly, for a tool whose job is inspecting a program's memory as it dies.",
+    "tags": ["tools", "trivia"]
+  },
+  {
+    "id": "hc-gdb-origin",
+    "title": "The debugger from the GNU Project",
+    "year": "1986",
+    "body": "GDB was written by Richard Stallman as part of the GNU Project, the same effort that produced the C compiler (GCC) most Linux systems still build with today.",
+    "tags": ["tools", "trivia"]
+  }
+]

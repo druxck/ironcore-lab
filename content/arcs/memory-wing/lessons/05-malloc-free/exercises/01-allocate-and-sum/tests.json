@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Sum: 15\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints \"Sum: 15\" and leaves no sanitizer findings"
+  }
+]

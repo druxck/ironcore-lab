@@ -1,0 +1,13 @@
+{
+  "id": "memory-wing-01-ex02-auto-reclaim",
+  "order": 2,
+  "title": "True or False: Automatic Reclaim",
+  "type": "predict-output",
+  "prompt": "True or false: the memory for a local (non-static) variable is automatically reclaimed as soon as its function returns, with no action needed from the programmer.",
+  "starterCode": "",
+  "expectedAnswer": "true",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

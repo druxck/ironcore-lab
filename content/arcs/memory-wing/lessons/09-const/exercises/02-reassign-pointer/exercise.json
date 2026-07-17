@@ -1,0 +1,13 @@
+{
+  "id": "memory-wing-09-ex02-reassign-pointer",
+  "order": 2,
+  "title": "Predict: Reassigning a const int *",
+  "type": "predict-output",
+  "prompt": "Given: int x = 1, y = 2; const int *p = &x; Does the statement p = &y; (pointing p at a different int) compile? Answer yes or no.",
+  "starterCode": "",
+  "expectedAnswer": "yes",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

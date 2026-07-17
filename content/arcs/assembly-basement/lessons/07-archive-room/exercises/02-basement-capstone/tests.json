@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Bits per byte: 8\nValues per byte: 256\nMax byte in hex: 0xff\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints all three lab-status lines in order"
+  }
+]

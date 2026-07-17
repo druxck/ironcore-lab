@@ -1,0 +1,12 @@
+{
+  "id": "patch-bay-01-ex01-declare-and-print",
+  "order": 1,
+  "title": "Declare and Print",
+  "type": "write-program",
+  "prompt": "Declare an int named count set to 3, a float named ratio set to 0.5, and a char named grade set to 'A'. Print exactly: count=3 ratio=0.50 grade=A",
+  "starterCode": "#include <stdio.h>\n\nint main(void) {\n    // declare count, ratio, grade here\n    // your code here\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

@@ -1,0 +1,4 @@
+[
+  { "id": "yes", "stdin": "yes", "expectedStdout": "correct\n", "matchMode": "exact", "hidden": false, "description": "Typing yes should print correct" },
+  { "id": "no", "stdin": "no", "expectedStdout": "try again\n", "matchMode": "exact", "hidden": true, "description": "Typing anything else should print try again" }
+]
