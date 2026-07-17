@@ -9,6 +9,8 @@ interface Props {
 export default function SetupWizard({ status, onRecheck }: Props): JSX.Element {
   const [rechecking, setRechecking] = useState(false)
   const [copied, setCopied] = useState(false)
+  const [wslLaunchMessage, setWslLaunchMessage] = useState<string | null>(null)
+  const [toolchainLaunchMessage, setToolchainLaunchMessage] = useState<string | null>(null)
 
   async function handleRecheck(): Promise<void> {
     setRechecking(true)
@@ -26,6 +28,24 @@ export default function SetupWizard({ status, onRecheck }: Props): JSX.Element {
     await window.lab.invoke('setup:openSetupDocs', undefined)
   }
 
+  async function handleInstallWsl(): Promise<void> {
+    const result = await window.lab.invoke('setup:launchWslInstall', undefined)
+    setWslLaunchMessage(
+      result.launched
+        ? 'A Windows permission prompt should appear — approve it to start installing. This can take several minutes and may ask for a restart. Once it finishes (and after any restart), come back and click Recheck.'
+        : `Couldn't launch the installer automatically (${result.error ?? 'unknown error'}). Use the command below instead.`
+    )
+  }
+
+  async function handleInstallToolchain(): Promise<void> {
+    const result = await window.lab.invoke('setup:launchToolchainInstall', undefined)
+    setToolchainLaunchMessage(
+      result.launched
+        ? "A terminal window just opened running the install command. It'll ask for your Ubuntu account password (typing is normal, nothing shows on screen) — once it finishes, close that window and click Recheck here."
+        : `Couldn't open a terminal automatically (${result.error ?? 'unknown error'}). Use the command below instead.`
+    )
+  }
+
   const wslMissing = !status?.wslInstalled
 
   return (
@@ -41,15 +61,23 @@ export default function SetupWizard({ status, onRecheck }: Props): JSX.Element {
           <div className="mt-5 rounded border border-lab-alert/40 bg-lab-alert/5 p-4">
             <div className="glow-text-alert text-sm font-semibold text-lab-alert">WSL / Ubuntu not detected</div>
             <p className="mt-1 text-sm text-lab-phosphorDim">
-              Ironcore Lab needs WSL2 with an Ubuntu distro installed. That step needs administrator elevation and
-              usually a reboot, so it isn&apos;t something the app can do for you.
+              Ironcore Lab needs WSL2 with an Ubuntu distro installed. That step needs a Windows administrator
+              permission prompt, so it isn&apos;t something the app can do silently — but it can open that prompt
+              for you.
             </p>
-            <pre className="mt-2 overflow-x-auto rounded bg-black/40 p-2 text-xs text-lab-phosphor">
+            <button
+              type="button"
+              onClick={handleInstallWsl}
+              className="mt-3 rounded border border-lab-alert/50 bg-lab-alert/10 px-4 py-2 text-sm text-lab-alert hover:bg-lab-alert/20"
+            >
+              Install WSL + Ubuntu
+            </button>
+            {wslLaunchMessage && <p className="mt-2 text-xs text-lab-phosphorDim">{wslLaunchMessage}</p>}
+
+            <div className="mt-4 text-xs text-lab-phosphorDim/70">Or run it yourself in an elevated PowerShell:</div>
+            <pre className="mt-1 overflow-x-auto rounded bg-black/40 p-2 text-xs text-lab-phosphor">
               wsl --install -d Ubuntu
             </pre>
-            <p className="mt-1 text-xs text-lab-phosphorDim">
-              Run that in an elevated PowerShell, reboot, then come back and click Recheck.
-            </p>
           </div>
         ) : (
           <div className="mt-5">
@@ -69,8 +97,20 @@ export default function SetupWizard({ status, onRecheck }: Props): JSX.Element {
 
             {!status?.allToolsPresent && (
               <div className="mt-4 rounded border border-lab-amber/30 bg-black/30 p-3">
-                <div className="text-xs text-lab-phosphorDim">Run this once inside your Ubuntu shell:</div>
-                <div className="mt-2 flex items-center gap-2">
+                <div className="text-xs text-lab-phosphorDim">
+                  Missing tools install with one command inside Ubuntu — Ironcore Lab can open that terminal for you:
+                </div>
+                <button
+                  type="button"
+                  onClick={handleInstallToolchain}
+                  className="mt-2 rounded border border-lab-amber/50 bg-lab-amber/10 px-4 py-2 text-sm text-lab-amber hover:bg-lab-amber/20"
+                >
+                  Install C Toolchain
+                </button>
+                {toolchainLaunchMessage && <p className="mt-2 text-xs text-lab-phosphorDim">{toolchainLaunchMessage}</p>}
+
+                <div className="mt-3 text-xs text-lab-phosphorDim/70">Or run it yourself:</div>
+                <div className="mt-1 flex items-center gap-2">
                   <code className="flex-1 overflow-x-auto whitespace-nowrap rounded bg-black/50 p-2 text-xs text-lab-amber">
                     {INSTALL_COMMAND}
                   </code>

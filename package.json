@@ -34,7 +34,8 @@
     "lint": "eslint . --ext .ts,.tsx",
     "test": "vitest run test/unit",
     "test:wsl": "vitest run test/integration-wsl",
-    "start": "electron-vite preview"
+    "start": "electron-vite preview",
+    "dist:win": "electron-vite build && electron-builder --win"
   },
   "dependencies": {
     "@monaco-editor/react": "^4.6.0",
@@ -53,6 +54,7 @@
     "@vitejs/plugin-react": "^4.3.3",
     "autoprefixer": "^10.4.20",
     "electron": "^33.2.0",
+    "electron-builder": "^26.15.3",
     "electron-vite": "^2.3.0",
     "eslint": "^8.57.1",
     "eslint-plugin-react-hooks": "^4.6.2",
@@ -61,5 +63,34 @@
     "typescript": "^5.6.3",
     "vite": "^5.4.11",
     "vitest": "^2.1.5"
+  },
+  "build": {
+    "appId": "com.druxck.ironcore-lab",
+    "productName": "Ironcore Lab",
+    "copyright": "Copyright © 2026 Austin",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "out/**/*",
+      "content/**/*",
+      "resources/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
   }
 }

@@ -5,6 +5,7 @@ import type { SubmitResultRequest, SubmitResultResponse } from '@shared/ipc-cont
 import type { SaveData } from '@shared/save-types'
 import * as contentLoader from '../content/contentLoader'
 import * as wslSetup from '../setup/wslSetup'
+import * as installActions from '../setup/installActions'
 import * as saveStore from '../save/saveStore'
 import { compileAndRun } from '../wsl/runPipeline'
 import { computeRank, computeXpAward, evaluateGradingCriteria, meetsRequiredCriteria } from '../save/xpEngine'
@@ -41,6 +42,8 @@ export function registerIpcHandlers(): void {
   ipcMain.handle('setup:openSetupDocs', async () => {
     await shell.openPath(join(getAppRoot(), 'docs', 'setup-manual.md'))
   })
+  ipcMain.handle('setup:launchWslInstall', async () => installActions.launchWslInstall())
+  ipcMain.handle('setup:launchToolchainInstall', async () => installActions.launchToolchainInstallTerminal())
 
   ipcMain.handle('save:getSaveData', async () => saveStore.getSave())
   ipcMain.handle('save:updateSettings', async (_e, req: Partial<SaveData['settings']>) =>

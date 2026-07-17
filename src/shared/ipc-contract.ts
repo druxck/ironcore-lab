@@ -43,6 +43,8 @@ export interface IpcChannelMap {
   'setup:recheckEnvironment': { request: void; response: EnvironmentStatus }
   'setup:deployRunner': { request: void; response: { deployed: boolean } }
   'setup:openSetupDocs': { request: void; response: void }
+  'setup:launchWslInstall': { request: void; response: { launched: boolean; error?: string } }
+  'setup:launchToolchainInstall': { request: void; response: { launched: boolean; error?: string } }
 
   'save:getSaveData': { request: void; response: SaveData }
   'save:submitExerciseResult': { request: SubmitResultRequest; response: SubmitResultResponse }
