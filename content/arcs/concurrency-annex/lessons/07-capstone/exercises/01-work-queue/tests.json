@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Total: 55\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Producer pushes 1 through 10, consumer pops and sums them all through the bounded queue"
+  }
+]

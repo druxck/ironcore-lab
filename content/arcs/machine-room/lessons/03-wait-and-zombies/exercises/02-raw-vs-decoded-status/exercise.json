@@ -1,0 +1,12 @@
+{
+  "id": "machine-room-03-ex02-raw-vs-decoded-status",
+  "order": 2,
+  "title": "Fix It: The Wrong Number",
+  "type": "fix-the-bug",
+  "prompt": "This program forks a child that exits with code 3, but it prints the raw, packed status wait() fills in instead of the real exit code. Fix it to print exactly \"Child exited with code 3\\n\" using WEXITSTATUS().",
+  "starterCode": "#include <stdio.h>\n#include <stdlib.h>\n#include <unistd.h>\n#include <sys/wait.h>\n\nint main(void) {\n    pid_t pid = fork();\n    if (pid == 0) {\n        exit(3);\n    }\n    int status;\n    wait(&status);\n    printf(\"Child exited with code %d\\n\", status);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

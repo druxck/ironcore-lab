@@ -24,7 +24,7 @@ export interface WslExecOptions {
  * turns to mojibake. Chunks are buffered raw and decoded once at the end so
  * multi-byte code units never get split across a chunk boundary either.
  */
-function decodeWslOutput(chunks: Buffer[]): string {
+export function decodeWslOutput(chunks: Buffer[]): string {
   const buf = Buffer.concat(chunks)
   if (buf.length === 0) return ''
   if (buf.length >= 2 && buf[0] === 0xff && buf[1] === 0xfe) {

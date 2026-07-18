@@ -1,0 +1,13 @@
+{
+  "id": "machine-room-07-ex01-printf-becomes-write",
+  "order": 1,
+  "title": "Read the Trace",
+  "type": "fill-in-blank",
+  "prompt": "In the trace shown in this lesson (write(1, \"hi\\n\", 3) = 3), which syscall does printf(\"hi\\n\") ultimately turn into?",
+  "starterCode": "",
+  "expectedAnswer": "write",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

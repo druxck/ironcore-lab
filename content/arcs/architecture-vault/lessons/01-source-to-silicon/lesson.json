@@ -1,0 +1,15 @@
+{
+  "id": "architecture-vault-01-source-to-silicon",
+  "arcId": "architecture-vault",
+  "order": 1,
+  "title": "From Source to Silicon",
+  "objectives": [
+    "Name the four stages a C file passes through before it can run: preprocessing, compiling, assembling, and linking",
+    "State what kind of artifact each stage produces and use `file` to tell them apart",
+    "Use a single gcc flag to stop the pipeline early at any one stage"
+  ],
+  "prerequisites": [],
+  "narrativeContentPath": "arcs/architecture-vault/lessons/01-source-to-silicon/content.md",
+  "estXp": 50,
+  "historyCardIds": ["hc-elf-format"]
+}

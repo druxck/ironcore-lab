@@ -1,0 +1,12 @@
+{
+  "id": "concurrency-annex-01-ex01-basic-create-join",
+  "order": 1,
+  "title": "Create Two Threads and Join Them",
+  "type": "write-program",
+  "prompt": "Write a program that creates exactly two threads (pthread_create), has each one do nothing observable, then joins both (pthread_join) before printing exactly \"both threads joined\\n\". Don't print anything from inside the thread function.",
+  "starterCode": "#include <stdio.h>\n#include <pthread.h>\n\nvoid *worker(void *arg) {\n    (void)arg;\n    // nothing to do here\n    return NULL;\n}\n\nint main(void) {\n    // your code here: create two threads running worker, then join both\n\n    printf(\"both threads joined\\n\");\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 35,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

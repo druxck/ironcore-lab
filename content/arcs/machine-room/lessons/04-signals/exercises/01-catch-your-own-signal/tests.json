@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "caught it\ndone\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "The handler runs (and finishes) before raise() returns"
+  }
+]

@@ -7,5 +7,5 @@
   "order": 5,
   "unlockRequires": [{ "arcId": "machine-room", "minRestorationPct": 80 }],
   "theme": { "accentColor": "#b388ff", "motif": "braided-cable-bundles" },
-  "status": "outline"
+  "status": "authored"
 }

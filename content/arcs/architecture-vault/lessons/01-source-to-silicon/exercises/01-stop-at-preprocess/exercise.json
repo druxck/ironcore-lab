@@ -1,0 +1,13 @@
+{
+  "id": "architecture-vault-01-ex01-stop-at-preprocess",
+  "order": 1,
+  "title": "Stopping After Preprocessing",
+  "type": "fill-in-blank",
+  "prompt": "Which single gcc flag stops the pipeline after preprocessing, before compiling to assembly?",
+  "starterCode": "",
+  "expectedAnswer": "-E",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

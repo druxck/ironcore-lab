@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Row sum: 120\nCol sum: 120\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Both traversal orders sum to 120"
+  }
+]

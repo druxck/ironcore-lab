@@ -1,0 +1,26 @@
+[
+  {
+    "id": "main",
+    "stdin": "echo capstone-ok\n",
+    "expectedStdout": "capstone-ok\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Runs echo with one argument"
+  },
+  {
+    "id": "multi-arg",
+    "stdin": "echo one two three\n",
+    "expectedStdout": "one two three\n",
+    "matchMode": "exact",
+    "hidden": true,
+    "description": "Multiple words are split into separate argv entries"
+  },
+  {
+    "id": "true-command",
+    "stdin": "true\n",
+    "expectedStdout": "",
+    "matchMode": "exact",
+    "hidden": true,
+    "description": "A command with no output produces no output"
+  }
+]

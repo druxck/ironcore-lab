@@ -1,0 +1,13 @@
+{
+  "id": "machine-room-07-ex02-which-fd",
+  "order": 2,
+  "title": "Read the Trace: Which fd",
+  "type": "fill-in-blank",
+  "prompt": "In write(1, \"hi\\n\", 3) = 3, the first argument is a file descriptor number. Which one is it?",
+  "starterCode": "",
+  "expectedAnswer": "1",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

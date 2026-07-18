@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "hello-from-exec\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "echo's own output after execvp replaces the process"
+  }
+]

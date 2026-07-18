@@ -84,5 +84,26 @@
     "year": "1986",
     "body": "GDB was written by Richard Stallman as part of the GNU Project, the same effort that produced the C compiler (GCC) most Linux systems still build with today.",
     "tags": ["tools", "trivia"]
+  },
+  {
+    "id": "hc-fork-name",
+    "title": "Why it's called 'fork'",
+    "year": "1971",
+    "body": "fork() has kept its name since Unix's earliest editions. A single running process's execution genuinely splits into two independent paths that both continue on from the same point — like a fork in a road — one of the oldest system call names still in everyday use in computing.",
+    "tags": ["history", "unix", "trivia"]
+  },
+  {
+    "id": "hc-pthreads-standardization",
+    "title": "One standard, out of many competing threading libraries",
+    "year": "1995",
+    "body": "Before POSIX Threads (pthreads) was standardized in 1995 as POSIX.1c, Unix vendors each shipped their own incompatible threading APIs. pthreads gave C programmers on any POSIX system — Linux, the BSDs, commercial Unix — the same thread, mutex, and condition-variable functions this room teaches.",
+    "tags": ["history", "standards", "concurrency"]
+  },
+  {
+    "id": "hc-elf-format",
+    "title": "One executable format most Unix-likes agreed on",
+    "year": "1990s",
+    "body": "ELF (Executable and Linkable Format) — what the `file` command reports for every object file and executable you produce in this room — was originally specified for Unix System V Release 4. Linux adopted it in the mid-1990s, replacing the older, more limited a.out format, and it's remained the standard executable format on Linux ever since.",
+    "tags": ["history", "tools", "trivia"]
   }
 ]

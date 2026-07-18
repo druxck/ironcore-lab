@@ -1,0 +1,13 @@
+{
+  "id": "concurrency-annex-05-ex02-header-name",
+  "order": 2,
+  "title": "Where Atomics Live",
+  "type": "fill-in-blank",
+  "prompt": "Which standard C header declares C11 atomic types like atomic_int?",
+  "starterCode": "",
+  "expectedAnswer": "stdatomic.h",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

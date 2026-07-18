@@ -1,0 +1,14 @@
+{
+  "id": "concurrency-annex-06-deadlock",
+  "arcId": "concurrency-annex",
+  "order": 6,
+  "title": "Deadlock: When Everyone's Waiting",
+  "objectives": [
+    "Recognize the classic AB-BA deadlock pattern between two mutexes",
+    "Fix a deadlock by enforcing a consistent lock ordering",
+    "Explain why a deadlock is a timing bug, not a logic bug"
+  ],
+  "prerequisites": ["concurrency-annex-03-mutexes"],
+  "narrativeContentPath": "arcs/concurrency-annex/lessons/06-deadlock/content.md",
+  "estXp": 55
+}

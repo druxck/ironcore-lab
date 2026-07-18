@@ -1,0 +1,12 @@
+{
+  "id": "concurrency-annex-03-ex02-fix-early-return",
+  "order": 2,
+  "title": "Fix It: The Lock That Never Unlocks",
+  "type": "fix-the-bug",
+  "prompt": "This program skips negative amounts, but its early return leaves the mutex locked forever, deadlocking the next thread that tries to lock it. Fix it so the lock is always released, on every path, and the program prints exactly \"Total: 45\\n\" (5 + 15 + 25, skipping the -1).",
+  "starterCode": "#include <stdio.h>\n#include <pthread.h>\n\nstatic int total = 0;\nstatic pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;\n\ntypedef struct { int amount; } arg_t;\n\nvoid *worker(void *arg) {\n    int amount = ((arg_t *)arg)->amount;\n    pthread_mutex_lock(&lock);\n    if (amount < 0) {\n        return NULL;   // bug: lock is still held here\n    }\n    total += amount;\n    pthread_mutex_unlock(&lock);\n    return NULL;\n}\n\nint main(void) {\n    arg_t args[4] = {{5}, {15}, {-1}, {25}};\n    pthread_t threads[4];\n    for (int i = 0; i < 4; i++) {\n        pthread_create(&threads[i], NULL, worker, &args[i]);\n    }\n    for (int i = 0; i < 4; i++) {\n        pthread_join(threads[i], NULL);\n    }\n    printf(\"Total: %d\\n\", total);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 40,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

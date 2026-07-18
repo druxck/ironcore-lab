@@ -1,0 +1,12 @@
+{
+  "id": "architecture-vault-01-ex03-add-function",
+  "order": 3,
+  "title": "The Function You'll Disassemble Next Lesson",
+  "type": "write-program",
+  "prompt": "Write a function `int add(int a, int b)` that returns the sum of its two arguments. Call it from main with 3 and 4, and print exactly \"Sum: 7\\n\". Keep it this simple on purpose — next lesson you'll compile this exact shape of program with -S and read the assembly it produces.",
+  "starterCode": "#include <stdio.h>\n\nint add(int a, int b) {\n    // your code here\n    return 0;\n}\n\nint main(void) {\n    printf(\"Sum: %d\\n\", add(3, 4));\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

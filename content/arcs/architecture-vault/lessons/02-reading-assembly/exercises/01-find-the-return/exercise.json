@@ -1,0 +1,13 @@
+{
+  "id": "architecture-vault-02-ex01-find-the-return",
+  "order": 1,
+  "title": "The Return-Value Register",
+  "type": "fill-in-blank",
+  "prompt": "In the disassembly shown in this lesson, which x86-64 register is holding a function's integer return value when it executes `ret`? Answer with just the register name, no % sign (e.g. \"eax\").",
+  "starterCode": "",
+  "expectedAnswer": "eax",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

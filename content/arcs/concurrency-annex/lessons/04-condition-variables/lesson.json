@@ -1,0 +1,14 @@
+{
+  "id": "concurrency-annex-04-condition-variables",
+  "arcId": "concurrency-annex",
+  "order": 4,
+  "title": "Condition Variables: Waiting for Something to Happen",
+  "objectives": [
+    "Use pthread_cond_t to make one thread sleep until another thread signals it",
+    "Explain why a condition wait belongs inside a while loop, not an if",
+    "Combine a mutex and a condition variable correctly in the same wait"
+  ],
+  "prerequisites": ["concurrency-annex-03-mutexes"],
+  "narrativeContentPath": "arcs/concurrency-annex/lessons/04-condition-variables/content.md",
+  "estXp": 55
+}

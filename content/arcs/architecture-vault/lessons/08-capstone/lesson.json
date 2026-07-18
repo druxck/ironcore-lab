@@ -1,0 +1,14 @@
+{
+  "id": "architecture-vault-08-capstone",
+  "arcId": "architecture-vault",
+  "order": 8,
+  "title": "Capstone: Make It Fast",
+  "objectives": [
+    "Write memory-access code that's cache-friendly by construction, applying what this room taught about the memory hierarchy",
+    "Explain why this lab grades your capstone on correctness, not raw speed, and how to verify the speed claim yourself",
+    "Tie together the whole arc: the compile pipeline, the calling convention, optimization, memory, measurement, and undefined behavior, into one finished room"
+  ],
+  "prerequisites": ["architecture-vault-07-undefined-behavior"],
+  "narrativeContentPath": "arcs/architecture-vault/lessons/08-capstone/content.md",
+  "estXp": 90
+}

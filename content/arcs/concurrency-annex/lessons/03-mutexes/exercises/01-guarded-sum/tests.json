@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Total: 100\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Sums 10 + 20 + 30 + 40 with no lost updates"
+  }
+]

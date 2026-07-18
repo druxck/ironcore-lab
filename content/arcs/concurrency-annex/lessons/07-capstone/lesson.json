@@ -1,0 +1,14 @@
+{
+  "id": "concurrency-annex-07-capstone",
+  "arcId": "concurrency-annex",
+  "order": 7,
+  "title": "Capstone: A Thread-Safe Work Queue",
+  "objectives": [
+    "Combine a mutex and two condition variables into one correct bounded queue",
+    "Implement blocking push and pop that correctly wait when the queue is full or empty",
+    "Finish restoring the Concurrency Annex"
+  ],
+  "prerequisites": ["concurrency-annex-06-deadlock"],
+  "narrativeContentPath": "arcs/concurrency-annex/lessons/07-capstone/content.md",
+  "estXp": 90
+}

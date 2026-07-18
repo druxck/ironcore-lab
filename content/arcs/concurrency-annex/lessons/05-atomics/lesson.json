@@ -1,0 +1,14 @@
+{
+  "id": "concurrency-annex-05-atomics",
+  "arcId": "concurrency-annex",
+  "order": 5,
+  "title": "Atomics and the Cost of Ordering",
+  "objectives": [
+    "Use C11 atomic_int and atomic_fetch_add as a lock-free alternative to a mutex",
+    "Explain when an atomic operation is a reasonable substitute for a mutex, and when it isn't",
+    "Name the standard header that declares C11 atomic types"
+  ],
+  "prerequisites": ["concurrency-annex-03-mutexes"],
+  "narrativeContentPath": "arcs/concurrency-annex/lessons/05-atomics/content.md",
+  "estXp": 50
+}

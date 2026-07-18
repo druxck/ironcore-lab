@@ -1,0 +1,12 @@
+{
+  "id": "concurrency-annex-04-ex01-producer-consumer",
+  "order": 1,
+  "title": "Wait for the Signal",
+  "type": "write-program",
+  "prompt": "A producer thread sets value to 99 and marks ready. A consumer thread must wait (using a condition variable, in a while loop) until ready is set, then print exactly \"got: 99\\n\". Only the consumer should print anything.",
+  "starterCode": "#include <stdio.h>\n#include <pthread.h>\n\nstatic int ready = 0;\nstatic int value = 0;\nstatic pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;\nstatic pthread_cond_t cond = PTHREAD_COND_INITIALIZER;\n\nvoid *producer(void *arg) {\n    (void)arg;\n    pthread_mutex_lock(&lock);\n    value = 99;\n    ready = 1;\n    // your code here: signal the condition variable\n    pthread_mutex_unlock(&lock);\n    return NULL;\n}\n\nvoid *consumer(void *arg) {\n    (void)arg;\n    pthread_mutex_lock(&lock);\n    // your code here: wait (in a loop!) until ready is set\n    printf(\"got: %d\\n\", value);\n    pthread_mutex_unlock(&lock);\n    return NULL;\n}\n\nint main(void) {\n    pthread_t p, c;\n    pthread_create(&c, NULL, consumer, NULL);\n    pthread_create(&p, NULL, producer, NULL);\n    pthread_join(p, NULL);\n    pthread_join(c, NULL);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 45,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

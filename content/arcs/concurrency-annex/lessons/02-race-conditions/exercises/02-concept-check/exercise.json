@@ -1,0 +1,13 @@
+{
+  "id": "concurrency-annex-02-ex02-concept-check",
+  "order": 2,
+  "title": "How Many Steps?",
+  "type": "fill-in-blank",
+  "prompt": "counter++ compiles down to a read of the current value, an add, and a write of the new value back. As a single digit, how many separate steps is that?",
+  "starterCode": "",
+  "expectedAnswer": "3",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

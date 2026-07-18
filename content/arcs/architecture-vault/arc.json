@@ -7,5 +7,5 @@
   "order": 6,
   "unlockRequires": [{ "arcId": "concurrency-annex", "minRestorationPct": 80 }],
   "theme": { "accentColor": "#d4a017", "motif": "die-shot-cross-sections" },
-  "status": "outline"
+  "status": "authored"
 }

@@ -1,0 +1,13 @@
+{
+  "id": "machine-room-03-ex03-what-is-a-zombie",
+  "order": 3,
+  "title": "Name the Ghost",
+  "type": "fill-in-blank",
+  "prompt": "What is the name for a child process that has exited but has not yet been reaped by its parent's wait()?",
+  "starterCode": "",
+  "expectedAnswer": "zombie",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

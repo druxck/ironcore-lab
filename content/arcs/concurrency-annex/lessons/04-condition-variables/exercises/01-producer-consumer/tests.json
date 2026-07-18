@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "got: 99\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Consumer waits for the producer's signal before printing the value"
+  }
+]

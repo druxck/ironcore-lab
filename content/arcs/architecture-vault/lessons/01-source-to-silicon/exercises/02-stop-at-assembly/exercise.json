@@ -1,0 +1,13 @@
+{
+  "id": "architecture-vault-01-ex02-stop-at-assembly",
+  "order": 2,
+  "title": "Stopping After Compiling to Assembly",
+  "type": "fill-in-blank",
+  "prompt": "Which single gcc flag stops the pipeline after compiling to assembly, before assembling to an object file?",
+  "starterCode": "",
+  "expectedAnswer": "-S",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

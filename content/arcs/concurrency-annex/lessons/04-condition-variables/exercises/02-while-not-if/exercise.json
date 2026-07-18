@@ -1,0 +1,13 @@
+{
+  "id": "concurrency-annex-04-ex02-while-not-if",
+  "order": 2,
+  "title": "Loop or Branch?",
+  "type": "fill-in-blank",
+  "prompt": "When waiting on a condition variable, should the pthread_cond_wait call be inside an if statement or a while loop, to correctly handle spurious wakeups?",
+  "starterCode": "",
+  "expectedAnswer": "while",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

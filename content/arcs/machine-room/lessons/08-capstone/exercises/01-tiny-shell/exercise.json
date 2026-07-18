@@ -1,0 +1,12 @@
+{
+  "id": "machine-room-08-ex01-tiny-shell",
+  "order": 1,
+  "title": "A Tiny Shell",
+  "type": "write-program",
+  "prompt": "Read one line from stdin, strip its trailing newline, split it on spaces into a NULL-terminated argv array, then fork() + execvp() + wait() it. Print nothing of your own — the output should be exactly whatever the executed command prints.",
+  "starterCode": "#include <stdio.h>\n#include <string.h>\n#include <unistd.h>\n#include <sys/wait.h>\n\nint main(void) {\n    char line[256];\n    if (fgets(line, sizeof(line), stdin) == NULL) {\n        return 0;\n    }\n\n    // your code here:\n    // 1. strip the trailing newline from line, if present\n    // 2. split line into a NULL-terminated argv[] using strtok\n    // 3. fork(), execvp(argv[0], argv) in the child\n    // 4. wait() in the parent\n\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 90,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "worker ran\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Compiles clean and prints the confirmation line after the thread finishes"
+  }
+]

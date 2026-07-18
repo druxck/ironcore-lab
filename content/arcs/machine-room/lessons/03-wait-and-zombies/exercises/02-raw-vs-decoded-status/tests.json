@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Child exited with code 3\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "The real exit code (3), not the packed raw status (768 on this platform)"
+  }
+]

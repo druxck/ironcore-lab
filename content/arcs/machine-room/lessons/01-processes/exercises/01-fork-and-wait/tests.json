@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "child\nparent\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Child prints first, then the parent prints after wait() returns"
+  }
+]

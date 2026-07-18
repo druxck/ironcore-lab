@@ -1,0 +1,12 @@
+{
+  "id": "machine-room-03-ex01-decode-the-exit-code",
+  "order": 1,
+  "title": "Fork, Exit, Collect",
+  "type": "write-program",
+  "prompt": "Fork a child that immediately calls exit(7). In the parent, use wait() to collect the child's status, extract the real exit code with WEXITSTATUS(), and print exactly \"Child exited with code 7\\n\".",
+  "starterCode": "#include <stdio.h>\n#include <stdlib.h>\n#include <unistd.h>\n#include <sys/wait.h>\n\nint main(void) {\n    pid_t pid = fork();\n    if (pid == 0) {\n        // your code here: exit with code 7\n    }\n\n    // your code here: wait() for the child, then print its decoded exit code\n\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 35,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

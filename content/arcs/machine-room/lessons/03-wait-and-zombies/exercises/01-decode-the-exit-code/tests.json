@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Child exited with code 7\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "WEXITSTATUS() correctly decodes the child's real exit code"
+  }
+]

@@ -63,6 +63,27 @@
     "trigger": { "type": "arc-completed", "arcId": "memory-wing" }
   },
   {
+    "id": "machine-room-restored",
+    "title": "Timesharing Restored",
+    "description": "Fully restored the Machine Room.",
+    "icon": "🖥️",
+    "trigger": { "type": "arc-completed", "arcId": "machine-room" }
+  },
+  {
+    "id": "concurrency-annex-restored",
+    "title": "Running In Parallel",
+    "description": "Fully restored the Concurrency Annex.",
+    "icon": "🧵",
+    "trigger": { "type": "arc-completed", "arcId": "concurrency-annex" }
+  },
+  {
+    "id": "architecture-vault-restored",
+    "title": "Down to the Silicon",
+    "description": "Fully restored the Architecture Vault.",
+    "icon": "🔬",
+    "trigger": { "type": "arc-completed", "arcId": "architecture-vault" }
+  },
+  {
     "id": "full-power",
     "title": "Full Power",
     "description": "Restored every authored room in the lab.",

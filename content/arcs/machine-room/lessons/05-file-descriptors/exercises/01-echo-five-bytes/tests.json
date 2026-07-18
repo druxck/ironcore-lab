@@ -1,0 +1,18 @@
+[
+  {
+    "id": "main",
+    "stdin": "hello",
+    "expectedStdout": "hello",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "The exact 5 bytes read back out, byte for byte"
+  },
+  {
+    "id": "digits",
+    "stdin": "12345",
+    "expectedStdout": "12345",
+    "matchMode": "exact",
+    "hidden": true,
+    "description": "Works for any 5 bytes, not just letters"
+  }
+]

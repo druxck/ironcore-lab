@@ -1,0 +1,14 @@
+{
+  "id": "machine-room-08-capstone",
+  "arcId": "machine-room",
+  "order": 8,
+  "title": "Capstone: A Tiny Shell",
+  "objectives": [
+    "Combine fork(), execvp(), and wait() into a single working command runner",
+    "Parse a line of input into a NULL-terminated argv array",
+    "Finish restoring the Machine Room"
+  ],
+  "prerequisites": ["machine-room-06-pipes"],
+  "narrativeContentPath": "arcs/machine-room/lessons/08-capstone/content.md",
+  "estXp": 90
+}

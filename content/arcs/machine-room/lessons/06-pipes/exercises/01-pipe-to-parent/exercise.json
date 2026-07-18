@@ -1,0 +1,12 @@
+{
+  "id": "machine-room-06-ex01-pipe-to-parent",
+  "order": 1,
+  "title": "Send a Message Through a Pipe",
+  "type": "write-program",
+  "prompt": "Create a pipe(), then fork(). The child should close the read end, write the exact bytes \"piped\\n\" into the write end, then close the write end and exit. The parent should close the write end, read from the read end until end-of-file, then print \"Parent got: piped\\n\".",
+  "starterCode": "#include <stdio.h>\n#include <unistd.h>\n#include <string.h>\n\nint main(void) {\n    int fds[2];\n    pipe(fds);\n\n    pid_t pid = fork();\n    if (pid == 0) {\n        // child: close(fds[0]), write \"piped\\n\" to fds[1], close(fds[1])\n\n        return 0;\n    }\n\n    // parent: close(fds[1]), read from fds[0] until EOF, print \"Parent got: \" + what you read\n\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 40,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

@@ -1,0 +1,12 @@
+{
+  "id": "architecture-vault-08-ex01-sensor-grid-checksum",
+  "order": 1,
+  "title": "Sensor Grid Checksum",
+  "type": "write-program",
+  "prompt": "Fill an 8x8 int grid where grid[i][j] = i*8 + j. Sum every element into a checksum, walking the grid with j as the INNER loop index (row-major order, matching how C actually lays the grid out in memory). Print exactly \"Checksum: 2016\\n\".",
+  "starterCode": "#include <stdio.h>\n\n#define N 8\n\nint main(void) {\n    int grid[N][N];\n    for (int i = 0; i < N; i++)\n        for (int j = 0; j < N; j++)\n            grid[i][j] = i * N + j;\n\n    long checksum = 0;\n    // sum every element here, j as the inner loop\n\n    printf(\"Checksum: %ld\\n\", checksum);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 60,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

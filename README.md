@@ -4,9 +4,9 @@
 
 Ironcore Lab is a desktop app that teaches C from bits to bare metal. Every exercise compiles and runs against **actual gcc/clang, gdb, and Valgrind** inside WSL. The compiler errors are real compiler errors. The memory leaks are real memory leaks. The narrative wrapper — restoring the abandoned "Meridian Computing Laboratory" room by room — is there to give the curriculum shape, not to paper over how C actually behaves.
 
-> **Status:** early (`v0.1.0`), Windows + WSL only, single author. Three of six planned arcs are fully authored; see [Content roadmap](#content-roadmap) below.
+> **Status:** early (`v0.1.0`), Windows + WSL only, single author. All six planned arcs are fully authored; see [Content roadmap](#content-roadmap) below.
 
-![The Lab Map, showing Assembly Basement in progress and the other five rooms locked or outlined](docs/screenshots/lab-map.png)
+![The Lab Map, showing Assembly Basement in progress and the other five rooms locked](docs/screenshots/lab-map.png)
 
 ## Why a real toolchain
 
@@ -35,7 +35,7 @@ Most browser-based "learn C" tools run your code in a sandboxed interpreter or a
 1. Download the latest `Ironcore Lab Setup x.x.x.exe` from [Releases](https://github.com/druxck/ironcore-lab/releases).
 2. Run it and step through the installer (pick an install location, create shortcuts, etc.).
    > The installer isn't code-signed (that costs money a one-person hobby project doesn't have), so Windows SmartScreen will likely show an "unrecognized app" warning. Click **More info → Run anyway**. This is normal for small independent Windows apps, not a sign anything's wrong — you're welcome to inspect [the source](https://github.com/druxck/ironcore-lab) or [the packaging workflow](.github/workflows/ci.yml) first.
-3. Launch **Ironcore Lab**. If WSL/Ubuntu or the C toolchain (gcc, clang, gdb, valgrind, etc.) aren't already on your machine, the **Setup Wizard** screen will offer one-click **Install WSL + Ubuntu** and **Install C Toolchain** buttons — each just opens the real Windows permission prompt or a terminal for `sudo`, since neither of those can be (or should be) done silently. No existing WSL/Windows/npm knowledge required; see [`docs/setup-manual.md`](docs/setup-manual.md) for exactly what each button does and the manual fallback.
+3. Launch **Ironcore Lab**. If WSL/Ubuntu or the C toolchain (gcc, clang, gdb, valgrind, etc.) aren't already on your machine, the **Setup Wizard** screen will offer one-click **Install WSL + Ubuntu** and **Install C Toolchain** buttons. Both run in the background with a live progress bar — no terminal window to babysit and no password to type in. The only unavoidable interruption is a single Windows permission (UAC) prompt for the WSL install itself, since that's a real OS security boundary and can't be (or shouldn't be) bypassed silently. No existing WSL/Windows/npm knowledge required; see [`docs/setup-manual.md`](docs/setup-manual.md) for exactly what each button does and the manual fallback.
 4. Once every tool shows green, the Lab Map unlocks.
 
 ### Option B — From source (for developers)
@@ -56,11 +56,11 @@ Same Setup Wizard, same one-click install buttons, just running from source inst
 | Assembly Basement — bits, bytes, the toolchain | Authored |
 | The Patch Bay — variables, control flow, functions | Authored |
 | Memory Wing — pointers, stack/heap, structs | Authored |
-| The Machine Room — processes, signals, file descriptors | Outline |
-| The Concurrency Annex — threads and races | Outline |
-| The Architecture Vault — compiler internals, performance | Outline |
+| The Machine Room — processes, signals, file descriptors | Authored |
+| The Concurrency Annex — threads and races | Authored |
+| The Architecture Vault — compiler internals, performance | Authored |
 
-Contributions toward the outlined arcs are welcome — see [Contributing](#contributing).
+All six arcs are authored — contributions polishing or extending existing lessons are welcome, see [Contributing](#contributing).
 
 ## How it works
 
@@ -85,7 +85,7 @@ npm run dist:win     # packaged Windows installer (release/*.exe)
 
 Bug reports and PRs are welcome, especially:
 
-- New lessons/exercises for the outlined arcs (Machine Room, Concurrency Annex, Architecture Vault) — content is pure JSON/Markdown and doesn't require touching app code. Start with [`docs/content-authoring-guide.md`](docs/content-authoring-guide.md).
+- New arcs, lessons, or exercises beyond the current six — content is pure JSON/Markdown and doesn't require touching app code. Start with [`docs/content-authoring-guide.md`](docs/content-authoring-guide.md).
 - Additions to the error glossary (`content/error-glossary/`) for compiler/Valgrind/sanitizer output that isn't recognized yet.
 
 Please run `npm run typecheck && npm run lint && npm test` before opening a PR.

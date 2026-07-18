@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Total: 30\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Both threads complete and total 10 + 20, with no deadlock"
+  }
+]

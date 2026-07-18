@@ -1,0 +1,14 @@
+{
+  "id": "architecture-vault-05-memory-hierarchy",
+  "arcId": "architecture-vault",
+  "order": 5,
+  "title": "The Memory Hierarchy",
+  "objectives": [
+    "Explain what a cache line is and why sequential memory access is fast compared to scattered access",
+    "Explain why C stores 2D arrays in row-major order and what that means for how you loop over one",
+    "Show that traversal order changes speed without changing correctness"
+  ],
+  "prerequisites": ["architecture-vault-04-what-o2-does"],
+  "narrativeContentPath": "arcs/architecture-vault/lessons/05-memory-hierarchy/content.md",
+  "estXp": 50
+}

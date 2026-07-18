@@ -1,0 +1,14 @@
+{
+  "id": "architecture-vault-04-what-o2-does",
+  "arcId": "architecture-vault",
+  "order": 4,
+  "title": "What -O2 Actually Does",
+  "objectives": [
+    "Explain that optimization only ever applies a transformation the compiler can prove preserves behavior — it isn't guessing",
+    "Read a real -O0 vs -O2 disassembly comparison showing constant folding and whole-function elimination",
+    "Explain why marking a function static can unlock optimizations that would be unsafe on a globally visible one"
+  ],
+  "prerequisites": ["architecture-vault-03-stack-frame"],
+  "narrativeContentPath": "arcs/architecture-vault/lessons/04-what-o2-does/content.md",
+  "estXp": 45
+}

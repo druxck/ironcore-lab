@@ -1,6 +1,6 @@
 {
   "name": "ironcore-lab",
-  "version": "0.1.0",
+  "version": "0.2.19",
   "description": "Ironcore Lab — restore the Meridian Computing Laboratory while mastering C, from bits to bare metal.",
   "main": "./out/main/index.js",
   "author": "Austin",

@@ -1,0 +1,12 @@
+{
+  "id": "concurrency-annex-05-ex01-atomic-counter",
+  "order": 1,
+  "title": "Atomic Counter",
+  "type": "write-program",
+  "prompt": "Rewrite the racing counter from two lessons ago using an atomic_int and atomic_fetch_add instead of a mutex. Four threads each increment it 100000 times; after joining all four, print exactly \"Total: 400000\\n\".",
+  "starterCode": "#include <stdio.h>\n#include <pthread.h>\n#include <stdatomic.h>\n\n#define NUM_THREADS 4\n#define INCREMENTS 100000\n\nstatic atomic_int counter = 0;\n\nvoid *worker(void *arg) {\n    (void)arg;\n    for (int i = 0; i < INCREMENTS; i++) {\n        // your code here: atomically increment counter\n    }\n    return NULL;\n}\n\nint main(void) {\n    pthread_t threads[NUM_THREADS];\n    for (int i = 0; i < NUM_THREADS; i++) {\n        pthread_create(&threads[i], NULL, worker, NULL);\n    }\n    for (int i = 0; i < NUM_THREADS; i++) {\n        pthread_join(threads[i], NULL);\n    }\n    printf(\"Total: %d\\n\", atomic_load(&counter));\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 40,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

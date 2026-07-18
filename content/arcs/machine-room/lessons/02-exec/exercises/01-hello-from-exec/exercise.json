@@ -1,0 +1,12 @@
+{
+  "id": "machine-room-02-ex01-hello-from-exec",
+  "order": 1,
+  "title": "Become echo",
+  "type": "write-program",
+  "prompt": "Use execvp() to replace your process with /bin/echo (found via PATH, so just pass \"echo\"), passing it a single argument: \"hello-from-exec\". The output you see will be echo's own output, not a printf() you wrote.",
+  "starterCode": "#include <unistd.h>\n\nint main(void) {\n    // your code here: build an argv array (NULL-terminated!) and call execvp\n\n    return 1;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

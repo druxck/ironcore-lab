@@ -1,0 +1,12 @@
+{
+  "id": "machine-room-05-ex02-wrong-fd",
+  "order": 2,
+  "title": "Fix It: Nothing on stdout",
+  "type": "fix-the-bug",
+  "prompt": "This program is supposed to print \"on the wrong fd\\n\" to stdout, but the grader (which only reads stdout) sees nothing at all. Fix the file descriptor number so the message goes to stdout instead.",
+  "starterCode": "#include <unistd.h>\n\nint main(void) {\n    char msg[] = \"on the wrong fd\\n\";\n    write(2, msg, sizeof(msg) - 1);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 25,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

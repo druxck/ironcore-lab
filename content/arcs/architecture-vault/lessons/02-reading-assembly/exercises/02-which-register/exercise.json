@@ -1,0 +1,13 @@
+{
+  "id": "architecture-vault-02-ex02-which-register",
+  "order": 2,
+  "title": "The First Argument's Register",
+  "type": "fill-in-blank",
+  "prompt": "According to the calling convention shown in this lesson, which register carries a function's FIRST integer argument? Answer with just the register name, no % sign (e.g. \"eax\").",
+  "starterCode": "",
+  "expectedAnswer": "edi",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

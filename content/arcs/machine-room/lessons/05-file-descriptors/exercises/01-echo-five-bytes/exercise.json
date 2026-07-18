@@ -1,0 +1,12 @@
+{
+  "id": "machine-room-05-ex01-echo-five-bytes",
+  "order": 1,
+  "title": "Read and Write, No printf Allowed",
+  "type": "write-program",
+  "prompt": "Without using printf() or scanf(), read exactly 5 bytes from fd 0 (stdin) using read(), then write those exact 5 bytes to fd 1 (stdout) using write(). The input will always be exactly 5 bytes with no trailing newline.",
+  "starterCode": "#include <unistd.h>\n\nint main(void) {\n    char buf[5];\n    // your code here: read() 5 bytes from fd 0, then write() them to fd 1\n\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

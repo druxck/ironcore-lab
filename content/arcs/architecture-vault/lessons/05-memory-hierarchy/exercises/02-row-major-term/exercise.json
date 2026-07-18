@@ -1,0 +1,13 @@
+{
+  "id": "architecture-vault-05-ex02-row-major-term",
+  "order": 2,
+  "title": "Name the Layout",
+  "type": "fill-in-blank",
+  "prompt": "C stores a 2D array's rows contiguously in memory, one full row after another. What is this layout called? Answer with the hyphenated term used in this lesson: \"row-major\".",
+  "starterCode": "",
+  "expectedAnswer": "row-major",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

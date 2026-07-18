@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "fixed\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "echo runs successfully once the program name is spelled correctly"
+  }
+]

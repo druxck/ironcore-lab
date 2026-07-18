@@ -1,0 +1,14 @@
+{
+  "id": "machine-room-06-pipes",
+  "arcId": "machine-room",
+  "order": 6,
+  "title": "Redirection and Pipes",
+  "objectives": [
+    "Create a pipe with pipe() and understand its two file descriptors",
+    "Move data from a child process to a parent through a pipe",
+    "Explain why closing the unused end in each process matters"
+  ],
+  "prerequisites": ["machine-room-05-file-descriptors"],
+  "narrativeContentPath": "arcs/machine-room/lessons/06-pipes/content.md",
+  "estXp": 50
+}

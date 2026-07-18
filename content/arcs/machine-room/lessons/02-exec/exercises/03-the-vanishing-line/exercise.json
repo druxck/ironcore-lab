@@ -1,0 +1,13 @@
+{
+  "id": "machine-room-02-ex03-the-vanishing-line",
+  "order": 3,
+  "title": "Predict: The Vanishing Line",
+  "type": "predict-output",
+  "prompt": "This program's stdout is not connected to a terminal when the lab runs it (so stdout is fully buffered, not flushed line-by-line). How many lines of output does it actually produce?\n\nprintf(\"before\\n\");\nchar *argv[] = { \"echo\", \"hi\", NULL };\nexecvp(\"echo\", argv);\nprintf(\"after\\n\");",
+  "starterCode": "",
+  "expectedAnswer": "1",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 20,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "caught it\ndone\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Handler and raised signal now match, so the process survives to print both lines"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "id": "architecture-vault-07-ex01-check-before-not-after",
+  "order": 1,
+  "title": "Fix It: Check Before, Not After",
+  "type": "fix-the-bug",
+  "prompt": "This program triggers real signed integer overflow (undefined behavior) by adding 1 to INT_MAX directly. Fix it to check whether x is already at INT_MAX BEFORE doing the addition, printing exactly \"would overflow\\n\" in that case instead of performing the overflow at all.",
+  "starterCode": "#include <stdio.h>\n#include <limits.h>\n\nint main(void) {\n    int x = INT_MAX;\n    x = x + 1;\n    printf(\"%d\\n\", x);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "sanitizer-clean"],
+  "baseXp": 45,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

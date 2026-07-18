@@ -1,0 +1,15 @@
+{
+  "id": "machine-room-01-processes",
+  "arcId": "machine-room",
+  "order": 1,
+  "title": "Processes: Who Am I Running As",
+  "objectives": [
+    "Explain what fork() does to the calling process",
+    "Use wait() to make a parent block until its child finishes",
+    "State what fork() returns in the child versus the parent"
+  ],
+  "prerequisites": [],
+  "narrativeContentPath": "arcs/machine-room/lessons/01-processes/content.md",
+  "estXp": 40,
+  "historyCardIds": ["hc-fork-name"]
+}

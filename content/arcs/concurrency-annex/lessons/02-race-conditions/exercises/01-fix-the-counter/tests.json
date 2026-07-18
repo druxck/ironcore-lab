@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Total: 400000\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Four threads times 100000 increments each, with no increments lost to the race"
+  }
+]

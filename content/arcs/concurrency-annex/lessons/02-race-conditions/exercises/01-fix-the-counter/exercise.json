@@ -1,0 +1,12 @@
+{
+  "id": "concurrency-annex-02-ex01-fix-the-counter",
+  "order": 1,
+  "title": "Fix It: The Racing Counter",
+  "type": "fix-the-bug",
+  "prompt": "Four threads each increment a shared counter 100000 times, unprotected. Add the synchronization needed (a mutex) so the final printed total is deterministically correct — exactly \"Total: 400000\\n\" — every single time.",
+  "starterCode": "#include <stdio.h>\n#include <pthread.h>\n\n#define NUM_THREADS 4\n#define INCREMENTS 100000\n\nstatic int counter = 0;\n\nvoid *worker(void *arg) {\n    (void)arg;\n    for (int i = 0; i < INCREMENTS; i++) {\n        counter++;\n    }\n    return NULL;\n}\n\nint main(void) {\n    pthread_t threads[NUM_THREADS];\n    for (int i = 0; i < NUM_THREADS; i++) {\n        pthread_create(&threads[i], NULL, worker, NULL);\n    }\n    for (int i = 0; i < NUM_THREADS; i++) {\n        pthread_join(threads[i], NULL);\n    }\n    printf(\"Total: %d\\n\", counter);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 45,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

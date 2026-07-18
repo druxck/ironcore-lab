@@ -1,0 +1,12 @@
+{
+  "id": "architecture-vault-05-ex01-row-vs-col-sum",
+  "order": 1,
+  "title": "Same Data, Two Traversal Orders",
+  "type": "write-program",
+  "prompt": "Fill a 4x4 int matrix where matrix[i][j] = i*4 + j (so values 0 through 15). Sum every element two ways: once traversing row-major (i outer loop, j inner loop) into row_sum, once traversing column-major (j outer loop, i inner loop) into col_sum. Print exactly:\nRow sum: 120\nCol sum: 120\n(both sums are the same value, computed the same way, just in a different order — that's the point).",
+  "starterCode": "#include <stdio.h>\n\n#define N 4\n\nint main(void) {\n    int matrix[N][N];\n    for (int i = 0; i < N; i++)\n        for (int j = 0; j < N; j++)\n            matrix[i][j] = i * N + j;\n\n    int row_sum = 0;\n    // your row-major loop here\n\n    int col_sum = 0;\n    // your column-major loop here\n\n    printf(\"Row sum: %d\\n\", row_sum);\n    printf(\"Col sum: %d\\n\", col_sum);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 35,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Parent got: piped\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Data written by the child crosses the pipe and is read by the parent"
+  }
+]

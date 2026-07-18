@@ -1,0 +1,12 @@
+{
+  "id": "machine-room-01-ex01-fork-and-wait",
+  "order": 1,
+  "title": "Fork, Then Wait Your Turn",
+  "type": "write-program",
+  "prompt": "Use fork() to create a child process. The child should print \"child\\n\". The parent should call wait(NULL) to block until the child finishes, then print \"parent\\n\". Total output must be exactly \"child\\nparent\\n\", in that order, every time.",
+  "starterCode": "#include <stdio.h>\n#include <unistd.h>\n#include <sys/wait.h>\n\nint main(void) {\n    pid_t pid = fork();\n\n    // your code here: if pid == 0 you're the child, otherwise you're the parent\n\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 35,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

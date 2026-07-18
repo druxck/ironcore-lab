@@ -1,0 +1,13 @@
+{
+  "id": "concurrency-annex-06-ex02-name-the-problem",
+  "order": 2,
+  "title": "Name It",
+  "type": "fill-in-blank",
+  "prompt": "What is it called when two threads each hold a lock the other one needs, and neither can proceed?",
+  "starterCode": "",
+  "expectedAnswer": "deadlock",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

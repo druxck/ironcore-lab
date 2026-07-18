@@ -1,0 +1,14 @@
+{
+  "id": "architecture-vault-06-measuring",
+  "arcId": "architecture-vault",
+  "order": 6,
+  "title": "Measuring Instead of Guessing",
+  "objectives": [
+    "Use clock_gettime(CLOCK_MONOTONIC, ...) to measure elapsed wall-clock time around a piece of code",
+    "Correctly compute an elapsed duration from two struct timespec values, including the nanosecond borrow",
+    "Name at least one common way a naive benchmark lies about what it measured"
+  ],
+  "prerequisites": ["architecture-vault-05-memory-hierarchy"],
+  "narrativeContentPath": "arcs/architecture-vault/lessons/06-measuring/content.md",
+  "estXp": 45
+}

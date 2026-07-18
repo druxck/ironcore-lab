@@ -42,8 +42,21 @@ export function registerIpcHandlers(): void {
   ipcMain.handle('setup:openSetupDocs', async () => {
     await shell.openPath(join(getAppRoot(), 'docs', 'setup-manual.md'))
   })
-  ipcMain.handle('setup:launchWslInstall', async () => installActions.launchWslInstall())
-  ipcMain.handle('setup:launchToolchainInstall', async () => installActions.launchToolchainInstallTerminal())
+  ipcMain.handle('setup:launchWslInstall', async (event) => {
+    const logPath = await installActions.makeWslInstallLogPath()
+    const result = installActions.launchWslInstall(logPath)
+    if (result.launched) {
+      installActions.pollWslInstallProgress(logPath, (progress) => {
+        event.sender.send('setup:wslInstallProgress', progress)
+      })
+    }
+    return result
+  })
+  ipcMain.handle('setup:launchToolchainInstall', async (event) =>
+    installActions.runToolchainInstall((progress) => {
+      event.sender.send('setup:toolchainInstallProgress', progress)
+    })
+  )
 
   ipcMain.handle('save:getSaveData', async () => saveStore.getSave())
   ipcMain.handle('save:updateSettings', async (_e, req: Partial<SaveData['settings']>) =>

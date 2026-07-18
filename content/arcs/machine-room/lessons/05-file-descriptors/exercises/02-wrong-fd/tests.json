@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "on the wrong fd\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Writing to fd 1 instead of fd 2 puts the message on stdout"
+  }
+]

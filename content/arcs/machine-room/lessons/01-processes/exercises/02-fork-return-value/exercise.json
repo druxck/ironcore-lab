@@ -1,0 +1,13 @@
+{
+  "id": "machine-room-01-ex02-fork-return-value",
+  "order": 2,
+  "title": "What fork() Hands Back",
+  "type": "fill-in-blank",
+  "prompt": "In the code below, fork() is called once and its result stored in pid. What exact value does fork() return inside the newly created child process?\n\npid_t pid = fork();\nif (pid == 0) {\n    // the child gets here\n}",
+  "starterCode": "",
+  "expectedAnswer": "0",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

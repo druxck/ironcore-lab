@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "both threads joined\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Prints the confirmation line only after both threads have been joined"
+  }
+]

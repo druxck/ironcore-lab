@@ -1,0 +1,14 @@
+{
+  "id": "machine-room-03-wait-and-zombies",
+  "arcId": "machine-room",
+  "order": 3,
+  "title": "wait() and Zombie Processes",
+  "objectives": [
+    "Use wait() to retrieve a child's exit status",
+    "Extract the real exit code from that status with WEXITSTATUS()",
+    "Explain what a zombie process is and why reaping it matters"
+  ],
+  "prerequisites": ["machine-room-01-processes"],
+  "narrativeContentPath": "arcs/machine-room/lessons/03-wait-and-zombies/content.md",
+  "estXp": 45
+}

@@ -1,0 +1,12 @@
+{
+  "id": "concurrency-annex-07-ex01-work-queue",
+  "order": 1,
+  "title": "A Bounded, Thread-Safe Queue",
+  "type": "write-program",
+  "prompt": "Finish push() and pop() on the fixed-capacity circular queue below: push must wait (in a while loop, on not_full) while the queue is full, pop must wait (in a while loop, on not_empty) while the queue is empty, and each one must signal the other condition after changing the queue. One producer thread pushes 1 through 10; one consumer thread pops all ten and sums them. Print exactly \"Total: 55\\n\" from main after joining both threads.",
+  "starterCode": "#include <stdio.h>\n#include <pthread.h>\n\n#define CAPACITY 4\n#define NUM_ITEMS 10\n\ntypedef struct {\n    int items[CAPACITY];\n    int count;\n    int head;\n    int tail;\n    pthread_mutex_t lock;\n    pthread_cond_t not_full;\n    pthread_cond_t not_empty;\n} queue_t;\n\nstatic void queue_init(queue_t *q) {\n    q->count = 0;\n    q->head = 0;\n    q->tail = 0;\n    pthread_mutex_init(&q->lock, NULL);\n    pthread_cond_init(&q->not_full, NULL);\n    pthread_cond_init(&q->not_empty, NULL);\n}\n\nstatic void queue_push(queue_t *q, int value) {\n    pthread_mutex_lock(&q->lock);\n    // your code here: wait while full, insert at tail, advance tail,\n    // increment count, signal not_empty\n    (void)value;\n    pthread_mutex_unlock(&q->lock);\n}\n\nstatic int queue_pop(queue_t *q) {\n    pthread_mutex_lock(&q->lock);\n    // your code here: wait while empty, read from head, advance head,\n    // decrement count, signal not_full, return the value\n    pthread_mutex_unlock(&q->lock);\n    return 0;\n}\n\nstatic queue_t q;\n\nvoid *producer(void *arg) {\n    (void)arg;\n    for (int i = 1; i <= NUM_ITEMS; i++) {\n        queue_push(&q, i);\n    }\n    return NULL;\n}\n\nvoid *consumer(void *arg) {\n    int *sum = (int *)arg;\n    *sum = 0;\n    for (int i = 0; i < NUM_ITEMS; i++) {\n        *sum += queue_pop(&q);\n    }\n    return NULL;\n}\n\nint main(void) {\n    queue_init(&q);\n    int sum = 0;\n    pthread_t p, c;\n    pthread_create(&p, NULL, producer, NULL);\n    pthread_create(&c, NULL, consumer, &sum);\n    pthread_join(p, NULL);\n    pthread_join(c, NULL);\n    printf(\"Total: %d\\n\", sum);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 90,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

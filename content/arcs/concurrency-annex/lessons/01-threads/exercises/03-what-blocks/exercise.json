@@ -1,0 +1,13 @@
+{
+  "id": "concurrency-annex-01-ex03-what-blocks",
+  "order": 3,
+  "title": "Which Function Waits?",
+  "type": "fill-in-blank",
+  "prompt": "Which pthread function blocks the calling thread until another specified thread has finished running?",
+  "starterCode": "",
+  "expectedAnswer": "pthread_join",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

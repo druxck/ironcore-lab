@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Total: 45\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Sums 5 + 15 + 25, skipping the negative amount, with the lock released on every path"
+  }
+]

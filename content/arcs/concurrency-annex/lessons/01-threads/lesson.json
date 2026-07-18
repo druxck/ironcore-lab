@@ -1,0 +1,15 @@
+{
+  "id": "concurrency-annex-01-threads",
+  "arcId": "concurrency-annex",
+  "order": 1,
+  "title": "Threads: Running Two Places at Once",
+  "objectives": [
+    "Create and join threads with pthread_create and pthread_join",
+    "Match a thread function's signature to what pthread_create requires",
+    "Explain what actually runs concurrently versus what only looks like it does"
+  ],
+  "prerequisites": [],
+  "narrativeContentPath": "arcs/concurrency-annex/lessons/01-threads/content.md",
+  "estXp": 55,
+  "historyCardIds": ["hc-pthreads-standardization"]
+}

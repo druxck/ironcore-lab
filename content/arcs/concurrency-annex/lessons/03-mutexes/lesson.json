@@ -1,0 +1,14 @@
+{
+  "id": "concurrency-annex-03-mutexes",
+  "arcId": "concurrency-annex",
+  "order": 3,
+  "title": "Mutexes: Taking Turns",
+  "objectives": [
+    "Guard shared state with pthread_mutex_t so multiple threads can update it safely",
+    "Recognize and fix a mutex that isn't unlocked on every code path",
+    "Explain why every early return needs its own unlock"
+  ],
+  "prerequisites": ["concurrency-annex-02-race-conditions"],
+  "narrativeContentPath": "arcs/concurrency-annex/lessons/03-mutexes/content.md",
+  "estXp": 50
+}

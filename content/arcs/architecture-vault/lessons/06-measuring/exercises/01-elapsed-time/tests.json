@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Elapsed: 1600 ms\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Correctly combines the second and nanosecond differences"
+  }
+]

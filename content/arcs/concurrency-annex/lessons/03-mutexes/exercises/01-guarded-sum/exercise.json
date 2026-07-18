@@ -1,0 +1,12 @@
+{
+  "id": "concurrency-annex-03-ex01-guarded-sum",
+  "order": 1,
+  "title": "Guarded Sum",
+  "type": "write-program",
+  "prompt": "Four threads each add a fixed amount (10, 20, 30, and 40) to a shared int total, guarded by a mutex so nothing is lost. After joining all four threads, print exactly \"Total: 100\\n\".",
+  "starterCode": "#include <stdio.h>\n#include <pthread.h>\n\nstatic int total = 0;\n\ntypedef struct { int amount; } arg_t;\n\nvoid *worker(void *arg) {\n    int amount = ((arg_t *)arg)->amount;\n    // your code here: safely add amount to total\n    (void)amount;\n    return NULL;\n}\n\nint main(void) {\n    arg_t args[4] = {{10}, {20}, {30}, {40}};\n    pthread_t threads[4];\n    for (int i = 0; i < 4; i++) {\n        pthread_create(&threads[i], NULL, worker, &args[i]);\n    }\n    for (int i = 0; i < 4; i++) {\n        pthread_join(threads[i], NULL);\n    }\n    printf(\"Total: %d\\n\", total);\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 35,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

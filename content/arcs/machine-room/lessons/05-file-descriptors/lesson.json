@@ -1,0 +1,14 @@
+{
+  "id": "machine-room-05-file-descriptors",
+  "arcId": "machine-room",
+  "order": 5,
+  "title": "File Descriptors Are Just Integers",
+  "objectives": [
+    "Explain that stdin/stdout/stderr are just file descriptors 0, 1, and 2",
+    "Use read() and write() directly instead of printf()/scanf()",
+    "Recognize that a program can silently write to the wrong stream by using the wrong fd number"
+  ],
+  "prerequisites": ["machine-room-01-processes"],
+  "narrativeContentPath": "arcs/machine-room/lessons/05-file-descriptors/content.md",
+  "estXp": 40
+}

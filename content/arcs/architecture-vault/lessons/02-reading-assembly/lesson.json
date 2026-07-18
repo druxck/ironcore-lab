@@ -1,0 +1,14 @@
+{
+  "id": "architecture-vault-02-reading-assembly",
+  "arcId": "architecture-vault",
+  "order": 2,
+  "title": "Reading Assembly Without Fear",
+  "objectives": [
+    "Run objdump -d on a compiled binary and locate one function's disassembly inside it",
+    "Match generated instructions back to the C source lines that produced them",
+    "Identify which x86-64 registers the calling convention uses for a function's first integer argument and its return value"
+  ],
+  "prerequisites": ["architecture-vault-01-source-to-silicon"],
+  "narrativeContentPath": "arcs/architecture-vault/lessons/02-reading-assembly/content.md",
+  "estXp": 50
+}

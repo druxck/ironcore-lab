@@ -1,0 +1,14 @@
+{
+  "id": "machine-room-02-exec",
+  "arcId": "machine-room",
+  "order": 2,
+  "title": "exec and the Process That Becomes Another",
+  "objectives": [
+    "Explain that exec() replaces the current process image instead of creating a new process",
+    "Use execvp() to run another program from C",
+    "Predict what happens to buffered but unflushed output across a successful exec()"
+  ],
+  "prerequisites": ["machine-room-01-processes"],
+  "narrativeContentPath": "arcs/machine-room/lessons/02-exec/content.md",
+  "estXp": 45
+}

@@ -1,0 +1,13 @@
+{
+  "id": "architecture-vault-04-ex01-constant-folding",
+  "order": 1,
+  "title": "Name the Optimization",
+  "type": "fill-in-blank",
+  "prompt": "In the -O2 disassembly shown in this lesson, gcc replaced the entire call to add(3, 4) with one instruction loading the literal 7. What is the name for this optimization — computing a constant expression's result at compile time instead of at runtime?",
+  "starterCode": "",
+  "expectedAnswer": "constant folding",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

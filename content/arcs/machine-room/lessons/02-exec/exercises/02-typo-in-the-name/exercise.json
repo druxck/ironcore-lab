@@ -1,0 +1,12 @@
+{
+  "id": "machine-room-02-ex02-typo-in-the-name",
+  "order": 2,
+  "title": "Fix It: The Program That Never Runs",
+  "type": "fix-the-bug",
+  "prompt": "This program is supposed to run /bin/echo with the argument \"fixed\", but it never prints anything at all. Find the typo that makes execvp() unable to find the program, and fix it so the output is exactly \"fixed\\n\".",
+  "starterCode": "#include <unistd.h>\n\nint main(void) {\n    char *argv[] = { \"ehco\", \"fixed\", NULL };\n    execvp(\"ehco\", argv);\n    return 1;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 30,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

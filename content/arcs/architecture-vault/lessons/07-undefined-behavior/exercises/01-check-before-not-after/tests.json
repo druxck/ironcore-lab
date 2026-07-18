@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "would overflow\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Detects the overflow before it happens, never performs the UB"
+  }
+]

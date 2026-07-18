@@ -1,0 +1,14 @@
+{
+  "id": "machine-room-07-strace",
+  "arcId": "machine-room",
+  "order": 7,
+  "title": "Watching Syscalls with strace",
+  "objectives": [
+    "Explain what strace shows that reading source code alone can't",
+    "Read a single strace line: syscall name, arguments, and return value",
+    "Connect a familiar library call (printf) to the actual syscall underneath it"
+  ],
+  "prerequisites": ["machine-room-05-file-descriptors"],
+  "narrativeContentPath": "arcs/machine-room/lessons/07-strace/content.md",
+  "estXp": 30
+}

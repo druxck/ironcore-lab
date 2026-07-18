@@ -1,0 +1,13 @@
+{
+  "id": "machine-room-06-ex02-which-end-reads",
+  "order": 2,
+  "title": "Which End Is Which",
+  "type": "fill-in-blank",
+  "prompt": "After calling pipe(fds), which array element is the read end: fds[0] or fds[1]?",
+  "starterCode": "",
+  "expectedAnswer": "fds[0]",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

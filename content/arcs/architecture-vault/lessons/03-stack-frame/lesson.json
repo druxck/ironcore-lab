@@ -1,0 +1,14 @@
+{
+  "id": "architecture-vault-03-stack-frame",
+  "arcId": "architecture-vault",
+  "order": 3,
+  "title": "The Stack Frame and the Calling Convention",
+  "objectives": [
+    "Explain what a stack frame stores: the caller's saved frame pointer, the return address, and this function's own locals",
+    "Read a gdb backtrace as a chain of stack frames, innermost call first",
+    "Connect a real recursive call's backtrace to the recursion depth that produced it"
+  ],
+  "prerequisites": ["architecture-vault-02-reading-assembly"],
+  "narrativeContentPath": "arcs/architecture-vault/lessons/03-stack-frame/content.md",
+  "estXp": 45
+}

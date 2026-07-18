@@ -1,0 +1,13 @@
+{
+  "id": "machine-room-04-ex03-ctrl-c-signal-name",
+  "order": 3,
+  "title": "Name That Signal",
+  "type": "fill-in-blank",
+  "prompt": "Which signal macro name does a terminal conventionally send to a running program when you press Ctrl+C?",
+  "starterCode": "",
+  "expectedAnswer": "SIGINT",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

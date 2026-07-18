@@ -1,0 +1,10 @@
+[
+  {
+    "id": "main",
+    "stdin": "",
+    "expectedStdout": "Checksum: 2016\n",
+    "matchMode": "exact",
+    "hidden": false,
+    "description": "Sums the whole grid to 2016"
+  }
+]

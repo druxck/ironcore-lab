@@ -7,5 +7,5 @@
   "order": 4,
   "unlockRequires": [{ "arcId": "memory-wing", "minRestorationPct": 80 }],
   "theme": { "accentColor": "#5aa9e6", "motif": "oscilloscope-traces" },
-  "status": "outline"
+  "status": "authored"
 }

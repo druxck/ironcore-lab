@@ -1,0 +1,14 @@
+{
+  "id": "architecture-vault-03-ex01-count-the-frames",
+  "order": 1,
+  "title": "Count the Frames",
+  "type": "debug-with-gdb",
+  "prompt": "This program calls recurse(3), which calls itself down to recurse(0). The debugger session below breaks on recurse, lets it hit that breakpoint on every call (n=3, 2, 1, then 0), then runs `bt`. Count the stack frames bt prints, including main's. Type just the number.",
+  "starterCode": "#include <stdio.h>\n\nvoid recurse(int n) {\n    if (n == 0) {\n        printf(\"bottom\\n\");\n        return;\n    }\n    recurse(n - 1);\n}\n\nint main(void) {\n    recurse(3);\n    return 0;\n}\n",
+  "gdbCommands": "break recurse\nrun\ncontinue\ncontinue\ncontinue\nbt\n",
+  "expectedAnswer": "5",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 40,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

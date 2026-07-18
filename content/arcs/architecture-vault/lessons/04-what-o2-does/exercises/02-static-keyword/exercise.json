@@ -1,0 +1,13 @@
+{
+  "id": "architecture-vault-04-ex02-static-keyword",
+  "order": 2,
+  "title": "Name the Keyword",
+  "type": "fill-in-blank",
+  "prompt": "What C keyword, added in front of a function definition, tells the compiler that nothing outside this source file can ever call it — unlocking optimizations like deleting the whole function when nothing local calls it either?",
+  "starterCode": "",
+  "expectedAnswer": "static",
+  "gradingCriteria": ["stdout-match"],
+  "baseXp": 15,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

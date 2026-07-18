@@ -1,0 +1,14 @@
+{
+  "id": "concurrency-annex-02-race-conditions",
+  "arcId": "concurrency-annex",
+  "order": 2,
+  "title": "Race Conditions, Made Visible",
+  "objectives": [
+    "Explain why counter++ is not a single atomic step",
+    "Fix an unprotected shared counter with a mutex",
+    "Explain how this lab proves a fix is correct without a data-race detector"
+  ],
+  "prerequisites": ["concurrency-annex-01-threads"],
+  "narrativeContentPath": "arcs/concurrency-annex/lessons/02-race-conditions/content.md",
+  "estXp": 50
+}

@@ -1,0 +1,12 @@
+{
+  "id": "machine-room-04-ex01-catch-your-own-signal",
+  "order": 1,
+  "title": "Catch Your Own Signal",
+  "type": "write-program",
+  "prompt": "Install a handler for SIGUSR1 that prints \"caught it\\n\". In main(), call raise(SIGUSR1), then print \"done\\n\" afterward. Total output must be exactly \"caught it\\ndone\\n\".",
+  "starterCode": "#include <stdio.h>\n#include <signal.h>\n\nvoid handler(int sig) {\n    (void)sig;\n    // your code here\n}\n\nint main(void) {\n    // your code here: install the handler, then raise(SIGUSR1)\n\n    printf(\"done\\n\");\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 35,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}

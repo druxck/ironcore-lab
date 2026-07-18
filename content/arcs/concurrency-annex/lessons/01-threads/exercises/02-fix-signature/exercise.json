@@ -1,0 +1,12 @@
+{
+  "id": "concurrency-annex-01-ex02-fix-signature",
+  "order": 2,
+  "title": "Fix It: The Wrong Thread Signature",
+  "type": "fix-the-bug",
+  "prompt": "This program's worker function has the wrong signature for pthread_create, which needs a function shaped void *(*)(void *). Fix worker's signature (and anything that needs to change to match) so the program compiles with no warnings and prints exactly \"worker ran\\n\".",
+  "starterCode": "#include <stdio.h>\n#include <pthread.h>\n\nint worker(int arg) {\n    return arg;\n}\n\nint main(void) {\n    pthread_t t;\n    pthread_create(&t, NULL, worker, NULL);\n    pthread_join(t, NULL);\n    printf(\"worker ran\\n\");\n    return 0;\n}\n",
+  "gradingCriteria": ["stdout-match", "no-warnings"],
+  "baseXp": 35,
+  "timeoutSeconds": 5,
+  "memoryLimitMb": 64
+}
