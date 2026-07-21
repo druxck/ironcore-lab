@@ -3,7 +3,7 @@
   "order": 1,
   "title": "Implement push and pop",
   "type": "write-program",
-  "prompt": "Implement push (allocate a node, link it in front of *top, make it the new top) and pop (remove the front node, return its value, free the node — with no leaks and no use-after-free). main already pushes 1 through 5, then pops and prints every value until the stack is empty. Expected output: 5, 4, 3, 2, 1, each on its own line.",
+  "prompt": "Implement push (allocate a node, link it in front of *top, make it the new top) and pop (remove the front node, return its value, free the node - with no leaks and no use-after-free). main already pushes 1 through 5, then pops and prints every value until the stack is empty. Expected output: 5, 4, 3, 2, 1, each on its own line.",
   "starterCode": "#include <stdio.h>\n#include <stdlib.h>\n\nstruct node {\n    int value;\n    struct node *next;\n};\n\nvoid push(struct node **top, int value) {\n    // your code here\n}\n\nint pop(struct node **top) {\n    // your code here\n    return 0;\n}\n\nint main(void) {\n    struct node *stack = NULL;\n    for (int i = 1; i <= 5; i++) {\n        push(&stack, i);\n    }\n    while (stack != NULL) {\n        printf(\"%d\\n\", pop(&stack));\n    }\n    return 0;\n}\n",
   "gradingCriteria": ["stdout-match", "valgrind-clean", "sanitizer-clean"],
   "baseXp": 90,

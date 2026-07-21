@@ -3,7 +3,7 @@
   "title": "The Architecture Vault",
   "roomName": "Architecture Vault",
   "shortDescription": "Compiler internals, the machine underneath, and making code fast on purpose.",
-  "longDescription": "The lab's deepest room, sealed since the researchers moved on to other things. What's down here isn't C syntax anymore — it's what the compiler does with your C, how the CPU actually executes it, and why some correct programs run ten times faster than other equally correct ones. This is the room that gets you the rest of the way toward a computer scientist's understanding of C.",
+  "longDescription": "The lab's deepest room, sealed since the researchers moved on to other things. What's down here isn't C syntax anymore - it's what the compiler does with your C, how the CPU actually executes it, and why some correct programs run ten times faster than other equally correct ones. This is the room that gets you the rest of the way toward a computer scientist's understanding of C.",
   "order": 6,
   "unlockRequires": [{ "arcId": "concurrency-annex", "minRestorationPct": 80 }],
   "theme": { "accentColor": "#d4a017", "motif": "die-shot-cross-sections" },

@@ -3,7 +3,7 @@
   "order": 2,
   "title": "The Clock That Never Jumps Backward",
   "type": "fill-in-blank",
-  "prompt": "Which clock ID should you pass to clock_gettime() to measure elapsed time, because — unlike CLOCK_REALTIME — it's guaranteed to never jump backward or forward from a system clock adjustment? Answer with the exact macro name.",
+  "prompt": "Which clock ID should you pass to clock_gettime() to measure elapsed time, because - unlike CLOCK_REALTIME - it's guaranteed to never jump backward or forward from a system clock adjustment? Answer with the exact macro name.",
   "starterCode": "",
   "expectedAnswer": "CLOCK_MONOTONIC",
   "gradingCriteria": ["stdout-match"],

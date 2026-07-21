@@ -4,7 +4,7 @@
   "order": 4,
   "title": "What -O2 Actually Does",
   "objectives": [
-    "Explain that optimization only ever applies a transformation the compiler can prove preserves behavior — it isn't guessing",
+    "Explain that optimization only ever applies a transformation the compiler can prove preserves behavior - it isn't guessing",
     "Read a real -O0 vs -O2 disassembly comparison showing constant folding and whole-function elimination",
     "Explain why marking a function static can unlock optimizations that would be unsafe on a globally visible one"
   ],

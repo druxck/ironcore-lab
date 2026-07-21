@@ -92,7 +92,7 @@ export function spawnWsl(args: string[], timeoutMs = 30_000): Promise<WslExecRes
  * single argv element (spawn with shell:false), so Windows-side *command-line*
  * quoting never comes into play. wsl.exe's own Windows→Linux argument handoff
  * is still fragile with nested double quotes inside that single element (see
- * getWslHomeDir below) — avoid them; prefer single-quoted literal paths and
+ * getWslHomeDir below) - avoid them; prefer single-quoted literal paths and
  * base64-embed anything with content you don't control.
  */
 export function execInWsl(script: string, options: WslExecOptions = {}): Promise<WslExecResult> {
@@ -116,7 +116,7 @@ let cachedHomeDir: string | null = null
  * build plain single-quoted paths (e.g. '/home/austin/.ironcore-lab') instead
  * of embedding a literal "$HOME" that needs double-quote shell expansion.
  * That matters because nested double quotes inside a single wsl.exe argv
- * element get corrupted crossing the Windows→Linux interop boundary — e.g.
+ * element get corrupted crossing the Windows→Linux interop boundary - e.g.
  * `find "$HOME/x"` nested inside an outer `"$(...)"` can arrive at bash with
  * literal `"` characters baked into the path instead of being stripped.
  * Single-quoted literal paths with no embedded expansion sidestep that

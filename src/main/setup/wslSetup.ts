@@ -16,7 +16,7 @@ function computeHash(content: string): string {
  * Idempotent: only rewrites a script inside WSL if its hash has changed since
  * the last deploy (e.g. after an app update), so this is cheap to call on
  * every launch. Uses a resolved absolute $HOME (single-quoted, no shell
- * expansion needed) rather than literal "$HOME" — see getWslHomeDir's doc
+ * expansion needed) rather than literal "$HOME" - see getWslHomeDir's doc
  * comment for why that matters.
  */
 export async function deployRunnerScript(): Promise<{ deployed: boolean }> {

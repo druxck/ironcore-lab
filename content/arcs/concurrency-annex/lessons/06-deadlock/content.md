@@ -22,13 +22,13 @@ pthread_mutex_unlock(&lockA);
 pthread_mutex_unlock(&lockB);
 ```
 
-Walk through the unlucky timing: thread 1 locks A. Thread 2 locks B. Now thread 1 tries to lock B — held by thread 2, so it waits. Thread 2 tries to lock A — held by thread 1, so it waits too. Both threads are now waiting for a lock the *other one* is holding, and neither will ever release what it has, because releasing happens *after* the line they're stuck on. Nothing will ever unstick this on its own. That's a deadlock.
+Walk through the unlucky timing: thread 1 locks A. Thread 2 locks B. Now thread 1 tries to lock B - held by thread 2, so it waits. Thread 2 tries to lock A - held by thread 1, so it waits too. Both threads are now waiting for a lock the *other one* is holding, and neither will ever release what it has, because releasing happens *after* the line they're stuck on. Nothing will ever unstick this on its own. That's a deadlock.
 
-The unsettling part is that this doesn't happen every run — it depends on both threads reaching their second lock at close to the same moment. A quick test run might complete instantly a dozen times in a row and never show you the bug at all, right up until it hits production and hangs.
+The unsettling part is that this doesn't happen every run - it depends on both threads reaching their second lock at close to the same moment. A quick test run might complete instantly a dozen times in a row and never show you the bug at all, right up until it hits production and hangs.
 
 ## The fix: pick one order and never break it
 
-The reliable fix isn't clever, it's procedural: **every thread that needs both locks must acquire them in the same order.** If everyone always locks A before B, the AB-BA situation above simply can't occur — whichever thread gets A first is guaranteed to get B next, because no other thread can be holding B without already holding A.
+The reliable fix isn't clever, it's procedural: **every thread that needs both locks must acquire them in the same order.** If everyone always locks A before B, the AB-BA situation above simply can't occur - whichever thread gets A first is guaranteed to get B next, because no other thread can be holding B without already holding A.
 
 ```c
 // both threads, always:
@@ -39,4 +39,4 @@ pthread_mutex_unlock(&lockB);
 pthread_mutex_unlock(&lockA);
 ```
 
-That's the whole fix. No new API, no clever data structure — just a rule every piece of code touching both locks has to follow.
+That's the whole fix. No new API, no clever data structure - just a rule every piece of code touching both locks has to follow.

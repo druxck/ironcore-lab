@@ -65,7 +65,7 @@ function FriendlyView({ result }: { result: RunResult }): JSX.Element {
             {result.diagnostics.map((d, i) => (
               <li key={i} className="rounded border border-lab-wire bg-lab-panel/60 p-2">
                 <div className={d.severity === 'error' ? 'text-lab-alert' : 'text-lab-amber'}>
-                  line {d.line}:{d.column} — {d.message}
+                  line {d.line}:{d.column} - {d.message}
                 </div>
                 {d.friendlyExplanation && (
                   <div className="mt-1 text-xs text-lab-phosphorDim">{d.friendlyExplanation}</div>

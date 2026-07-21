@@ -23,7 +23,7 @@
   {
     "id": "no-ghosts-in-this-machine",
     "title": "No Ghosts in This Machine",
-    "description": "Passed a lesson completely clean — no warnings, no sanitizer findings, no leaks.",
+    "description": "Passed a lesson completely clean: no warnings, no sanitizer findings, no leaks.",
     "icon": "🧼",
     "trigger": { "type": "lesson-completed-clean" }
   },

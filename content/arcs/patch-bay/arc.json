@@ -3,7 +3,7 @@
   "title": "The Patch Bay",
   "roomName": "Patch Bay",
   "shortDescription": "Where you stop just printing things and start telling the machine what to decide.",
-  "longDescription": "Named for the wall of telephone-style jacks and cables still bolted to the workbench here — Meridian's researchers borrowed the lab's phone equipment to route signals between early experiments long before anyone called it 'programming.' Restoring the Patch Bay means learning to route your own logic: variables to hold values, operators to combine them, branches and loops to decide and repeat, and functions to wire it all into reusable pieces.",
+  "longDescription": "Named for the wall of telephone-style jacks and cables still bolted to the workbench here - Meridian's researchers borrowed the lab's phone equipment to route signals between early experiments long before anyone called it 'programming.' Restoring the Patch Bay means learning to route your own logic: variables to hold values, operators to combine them, branches and loops to decide and repeat, and functions to wire it all into reusable pieces.",
   "order": 2,
   "unlockRequires": [{ "arcId": "assembly-basement", "minRestorationPct": 80 }],
   "theme": { "accentColor": "#f4914c", "motif": "patch-panel-jacks" },

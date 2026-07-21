@@ -4,7 +4,7 @@ import type { SanitizerFinding } from '@shared/run-types'
  * ASan, LeakSanitizer, and UBSan all write to stderr. ASan/LSan blocks start
  * with an `==<pid>==ERROR: AddressSanitizer: ...` or
  * `==<pid>==ERROR: LeakSanitizer: detected memory leaks` line and run until a
- * blank line — LSan runs automatically as part of `-fsanitize=address` at
+ * blank line - LSan runs automatically as part of `-fsanitize=address` at
  * program exit, so a plain "forgot to free" leak (no overflow, no
  * use-after-free) reports under the LeakSanitizer banner, not
  * AddressSanitizer's. UBSan blocks are a single

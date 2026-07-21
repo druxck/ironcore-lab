@@ -33,17 +33,17 @@ const PHASE_UPDATE_MARKER = '__IRONCORE_PHASE_UPDATE__'
 const PHASE_INSTALL_MARKER = '__IRONCORE_PHASE_INSTALL__'
 
 /** Matches apt's machine-readable `-o APT::Status-Fd=1` lines, e.g.
- *  `pmstatus:make:40.0000:Installing make (amd64)` — the percent is already
+ *  `pmstatus:make:40.0000:Installing make (amd64)` - the percent is already
  *  whole-transaction-relative (0-100 across every package), not per-package. */
 const PMSTATUS_RE = /^pmstatus:[^:]*:([\d.]+):(.*)$/
 
 /**
- * Runs the toolchain install as root directly inside WSL — `wsl.exe -u root`
+ * Runs the toolchain install as root directly inside WSL - `wsl.exe -u root`
  * needs no Linux password at all (root has no separate auth boundary from
  * wsl.exe's perspective; the real security boundary already got crossed when
  * Windows let this user run wsl.exe in the first place). That means no `sudo`
  * prompt, no TTY requirement, and therefore no need for a visible terminal
- * window — the whole thing can run as a background pipe with real progress
+ * window - the whole thing can run as a background pipe with real progress
  * parsed out of apt's own status-fd output and streamed to the renderer.
  */
 export function runToolchainInstall(onProgress: (evt: ToolchainInstallProgressEvent) => void): LaunchResult {
@@ -78,7 +78,7 @@ export function runToolchainInstall(onProgress: (evt: ToolchainInstallProgressEv
   const handleChunk = (): void => {
     const text = decodeWslOutput(stdoutChunks)
     const lines = text.split('\n')
-    // Re-parse the whole buffer each time (cheap — apt output here is tiny)
+    // Re-parse the whole buffer each time (cheap - apt output here is tiny)
     // rather than trying to stitch partial multi-byte chunks together.
     for (let i = linesSeen; i < lines.length - 1; i++) {
       const line = lines[i].replace(/\r/g, '')
@@ -136,7 +136,7 @@ export function runToolchainInstall(onProgress: (evt: ToolchainInstallProgressEv
 
 /**
  * Elevates via a real Windows UAC consent prompt (Start-Process -Verb RunAs).
- * There's no way around that prompt, and there shouldn't be — installing WSL
+ * There's no way around that prompt, and there shouldn't be - installing WSL
  * touches Windows optional features, and silently self-elevating would be a
  * genuine security problem. `--no-launch` stops it from auto-launching the
  * distro into an interactive "create a Linux username and password" wizard
@@ -165,7 +165,7 @@ export async function makeWslInstallLogPath(): Promise<string> {
  * `wsl.exe`'s own piped output needs decoding, and pushes elapsed-time +
  * best-effort percent/status to the renderer every tick. wsl.exe's install
  * progress text format isn't a stable, documented contract, so percent
- * parsing is opportunistic (last "NN%"-shaped token seen) — elapsed time
+ * parsing is opportunistic (last "NN%"-shaped token seen) - elapsed time
  * always ticks regardless, so the UI never looks frozen even if no percent
  * can be parsed on a given machine.
  */

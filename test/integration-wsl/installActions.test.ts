@@ -3,7 +3,7 @@ import type { ToolchainInstallProgressEvent } from '@shared/setup-types'
 import { runToolchainInstall } from '../../src/main/setup/installActions'
 
 /**
- * Exercises the real toolchain-install path against WSL Ubuntu — same reason
+ * Exercises the real toolchain-install path against WSL Ubuntu - same reason
  * as compilePipeline.test.ts: this crosses the wsl.exe Windows->Linux
  * interop boundary and past bugs here only ever surfaced against a real
  * toolchain (see docs/setup-manual.md history). Run manually with

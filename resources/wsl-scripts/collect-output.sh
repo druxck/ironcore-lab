@@ -10,7 +10,7 @@
 # handoff have been observed to arrive corrupted (silently empty variables, or
 # outright bash syntax errors quoting one of the loop's own values) even
 # though the exact same logic works flawlessly as a real script file. Simple
-# sequential (non-looping) inline scripts are unaffected — only this
+# sequential (non-looping) inline scripts are unaffected - only this
 # collection step needed to move out.
 set -u
 RUNDIR="$1"

@@ -3,7 +3,7 @@
   "order": 1,
   "title": "Fix It: The AB-BA Deadlock",
   "type": "fix-the-bug",
-  "prompt": "thread1 locks lockA then lockB; thread2 locks lockA then lockB too, but wait — read closely, it doesn't. Fix whichever thread locks them in the wrong order so both threads always acquire lockA before lockB, then join cleanly and print exactly \"Total: 30\\n\".",
+  "prompt": "thread1 locks lockA then lockB; thread2 locks lockA then lockB too, but wait - read closely, it doesn't. Fix whichever thread locks them in the wrong order so both threads always acquire lockA before lockB, then join cleanly and print exactly \"Total: 30\\n\".",
   "starterCode": "#include <stdio.h>\n#include <pthread.h>\n#include <unistd.h>\n\nstatic int total = 0;\nstatic pthread_mutex_t lockA = PTHREAD_MUTEX_INITIALIZER;\nstatic pthread_mutex_t lockB = PTHREAD_MUTEX_INITIALIZER;\n\nvoid *thread1(void *arg) {\n    (void)arg;\n    pthread_mutex_lock(&lockA);\n    usleep(20000);\n    pthread_mutex_lock(&lockB);\n    total += 10;\n    pthread_mutex_unlock(&lockB);\n    pthread_mutex_unlock(&lockA);\n    return NULL;\n}\n\nvoid *thread2(void *arg) {\n    (void)arg;\n    pthread_mutex_lock(&lockB);\n    usleep(20000);\n    pthread_mutex_lock(&lockA);\n    total += 20;\n    pthread_mutex_unlock(&lockA);\n    pthread_mutex_unlock(&lockB);\n    return NULL;\n}\n\nint main(void) {\n    pthread_t t1, t2;\n    pthread_create(&t1, NULL, thread1, NULL);\n    pthread_create(&t2, NULL, thread2, NULL);\n    pthread_join(t1, NULL);\n    pthread_join(t2, NULL);\n    printf(\"Total: %d\\n\", total);\n    return 0;\n}\n",
   "gradingCriteria": ["stdout-match", "no-warnings"],
   "baseXp": 45,

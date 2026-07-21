@@ -2,12 +2,12 @@ import { resolve } from 'path'
 import { beforeAll, describe, expect, it, vi } from 'vitest'
 
 /**
- * Exercises the real WSL bridge — needs a working toolchain inside WSL Ubuntu
+ * Exercises the real WSL bridge - needs a working toolchain inside WSL Ubuntu
  * (see docs/setup-manual.md). Run manually with `npm run test:wsl`; this is
  * deliberately excluded from `npm run test` / CI, since CI has no WSL.
  *
  * runPipeline.ts pulls the error glossary via paths.ts's `app.getAppPath()`,
- * which only exists inside a real Electron process — mock it the same way
+ * which only exists inside a real Electron process - mock it the same way
  * contentLoader.test.ts does so this can run under plain Node/Vitest.
  */
 vi.mock('electron', () => ({

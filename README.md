@@ -1,10 +1,10 @@
 # Ironcore Lab
 
-**Learn C by restoring a dead computing laboratory — with a real Linux toolchain under the hood, not a toy simulator.**
+**Learn C by restoring a dead computing laboratory, with a real Linux toolchain under the hood rather than a toy simulator.**
 
-Ironcore Lab is a desktop app that teaches C from bits to bare metal. Every exercise compiles and runs against **actual gcc/clang, gdb, and Valgrind** inside WSL. The compiler errors are real compiler errors. The memory leaks are real memory leaks. The narrative wrapper — restoring the abandoned "Meridian Computing Laboratory" room by room — is there to give the curriculum shape, not to paper over how C actually behaves.
+Ironcore Lab is a desktop app that teaches C from bits to bare metal. Every exercise compiles and runs against **actual gcc/clang, gdb, and Valgrind** inside WSL. The compiler errors are real compiler errors. The memory leaks are real memory leaks. The narrative wrapper (restoring the abandoned "Meridian Computing Laboratory" room by room) is there to give the curriculum shape, not to paper over how C actually behaves.
 
-> **Status:** early (`v0.1.0`), Windows + WSL only, single author. All six planned arcs are fully authored; see [Content roadmap](#content-roadmap) below.
+> **Status:** early (`v0.2.19`), Windows + WSL only, single author. All six planned arcs are fully authored; see [Content roadmap](#content-roadmap) below.
 
 ![The Lab Map, showing Assembly Basement in progress and the other five rooms locked](docs/screenshots/lab-map.png)
 
@@ -21,24 +21,24 @@ Most browser-based "learn C" tools run your code in a sandboxed interpreter or a
 
 - **Six-arc curriculum**, from "what is a bit" through pointers, structs, processes, concurrency, and compiler internals
 - **Monaco-based editor** (the engine behind VS Code) for every coding exercise
-- **Five exercise types** — write-program, fix-the-bug, predict-output, fill-in-blank, and guided gdb debugging — each graded appropriately (WSL round-trip vs. instant client-side check)
-- **Setup Wizard** that detects your WSL/Ubuntu toolchain, tells you exactly what's missing, and offers one-click buttons to install it — rather than failing silently mid-lesson or expecting you to already know WSL
+- **Five exercise types** (write-program, fix-the-bug, predict-output, fill-in-blank, and guided gdb debugging), each graded appropriately (WSL round-trip vs. instant client-side check)
+- **Setup Wizard** that detects your WSL/Ubuntu toolchain, tells you exactly what's missing, and offers one-click buttons to install it, rather than failing silently mid-lesson or expecting you to already know WSL
 - **XP, achievements, and an in-app error glossary** that recognizes real gcc/clang/Valgrind/sanitizer output and links it back to the lesson that explains it
-- **Data-driven content** — every lesson and exercise is JSON validated by Zod at load time (see [Content roadmap](#content-roadmap)); adding a lesson never requires touching app code
+- **Data-driven content:** every lesson and exercise is JSON validated by Zod at load time (see [Content roadmap](#content-roadmap)); adding a lesson never requires touching app code
 
 ## Install
 
-**Requirement either way:** Windows 10/11. (WSL2 + Ubuntu is also required to actually compile/run C code, but you don't need to set that up yourself first — see below.)
+**Requirement either way:** Windows 10/11. (WSL2 + Ubuntu is also required to actually compile and run C code, but you don't need to set that up yourself first; see below.)
 
-### Option A — Installer (recommended if you just want to use it)
+### Option A: Installer (recommended if you just want to use it)
 
 1. Download the latest `Ironcore Lab Setup x.x.x.exe` from [Releases](https://github.com/druxck/ironcore-lab/releases).
 2. Run it and step through the installer (pick an install location, create shortcuts, etc.).
-   > The installer isn't code-signed (that costs money a one-person hobby project doesn't have), so Windows SmartScreen will likely show an "unrecognized app" warning. Click **More info → Run anyway**. This is normal for small independent Windows apps, not a sign anything's wrong — you're welcome to inspect [the source](https://github.com/druxck/ironcore-lab) or [the packaging workflow](.github/workflows/ci.yml) first.
-3. Launch **Ironcore Lab**. If WSL/Ubuntu or the C toolchain (gcc, clang, gdb, valgrind, etc.) aren't already on your machine, the **Setup Wizard** screen will offer one-click **Install WSL + Ubuntu** and **Install C Toolchain** buttons. Both run in the background with a live progress bar — no terminal window to babysit and no password to type in. The only unavoidable interruption is a single Windows permission (UAC) prompt for the WSL install itself, since that's a real OS security boundary and can't be (or shouldn't be) bypassed silently. No existing WSL/Windows/npm knowledge required; see [`docs/setup-manual.md`](docs/setup-manual.md) for exactly what each button does and the manual fallback.
+   > The installer isn't code-signed (that costs money a one-person hobby project doesn't have), so Windows SmartScreen will likely show an "unrecognized app" warning. Click **More info → Run anyway**. This is normal for small independent Windows apps, not a sign anything's wrong. You're welcome to inspect [the source](https://github.com/druxck/ironcore-lab) or [the packaging workflow](.github/workflows/ci.yml) first.
+3. Launch **Ironcore Lab**. If WSL/Ubuntu or the C toolchain (gcc, clang, gdb, valgrind, etc.) aren't already on your machine, the **Setup Wizard** screen will offer one-click **Install WSL + Ubuntu** and **Install C Toolchain** buttons. Both run in the background with a live progress bar: no terminal window to babysit and no password to type in. The only unavoidable interruption is a single Windows permission (UAC) prompt for the WSL install itself, since that's a real OS security boundary and can't be (or shouldn't be) bypassed silently. No existing WSL, Windows, or npm knowledge required; see [`docs/setup-manual.md`](docs/setup-manual.md) for exactly what each button does and the manual fallback.
 4. Once every tool shows green, the Lab Map unlocks.
 
-### Option B — From source (for developers)
+### Option B: From source (for developers)
 
 ```bash
 git clone https://github.com/druxck/ironcore-lab.git
@@ -53,21 +53,21 @@ Same Setup Wizard, same one-click install buttons, just running from source inst
 
 | Arc | Status |
 |---|---|
-| Assembly Basement — bits, bytes, the toolchain | Authored |
-| The Patch Bay — variables, control flow, functions | Authored |
-| Memory Wing — pointers, stack/heap, structs | Authored |
-| The Machine Room — processes, signals, file descriptors | Authored |
-| The Concurrency Annex — threads and races | Authored |
-| The Architecture Vault — compiler internals, performance | Authored |
+| Assembly Basement: bits, bytes, the toolchain | Authored |
+| The Patch Bay: variables, control flow, functions | Authored |
+| Memory Wing: pointers, stack/heap, structs | Authored |
+| The Machine Room: processes, signals, file descriptors | Authored |
+| The Concurrency Annex: threads and races | Authored |
+| The Architecture Vault: compiler internals, performance | Authored |
 
-All six arcs are authored — contributions polishing or extending existing lessons are welcome, see [Contributing](#contributing).
+All six arcs are authored. Contributions that polish or extend existing lessons are welcome; see [Contributing](#contributing).
 
 ## How it works
 
-- **`src/main`** — Electron main process: WSL bridge (spawns `wsl.exe`, streams output), toolchain detection, content loader (Zod-validated JSON), save-file migrations
-- **`src/renderer`** — React/TypeScript UI: Lab Map, Lesson View, Setup Wizard, Dashboard, Achievements
-- **`src/shared`** — types shared across the Electron process boundary via a typed IPC contract
-- **`content/`** — the entire curriculum as data (arcs, lessons, exercises, error glossary, history trivia); see [`docs/content-authoring-guide.md`](docs/content-authoring-guide.md) for the full spec
+- **`src/main`:** Electron main process: WSL bridge (spawns `wsl.exe`, streams output), toolchain detection, content loader (Zod-validated JSON), save-file migrations
+- **`src/renderer`:** React/TypeScript UI: Lab Map, Lesson View, Setup Wizard, Dashboard, Achievements
+- **`src/shared`:** types shared across the Electron process boundary via a typed IPC contract
+- **`content/`:** the entire curriculum as data (arcs, lessons, exercises, error glossary, history trivia); see [`docs/content-authoring-guide.md`](docs/content-authoring-guide.md) for the full spec
 
 ## Development
 
@@ -85,7 +85,7 @@ npm run dist:win     # packaged Windows installer (release/*.exe)
 
 Bug reports and PRs are welcome, especially:
 
-- New arcs, lessons, or exercises beyond the current six — content is pure JSON/Markdown and doesn't require touching app code. Start with [`docs/content-authoring-guide.md`](docs/content-authoring-guide.md).
+- New arcs, lessons, or exercises beyond the current six. Content is pure JSON/Markdown and doesn't require touching app code. Start with [`docs/content-authoring-guide.md`](docs/content-authoring-guide.md).
 - Additions to the error glossary (`content/error-glossary/`) for compiler/Valgrind/sanitizer output that isn't recognized yet.
 
 Please run `npm run typecheck && npm run lint && npm test` before opening a PR.

@@ -37,7 +37,7 @@ fi
 # NOTE: deliberately no `ulimit -v` (virtual address space) anywhere below.
 # AddressSanitizer reserves a large shadow-memory region (hundreds of MB of
 # *virtual* address space, not physical RAM) for any sanitizer-instrumented
-# binary, and valgrind does the same for its own instrumentation — a `ulimit
+# binary, and valgrind does the same for its own instrumentation - a `ulimit
 # -v` sized for the student's actual program (e.g. 256MB) makes ASan's own
 # startup allocation fail ("ReserveShadowMemoryRange failed... Perhaps you're
 # using ulimit -v") or makes valgrind's address-space manager abort with

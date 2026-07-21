@@ -1,22 +1,22 @@
 [
   {
     "match": "definitely lost",
-    "explanation": "Memory you malloc'd is gone — no pointer anywhere in your program still points to it, and you never freed it. Classic leak: find the malloc with no matching free.",
+    "explanation": "Memory you malloc'd is gone: no pointer anywhere in your program still points to it, and you never freed it. Classic leak: find the malloc with no matching free.",
     "relatedLessonId": "memory-wing-06-ghosts-in-the-machine"
   },
   {
     "match": "invalid write of size",
-    "explanation": "Your program wrote to memory it doesn't own — often one element past the end of an array (an off-by-one), or through a pointer that's already been freed.",
+    "explanation": "Your program wrote to memory it doesn't own, often one element past the end of an array (an off-by-one), or through a pointer that's already been freed.",
     "relatedLessonId": "memory-wing-06-ghosts-in-the-machine"
   },
   {
     "match": "invalid read of size",
-    "explanation": "Your program read from memory it doesn't own — often reading past the end of an allocation, or reading through a dangling pointer after free().",
+    "explanation": "Your program read from memory it doesn't own, often reading past the end of an allocation, or reading through a dangling pointer after free().",
     "relatedLessonId": "memory-wing-06-ghosts-in-the-machine"
   },
   {
     "match": "invalid free",
-    "explanation": "You called free() on a pointer that wasn't the result of a matching malloc — maybe it was already freed (a double free), or it points into the middle of a block instead of the start.",
+    "explanation": "You called free() on a pointer that wasn't the result of a matching malloc: maybe it was already freed (a double free), or it points into the middle of a block instead of the start.",
     "relatedLessonId": "memory-wing-06-ghosts-in-the-machine"
   },
   {

@@ -6,7 +6,7 @@
   },
   {
     "match": "expected declaration or statement at end of input",
-    "explanation": "The compiler ran out of file before it found a closing '}'. Count your braces — one of them is missing.",
+    "explanation": "The compiler ran out of file before it found a closing '}'. Count your braces; one of them is missing.",
     "relatedLessonId": "assembly-basement-05-reading-complaints"
   },
   {
@@ -16,12 +16,12 @@
   },
   {
     "match": "implicit declaration of function",
-    "explanation": "You called a function the compiler hasn't seen declared yet — usually a missing #include, or the function is defined further down the file than where you called it.",
+    "explanation": "You called a function the compiler hasn't seen declared yet, usually a missing #include, or the function is defined further down the file than where you called it.",
     "relatedLessonId": "assembly-basement-06-make-it-so"
   },
   {
     "match": "unused variable",
-    "explanation": "You declared this variable but never read its value. Not an error, but usually a sign of a bug — either you meant to use it, or you can delete it.",
+    "explanation": "You declared this variable but never read its value. Not an error, but usually a sign of a bug: either you meant to use it, or you can delete it.",
     "relatedLessonId": "assembly-basement-05-reading-complaints"
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "match": "assignment makes pointer from integer without a cast",
-    "explanation": "You're assigning a plain number to a pointer variable. This is almost always a bug — did you mean to use & to take an address, or forget a dereference *?",
+    "explanation": "You're assigning a plain number to a pointer variable. This is almost always a bug. Did you mean to use & to take an address, or forget a dereference *?",
     "relatedLessonId": "memory-wing-02-what-is-a-pointer"
   },
   {
@@ -51,7 +51,7 @@
   },
   {
     "match": "expected expression",
-    "explanation": "The compiler expected a value or expression here and found something else instead — often a stray operator, an extra comma, or a misplaced symbol.",
+    "explanation": "The compiler expected a value or expression here and found something else instead, often a stray operator, an extra comma, or a misplaced symbol.",
     "relatedLessonId": "patch-bay-02-operators-expressions"
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "match": "expected identifier or",
-    "explanation": "The compiler expected a name (a variable, function, or type) here and found a symbol instead — often a missing type keyword or a typo.",
+    "explanation": "The compiler expected a name (a variable, function, or type) here and found a symbol instead, often a missing type keyword or a typo.",
     "relatedLessonId": "assembly-basement-05-reading-complaints"
   }
 ]

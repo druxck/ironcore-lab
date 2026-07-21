@@ -3,7 +3,7 @@
   "order": 1,
   "title": "Compute the Elapsed Time Correctly",
   "type": "fix-the-bug",
-  "prompt": "This program is supposed to print how many milliseconds elapsed between two fixed struct timespec values (start = 10.5s, end = 12.1s — 1600ms apart). It only subtracts tv_nsec directly, which goes negative here and gives the wrong answer. Fix the formula so it correctly combines the whole-second and nanosecond differences, and prints exactly \"Elapsed: 1600 ms\".",
+  "prompt": "This program is supposed to print how many milliseconds elapsed between two fixed struct timespec values (start = 10.5s, end = 12.1s - 1600ms apart). It only subtracts tv_nsec directly, which goes negative here and gives the wrong answer. Fix the formula so it correctly combines the whole-second and nanosecond differences, and prints exactly \"Elapsed: 1600 ms\".",
   "starterCode": "#include <stdio.h>\n#include <time.h>\n\nint main(void) {\n    struct timespec start = {10, 500000000};\n    struct timespec end = {12, 100000000};\n    double elapsed_ms = (end.tv_nsec - start.tv_nsec) / 1e6;\n    printf(\"Elapsed: %.0f ms\\n\", elapsed_ms);\n    return 0;\n}\n",
   "gradingCriteria": ["stdout-match", "no-warnings"],
   "baseXp": 35,

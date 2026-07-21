@@ -6,7 +6,7 @@ import { isValgrindClean } from '../wsl/diagnostics/parseValgrind'
 /**
  * "Fixed it" achievements (first-fixed-error, first-valgrind-clean-fix) need
  * to know an exercise was previously broken. That's session-local, in-memory
- * state rather than something persisted to save.json — losing it across app
+ * state rather than something persisted to save.json - losing it across app
  * restarts just means an occasional missed achievement on a resumed exercise,
  * an acceptable tradeoff for what's flavor rather than core progression.
  */

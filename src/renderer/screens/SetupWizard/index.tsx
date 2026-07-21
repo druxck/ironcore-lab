@@ -123,7 +123,7 @@ export default function SetupWizard({ status, onRecheck }: Props): JSX.Element {
       <div className="crt-scanlines w-full max-w-2xl rounded border border-lab-wire bg-lab-panel/90 p-6">
         <h1 className="glow-text-phosphor font-blueprint text-xl text-lab-phosphor">Meridian Computing Laboratory</h1>
         <p className="mt-1 text-sm text-lab-phosphorDim">
-          The lab&apos;s been dark a long time. Before anything can be restored, the workshop needs power — a real C
+          The lab&apos;s been dark a long time. Before anything can be restored, the workshop needs power - a real C
           toolchain running inside WSL.
         </p>
 
@@ -132,7 +132,7 @@ export default function SetupWizard({ status, onRecheck }: Props): JSX.Element {
             <div className="glow-text-alert text-sm font-semibold text-lab-alert">WSL / Ubuntu not detected</div>
             <p className="mt-1 text-sm text-lab-phosphorDim">
               Ironcore Lab needs WSL2 with an Ubuntu distro installed. Windows requires a one-time administrator
-              permission prompt for that step — that part can&apos;t be automated away — but everything else runs in
+              permission prompt for that step - that part can&apos;t be automated away - but everything else runs in
               the background with no terminal window to babysit.
             </p>
             <button
@@ -156,7 +156,7 @@ export default function SetupWizard({ status, onRecheck }: Props): JSX.Element {
                 </div>
                 {wslProgress.phase === 'done' && (
                   <p className="mt-1 text-xs text-lab-phosphor">
-                    Installed. If Windows asks for a restart, restart and come back — otherwise rechecking now.
+                    Installed. If Windows asks for a restart, restart and come back - otherwise rechecking now.
                   </p>
                 )}
                 {wslProgress.phase === 'error' && (
@@ -190,7 +190,7 @@ export default function SetupWizard({ status, onRecheck }: Props): JSX.Element {
             {!status?.allToolsPresent && (
               <div className="mt-4 rounded border border-lab-amber/30 bg-black/30 p-3">
                 <div className="text-xs text-lab-phosphorDim">
-                  Missing tools install automatically in the background — no terminal window, no password prompt to
+                  Missing tools install automatically in the background - no terminal window, no password prompt to
                   type into.
                 </div>
                 <button
@@ -213,7 +213,7 @@ export default function SetupWizard({ status, onRecheck }: Props): JSX.Element {
                       <span>{toolchainProgress.phase === 'installing' ? `${toolchainProgress.percent}%` : ''}</span>
                     </div>
                     {toolchainProgress.phase === 'done' && (
-                      <p className="mt-1 text-xs text-lab-phosphor">Done — rechecking automatically.</p>
+                      <p className="mt-1 text-xs text-lab-phosphor">Done - rechecking automatically.</p>
                     )}
                     {toolchainProgress.phase === 'error' && (
                       <pre className="mt-1 overflow-x-auto whitespace-pre-wrap rounded bg-black/40 p-2 text-xs text-lab-alert">

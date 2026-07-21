@@ -3,7 +3,7 @@
   "order": 1,
   "title": "Count the Hidden Byte",
   "type": "predict-output",
-  "prompt": "char name[6] = \"Alice\"; — how many bytes does this array actually use in total, including the byte C adds automatically that you didn't write?",
+  "prompt": "char name[6] = \"Alice\"; - how many bytes does this array actually use in total, including the byte C adds automatically that you didn't write?",
   "starterCode": "",
   "expectedAnswer": "6",
   "gradingCriteria": ["stdout-match"],

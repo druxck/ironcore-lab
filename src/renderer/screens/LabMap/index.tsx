@@ -50,7 +50,7 @@ export default function LabMap({ onOpenLesson }: Props): JSX.Element {
             <ul className="mt-3 flex flex-col gap-2">
               {selectedArc.outlineLessons?.map((lesson) => (
                 <li key={lesson.workingTitle} className="text-sm text-lab-phosphorDim/80">
-                  <span className="text-lab-phosphorDim">— </span>
+                  <span className="text-lab-phosphorDim"> - </span>
                   {lesson.workingTitle}: {lesson.summary}
                 </li>
               ))}

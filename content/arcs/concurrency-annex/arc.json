@@ -3,7 +3,7 @@
   "title": "The Concurrency Annex",
   "roomName": "Concurrency Annex",
   "shortDescription": "Threads, races, and the discipline it takes to run code in parallel without lying to yourself.",
-  "longDescription": "A later addition to the lab, built when the researchers started running experiments in parallel. Restoring it means learning pthreads, why race conditions are real even when your test run looked fine, and the tools — mutexes, condition variables, atomics — that make shared memory safe to touch from more than one thread at once.",
+  "longDescription": "A later addition to the lab, built when the researchers started running experiments in parallel. Restoring it means learning pthreads, why race conditions are real even when your test run looked fine, and the tools (mutexes, condition variables, atomics) that make shared memory safe to touch from more than one thread at once.",
   "order": 5,
   "unlockRequires": [{ "arcId": "machine-room", "minRestorationPct": 80 }],
   "theme": { "accentColor": "#b388ff", "motif": "braided-cable-bundles" },

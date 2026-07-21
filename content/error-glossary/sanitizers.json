@@ -1,7 +1,7 @@
 [
   {
     "match": "heap-buffer-overflow",
-    "explanation": "AddressSanitizer caught a read or write outside the bounds of a heap allocation — almost always an off-by-one in a loop, or an index computed wrong.",
+    "explanation": "AddressSanitizer caught a read or write outside the bounds of a heap allocation, almost always an off-by-one in a loop, or an index computed wrong.",
     "relatedLessonId": "memory-wing-06-ghosts-in-the-machine"
   },
   {
@@ -11,17 +11,17 @@
   },
   {
     "match": "heap-use-after-free",
-    "explanation": "Your program touched memory after calling free() on it. The pointer is 'dangling' — it still holds an old address, but that memory is no longer yours.",
+    "explanation": "Your program touched memory after calling free() on it. The pointer is 'dangling': it still holds an old address, but that memory is no longer yours.",
     "relatedLessonId": "memory-wing-06-ghosts-in-the-machine"
   },
   {
     "match": "index out of bounds",
-    "explanation": "UndefinedBehaviorSanitizer caught an array access outside the array's declared size — check the index expression and the array's bounds.",
+    "explanation": "UndefinedBehaviorSanitizer caught an array access outside the array's declared size. Check the index expression and the array's bounds.",
     "relatedLessonId": "patch-bay-07-arrays"
   },
   {
     "match": "signed integer overflow",
-    "explanation": "A signed integer calculation went past what an int can represent. In C this is undefined behavior, not a wraparound — the compiler is allowed to do anything.",
+    "explanation": "A signed integer calculation went past what an int can represent. In C this is undefined behavior, not a wraparound: the compiler is allowed to do anything.",
     "relatedLessonId": "patch-bay-02-operators-expressions"
   },
   {

@@ -10,7 +10,7 @@ export default function HistoryCallout({ card }: { card: HistoryCard }): JSX.Ele
       <div className="flex items-start justify-between gap-2">
         <div>
           <div className="glow-text-amber text-xs font-semibold uppercase tracking-wide text-lab-amber">
-            From the Lab Archives{card.year ? ` — ${card.year}` : ''}
+            From the Lab Archives{card.year ? ` - ${card.year}` : ''}
           </div>
           <div className="mt-1 text-sm font-semibold text-lab-amber/90">{card.title}</div>
           <p className="mt-1 text-sm leading-relaxed text-lab-phosphorDim">{card.body}</p>

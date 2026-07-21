@@ -92,7 +92,7 @@ function TopNav({ view, setView }: { view: View; setView: (v: View) => void }): 
   return (
     <header className="flex items-center justify-between border-b border-lab-wire bg-lab-panel/60 px-4 py-2">
       <div className="glow-text-phosphor font-blueprint text-sm tracking-widest text-lab-phosphor">
-        IRONCORE LAB <span className="text-lab-phosphorDim">— Meridian Computing Laboratory</span>
+        IRONCORE LAB <span className="text-lab-phosphorDim"> - Meridian Computing Laboratory</span>
       </div>
       <nav className="flex gap-1">
         {tabs.map((tab) => (

@@ -123,7 +123,7 @@ function loadContent(): LoadedContent {
   return cache
 }
 
-/** Dev convenience — content edits normally don't require an app restart. */
+/** Dev convenience - content edits normally don't require an app restart. */
 export function invalidateContentCache(): void {
   cache = null
 }

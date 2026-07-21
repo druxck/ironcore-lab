@@ -5,7 +5,7 @@
   "title": "Signals: Interrupting the Machine",
   "objectives": [
     "Install a signal handler with signal()",
-    "Explain that an unhandled signal falls back to its default disposition — often process termination",
+    "Explain that an unhandled signal falls back to its default disposition - often process termination",
     "Use raise() to send a signal to your own process"
   ],
   "prerequisites": ["machine-room-03-wait-and-zombies"],

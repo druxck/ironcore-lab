@@ -4,7 +4,7 @@
   "order": 7,
   "title": "Undefined Behavior Is a Compiler's Permission Slip",
   "objectives": [
-    "Explain that undefined behavior isn't 'anything could happen' folklore — it's the standard giving the compiler explicit license to assume it never occurs",
+    "Explain that undefined behavior isn't 'anything could happen' folklore - it's the standard giving the compiler explicit license to assume it never occurs",
     "Recognize signed integer overflow as real, UBSan-catchable undefined behavior",
     "Rewrite overflow-prone code to check for the dangerous condition before it happens, not after"
   ],

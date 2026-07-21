@@ -3,7 +3,7 @@
   "title": "Memory Wing",
   "roomName": "Memory Wing",
   "shortDescription": "Pointers, the stack and heap, and the discipline of managing memory by hand.",
-  "longDescription": "The wing built around the lab's old core memory racks — physical grids of tiny magnetic rings, each one a single bit, wired by hand. That's not a coincidence: this is where you learn to think about memory the way C makes you think about it. Pointers, the stack, the heap, and manual allocation are the traditional hardest wall in learning C. This wing is also where the lab's real diagnostic tools — Valgrind, AddressSanitizer, gdb — stop being abstract warnings and start being instruments you use on every exercise.",
+  "longDescription": "The wing built around the lab's old core memory racks - physical grids of tiny magnetic rings, each one a single bit, wired by hand. That's not a coincidence: this is where you learn to think about memory the way C makes you think about it. Pointers, the stack, the heap, and manual allocation are the traditional hardest wall in learning C. This wing is also where the lab's real diagnostic tools (Valgrind, AddressSanitizer, gdb) stop being abstract warnings and start being instruments you use on every exercise.",
   "order": 3,
   "unlockRequires": [{ "arcId": "patch-bay", "minRestorationPct": 80 }],
   "theme": { "accentColor": "#39d9ff", "motif": "core-memory-lattice" },

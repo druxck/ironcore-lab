@@ -3,7 +3,7 @@
   "order": 2,
   "title": "Fix It: Missing Prototype",
   "type": "fix-the-bug",
-  "prompt": "This calls triple() before the compiler has seen its declaration. Depending on your compiler that's either a hard error or 'just' a warning — but it's always wrong. Fix it properly by declaring the function before it's used, so it compiles clean with no warnings.",
+  "prompt": "This calls triple() before the compiler has seen its declaration. Depending on your compiler that's either a hard error or 'just' a warning - but it's always wrong. Fix it properly by declaring the function before it's used, so it compiles clean with no warnings.",
   "starterCode": "#include <stdio.h>\n\nint main(void) {\n    printf(\"%d\\n\", triple(4));\n    return 0;\n}\n\nint triple(int n) {\n    return n * 3;\n}\n",
   "gradingCriteria": ["stdout-match", "no-warnings"],
   "baseXp": 30,

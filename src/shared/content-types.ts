@@ -20,7 +20,7 @@ export interface Arc {
   status: ArcStatus
 }
 
-/** Present only for outline-only arcs — a lightweight preview of what's coming. */
+/** Present only for outline-only arcs - a lightweight preview of what's coming. */
 export interface ArcOutlineLesson {
   workingTitle: string
   summary: string

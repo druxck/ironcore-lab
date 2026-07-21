@@ -9,7 +9,7 @@ import { annotateWithGlossary } from './errorGlossary'
 
 const MAX_RETAINED_RUNS = 20
 
-/** Resolved (not literal "$HOME") — see getWslHomeDir's doc comment for why. */
+/** Resolved (not literal "$HOME") - see getWslHomeDir's doc comment for why. */
 async function getLabHome(): Promise<string> {
   const home = await getWslHomeDir()
   return `${home}/.ironcore-lab`
@@ -84,27 +84,27 @@ function buildFriendlyMessage(
     return "Your code didn't compile. Check the Problems panel for the exact line and what the compiler expected."
   }
   if (outcome === 'timed-out') {
-    return "Your program didn't finish in time — check for an infinite loop, an infinite recursion, or a blocking read with no input."
+    return "Your program didn't finish in time - check for an infinite loop, an infinite recursion, or a blocking read with no input."
   }
   if (outcome === 'crashed') {
     if (signal === 'SIGSEGV') {
-      return 'Your program crashed with a segmentation fault — it touched memory it had no right to touch. Common causes: a null or dangling pointer, or an out-of-bounds array access.'
+      return 'Your program crashed with a segmentation fault - it touched memory it had no right to touch. Common causes: a null or dangling pointer, or an out-of-bounds array access.'
     }
     if (signal === 'SIGABRT') {
-      return 'Your program aborted — often from a failed assertion, a detected heap corruption, or a sanitizer catching undefined behavior.'
+      return 'Your program aborted - often from a failed assertion, a detected heap corruption, or a sanitizer catching undefined behavior.'
     }
     return `Your program crashed (${signal ?? 'unknown signal'}).`
   }
 
   if (sanitizerCount > 0) {
-    return `AddressSanitizer/UBSan flagged ${sanitizerCount} issue${sanitizerCount === 1 ? '' : 's'} — your program ran, but it triggered undefined behavior along the way.`
+    return `AddressSanitizer/UBSan flagged ${sanitizerCount} issue${sanitizerCount === 1 ? '' : 's'} - your program ran, but it triggered undefined behavior along the way.`
   }
 
   if (valgrindClean === false) {
-    return 'Valgrind found memory issues — see the Memory Report for the leak trace.'
+    return 'Valgrind found memory issues - see the Memory Report for the leak trace.'
   }
   if (valgrindClean === true) {
-    return 'Clean run under Valgrind — no leaks, no errors.'
+    return 'Clean run under Valgrind - no leaks, no errors.'
   }
 
   if (mode === 'test' && testResults) {
@@ -142,7 +142,7 @@ export async function compileAndRun(sourceCode: string, mode: PipelineMode, exer
     setup.push(`echo '${base64Encode(gdbScript)}' | base64 -d > '${rundir}/gdb-commands.txt'`)
   } else {
     // Trailing newline matters: run-exercise.sh reads this with `while read`,
-    // which silently skips the final line if the file doesn't end in \n —
+    // which silently skips the final line if the file doesn't end in \n - 
     // fatal when there's exactly one case (a lone line with no newline at all).
     const caseIds = cases.map((c) => c.id).join('\n') + '\n'
     setup.push(`echo '${base64Encode(caseIds)}' | base64 -d > '${rundir}/cases.txt'`)
@@ -157,7 +157,7 @@ export async function compileAndRun(sourceCode: string, mode: PipelineMode, exer
   const execResult = await execInWsl(setup.join('\n'), { timeoutMs: totalBudgetMs })
 
   if (execResult.timedOut) {
-    return emptyResult(mode, 'internal-error', startedAt, "The lab bridge to WSL didn't respond in time. Try again — if this keeps happening, reopen the app.")
+    return emptyResult(mode, 'internal-error', startedAt, "The lab bridge to WSL didn't respond in time. Try again - if this keeps happening, reopen the app.")
   }
 
   // Delegates to a deployed script file rather than inline `-c` text: a
@@ -165,7 +165,7 @@ export async function compileAndRun(sourceCode: string, mode: PipelineMode, exer
   // Windows->Linux argument handoff has been observed to arrive corrupted
   // (empty loop variables, or a bash syntax error quoting one of the loop's
   // own values) even though the identical logic works reliably as a real
-  // file — see collect-output.sh's own header comment for the full story.
+  // file - see collect-output.sh's own header comment for the full story.
   const retrieveResult = await execInWsl(`bash '${collectPath}' '${rundir}'`, { timeoutMs: 15_000 })
   const files = parseFileDump(retrieveResult.stdout)
 
@@ -204,7 +204,7 @@ export async function compileAndRun(sourceCode: string, mode: PipelineMode, exer
       diagnostics,
       sanitizerFindings: [],
       durationMs: Date.now() - startedAt,
-      friendlyMessage: 'Debugger session complete — read the trace above.'
+      friendlyMessage: 'Debugger session complete - read the trace above.'
     }
   }
 

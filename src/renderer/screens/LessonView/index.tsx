@@ -280,7 +280,7 @@ function buildAnswerResult(answer: string, expected: string): RunResult {
       }
     ],
     durationMs: 0,
-    friendlyMessage: passed ? 'Correct.' : 'Not quite — reread the narrative above and try again.'
+    friendlyMessage: passed ? 'Correct.' : 'Not quite - reread the narrative above and try again.'
   }
 }
 
@@ -415,7 +415,7 @@ function GdbExercise({ exercise, passedAlready, onGraded, onSubmit }: ExercisePa
             </button>
             {result && (
               <span className={result.testResults?.[0]?.passed ? 'text-lab-phosphor' : 'text-lab-alert'}>
-                {result.testResults?.[0]?.passed ? 'Correct diagnosis.' : 'Not quite — run it again and look closer.'}
+                {result.testResults?.[0]?.passed ? 'Correct diagnosis.' : 'Not quite - run it again and look closer.'}
               </span>
             )}
           </div>

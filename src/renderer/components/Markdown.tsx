@@ -1,8 +1,8 @@
 /**
  * Minimal, dependency-free markdown renderer for first-party lesson content
  * (headings, paragraphs, fenced code, lists, blockquotes, bold/italic/inline
- * code). Deliberately not a full CommonMark implementation — authored .md
- * files stick to this subset (see docs/content-authoring-guide.md) — and
+ * code). Deliberately not a full CommonMark implementation - authored .md
+ * files stick to this subset (see docs/content-authoring-guide.md) - and
  * builds plain React elements rather than dangerouslySetInnerHTML.
  */
 export default function Markdown({ content }: { content: string }): JSX.Element {

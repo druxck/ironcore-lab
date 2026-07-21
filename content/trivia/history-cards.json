@@ -2,8 +2,8 @@
   {
     "id": "hc-dennis-ritchie",
     "title": "A language built to write an operating system",
-    "year": "1969–1973",
-    "body": "C was designed by Dennis Ritchie at Bell Labs, growing out of an earlier language called B. It wasn't built as an academic exercise — it was built because Ritchie and Ken Thompson needed a language good enough to write an operating system in.",
+    "year": "1969-1973",
+    "body": "C was designed by Dennis Ritchie at Bell Labs, growing out of an earlier language called B. It wasn't built as an academic exercise; it was built because Ritchie and Ken Thompson needed a language good enough to write an operating system in.",
     "tags": ["history", "origins"]
   },
   {
@@ -17,21 +17,21 @@
     "id": "hc-unix-rewrite",
     "title": "Unix rewrites itself",
     "year": "1973",
-    "body": "The third edition of Unix was almost entirely rewritten in C, replacing assembly language. This was a radical bet at the time — operating systems were assumed to need hand-tuned assembly. It paid off: Unix could now be ported to new hardware by rewriting the compiler, not the OS.",
+    "body": "The third edition of Unix was almost entirely rewritten in C, replacing assembly language. This was a radical bet at the time: operating systems were assumed to need hand-tuned assembly. It paid off: Unix could now be ported to new hardware by rewriting the compiler, not the OS.",
     "tags": ["history", "unix"]
   },
   {
     "id": "hc-hello-world-origin",
     "title": "Where 'hello, world' really comes from",
     "year": "1972",
-    "body": "The phrase predates the C language's famous textbook. Brian Kernighan used 'hello, world' in a 1972 internal Bell Labs tutorial for the B language. When he and Ritchie wrote the C book six years later, the example — and the tradition — came with it.",
+    "body": "The phrase predates the C language's famous textbook. Brian Kernighan used 'hello, world' in a 1972 internal Bell Labs tutorial for the B language. When he and Ritchie wrote the C book six years later, the example and the tradition came with it.",
     "tags": ["history", "trivia"]
   },
   {
     "id": "hc-knr-book",
     "title": "The White Book",
     "year": "1978",
-    "body": "\"The C Programming Language\" by Kernighan and Ritchie — universally called K&R — was, for decades, the closest thing C had to an official specification. Programmers still refer to pre-standard C style as \"K&R C.\"",
+    "body": "\"The C Programming Language\" by Kernighan and Ritchie, universally called K&R, was for decades the closest thing C had to an official specification. Programmers still refer to pre-standard C style as \"K&R C.\"",
     "tags": ["history", "reference"]
   },
   {
@@ -56,26 +56,26 @@
   {
     "id": "hc-embedded-today",
     "title": "Still running everything",
-    "body": "Decades after its creation, C remains the dominant language for operating system kernels (Linux, most embedded RTOSes, large parts of Windows and macOS) and for microcontroller firmware — anywhere code needs to sit directly on top of the hardware.",
+    "body": "Decades after its creation, C remains the dominant language for operating system kernels (Linux, most embedded RTOSes, large parts of Windows and macOS) and for microcontroller firmware, anywhere code needs to sit directly on top of the hardware.",
     "tags": ["modern", "systems"]
   },
   {
     "id": "hc-segfault-name",
     "title": "Where 'segmentation fault' comes from",
-    "body": "The term comes from memory segmentation, a hardware feature that lets the operating system mark which memory regions a process is allowed to touch. When your program reaches outside its allowed segment, the CPU itself raises the fault — it's hardware catching the bug, not C.",
+    "body": "The term comes from memory segmentation, a hardware feature that lets the operating system mark which memory regions a process is allowed to touch. When your program reaches outside its allowed segment, the CPU itself raises the fault: it's hardware catching the bug, not C.",
     "tags": ["memory", "trivia"]
   },
   {
     "id": "hc-malloc-name",
     "title": "malloc: exactly what it says",
-    "body": "malloc is short for \"memory allocation.\" It and free() have been part of the C standard library since the language's earliest days — one of the first widely used APIs for manual, general-purpose heap management.",
+    "body": "malloc is short for \"memory allocation.\" It and free() have been part of the C standard library since the language's earliest days, one of the first widely used APIs for manual, general-purpose heap management.",
     "tags": ["memory", "trivia"]
   },
   {
     "id": "hc-valgrind-origin",
     "title": "Named after a gate to the underworld",
     "year": "2002",
-    "body": "Valgrind was created by Julian Seward. Its name comes from Norse mythology — the entrance to Valhalla — chosen, fittingly, for a tool whose job is inspecting a program's memory as it dies.",
+    "body": "Valgrind was created by Julian Seward. Its name comes from Norse mythology (the entrance to Valhalla), chosen, fittingly, for a tool whose job is inspecting a program's memory as it dies.",
     "tags": ["tools", "trivia"]
   },
   {
@@ -89,21 +89,21 @@
     "id": "hc-fork-name",
     "title": "Why it's called 'fork'",
     "year": "1971",
-    "body": "fork() has kept its name since Unix's earliest editions. A single running process's execution genuinely splits into two independent paths that both continue on from the same point — like a fork in a road — one of the oldest system call names still in everyday use in computing.",
+    "body": "fork() has kept its name since Unix's earliest editions. A single running process's execution genuinely splits into two independent paths that both continue on from the same point, like a fork in a road: one of the oldest system call names still in everyday use in computing.",
     "tags": ["history", "unix", "trivia"]
   },
   {
     "id": "hc-pthreads-standardization",
     "title": "One standard, out of many competing threading libraries",
     "year": "1995",
-    "body": "Before POSIX Threads (pthreads) was standardized in 1995 as POSIX.1c, Unix vendors each shipped their own incompatible threading APIs. pthreads gave C programmers on any POSIX system — Linux, the BSDs, commercial Unix — the same thread, mutex, and condition-variable functions this room teaches.",
+    "body": "Before POSIX Threads (pthreads) was standardized in 1995 as POSIX.1c, Unix vendors each shipped their own incompatible threading APIs. pthreads gave C programmers on any POSIX system (Linux, the BSDs, commercial Unix) the same thread, mutex, and condition-variable functions this room teaches.",
     "tags": ["history", "standards", "concurrency"]
   },
   {
     "id": "hc-elf-format",
     "title": "One executable format most Unix-likes agreed on",
     "year": "1990s",
-    "body": "ELF (Executable and Linkable Format) — what the `file` command reports for every object file and executable you produce in this room — was originally specified for Unix System V Release 4. Linux adopted it in the mid-1990s, replacing the older, more limited a.out format, and it's remained the standard executable format on Linux ever since.",
+    "body": "ELF (Executable and Linkable Format) - what the `file` command reports for every object file and executable you produce in this room - was originally specified for Unix System V Release 4. Linux adopted it in the mid-1990s, replacing the older, more limited a.out format, and it's remained the standard executable format on Linux ever since.",
     "tags": ["history", "tools", "trivia"]
   }
 ]

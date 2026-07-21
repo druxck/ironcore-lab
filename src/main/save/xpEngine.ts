@@ -39,7 +39,7 @@ export interface XpAward {
   breakdown: string[]
 }
 
-/** Bonuses only apply to criteria the exercise didn't already require — going beyond spec. */
+/** Bonuses only apply to criteria the exercise didn't already require - going beyond spec. */
 export function computeXpAward(exercise: Exercise, criteriaMet: GradingCriterion[], attemptNumber: number): XpAward {
   const breakdown = [`Base: ${exercise.baseXp} XP`]
   let xp = exercise.baseXp
@@ -48,7 +48,7 @@ export function computeXpAward(exercise: Exercise, criteriaMet: GradingCriterion
     const bonus = OPTIONAL_BONUS_XP[criterion]
     if (bonus > 0 && !exercise.gradingCriteria.includes(criterion)) {
       xp += bonus
-      breakdown.push(`Bonus — ${criterion} (not required): +${bonus} XP`)
+      breakdown.push(`Bonus - ${criterion} (not required): +${bonus} XP`)
     }
   }
 

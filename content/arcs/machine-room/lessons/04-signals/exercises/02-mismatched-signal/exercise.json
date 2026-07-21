@@ -3,7 +3,7 @@
   "order": 2,
   "title": "Fix It: The Signal Nobody Catches",
   "type": "fix-the-bug",
-  "prompt": "This program registers a handler for SIGUSR2 but then raises SIGUSR1 — which has no handler installed, so the kernel's default action (terminating the process) kicks in before anything gets printed. Fix the mismatch so the output is exactly \"caught it\\ndone\\n\".",
+  "prompt": "This program registers a handler for SIGUSR2 but then raises SIGUSR1 - which has no handler installed, so the kernel's default action (terminating the process) kicks in before anything gets printed. Fix the mismatch so the output is exactly \"caught it\\ndone\\n\".",
   "starterCode": "#include <stdio.h>\n#include <signal.h>\n\nvoid handler(int sig) {\n    (void)sig;\n    printf(\"caught it\\n\");\n}\n\nint main(void) {\n    signal(SIGUSR2, handler);\n    raise(SIGUSR1);\n    printf(\"done\\n\");\n    return 0;\n}\n",
   "gradingCriteria": ["stdout-match", "no-warnings"],
   "baseXp": 30,
